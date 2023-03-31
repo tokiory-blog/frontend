@@ -1,12 +1,13 @@
 ---
 interface Props {
   href: string,
+  isActive?: boolean
 }
 
-const {href}: Props = Astro.props;
+const {href, isActive}: Props = Astro.props;
 ---
 
-<a href={href} class="link">
+<a href={href} class:list={['link', {link_active: isActive}]}>
   <slot />
 </a>
 
@@ -14,6 +15,15 @@ const {href}: Props = Astro.props;
   .link {
     text-decoration: none;
     color: var(--link);
-    font-weight: 500;
+    user-select: none;
+  
+    &::hover {
+      opacity: 0.9;
+    }
+    
+    &_active {
+       text-decoration: line-through;
+       pointer-events: none;
+     }
   }
 </style>

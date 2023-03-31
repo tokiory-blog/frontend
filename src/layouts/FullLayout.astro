@@ -29,7 +29,9 @@ import UIHeader from '../components/ui/UIHeader.astro';
     font-family: "JetBrains Mono", monospace;
   }
   
-  .container {
-    min-height: calc(100vh - var(--size-footer));
+  .full-layout {
+    min-height: calc(100vh - (var(--size-footer) + var(--size-header)));
+    max-width: 1400px;
+    margin: 0 auto;
   }
 </style>
