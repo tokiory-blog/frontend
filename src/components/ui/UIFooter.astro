@@ -1,3 +1,29 @@
+---
+const author = {
+  name: 'kiotosi',
+  link: 'https://github.com/kiotosi'
+};
+---
 <footer class="footer">
-
+  <div class="footer__contact contact">
+    Made with love by
+    <a href={author.link} class="footer__link">
+      <span class="contact__author">{author.name}</span>
+    </a>
+  </div>
 </footer>
+
+<style lang="scss">
+  .footer {
+    background: #eeeeee;
+    width: 100%;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-evenly;
+  
+    &__link {
+       text-decoration: none;
+      color: #769fb6;
+     }
+  }
+</style>
