@@ -1,5 +1,4 @@
 ---
-
 // Styles
 import '../styles/-colors.scss';
 import '../styles/+common.scss';
@@ -25,14 +24,20 @@ import '@fontsource/manrope';
   <title>Astro</title>
 </head>
 <body>
-<UIHeader />
-<slot/>
-<UIFooter />
+  <div class="full-layout">
+    <UIHeader/>
+    <slot/>
+    <UIFooter/>
+  </div>
 </body>
 </html>
 
 <style>
   body {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
+  }
+  
+  .container {
+    min-height: 100vh;
   }
 </style>
