@@ -20,29 +20,25 @@ const navigation = [
     link: '/author',
   },
 ];
-
-const isLinkActive = (link: string): boolean => {
-  return Astro.url.pathname.endsWith(link);
-};
 ---
 
 <header class="header">
   <div class="header__logo">
-    <UILogo/>
+    <UILogo />
   </div>
   <nav class="header__navigation navigation">
     <ul class="navigation__list">
       {
         navigation.map(navigationItem => (
-          <li class="navigation__item">
-            <UILink
-              className="navigation__link"
-              href={navigationItem.link}
-              isActive={isLinkActive(navigationItem.link)}
-            >
-              {navigationItem.title}
-            </UILink>
-          </li>
+            <li class="navigation__item">
+              <UILink
+                className="navigation__link"
+                href={navigationItem.link}
+                isActive={Astro.url.pathname.endsWith(navigationItem.link)}
+              >
+                {navigationItem.title}
+              </UILink>
+            </li>
           )
         )
       }

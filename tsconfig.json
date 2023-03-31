@@ -1,7 +1,6 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "lib": ["DOM"],
     "jsx": "preserve"
   }
 }
