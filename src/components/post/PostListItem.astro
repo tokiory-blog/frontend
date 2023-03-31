@@ -1,0 +1,58 @@
+---
+import type { PostItem } from '../../types/posts.types';
+import UITag from '../ui/UITag.astro';
+
+interface Props extends PostItem {};
+
+const {title, description, url, tags}: Props = Astro.props;
+---
+
+<a href={url} class="post">
+  <div class="post__title">
+    {title}
+  </div>
+  <div class="post__description">
+    {description}
+  </div>
+  <div class="post__tags">
+    {
+      tags.map(tag => (
+        <UITag name={tag} />
+      ))
+    }
+  </div>
+</a>
+
+<style lang="scss">
+  .post {
+    padding: 12px 24px 18px;
+    display: block;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Manrope', sans-serif;
+
+    &:hover {
+      border-color: var(--black);
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    &__description {
+      margin-top: 4px;
+      font-size: 14px;
+    }
+
+    &__tags {
+      display: flex;
+      gap: 12px;
+      margin-top: 8px;
+      justify-content: flex-end;
+    }
+  }
+</style>

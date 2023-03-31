@@ -1,0 +1,184 @@
+---
+// Styles
+import "../styles/-colors.scss";
+import "../styles/+common.scss";
+import "normalize.css";
+
+// Footer component
+import Footer from "../components/ui/UIFooter.astro";
+
+// Fonts
+import '@fontsource/jetbrains-mono'
+import '@fontsource/manrope';
+import '@fontsource/manrope/500.css';
+import '@fontsource/manrope/600.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <div class="post-layout">
+      <slot />
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  body {
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .post-layout {
+    padding: 40vh 12px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  h1:first-child {
+    margin-top: 0;
+  }
+
+  blockquote {
+    margin-left: 0;
+    padding-left: 36px;
+    border-left: 3px solid var(--black);
+  }
+  table {
+    color: #333;
+    background: white;
+    border: 1px solid grey;
+    font-size: 12pt;
+    border-collapse: collapse;
+    margin: 1em 0;
+    width: 100%;
+  }
+  table thead th,
+  table tfoot th {
+    word-wrap: none;
+    color: rgb(32, 32, 32);
+    background: rgba(162, 162, 162, 0.1);
+  }
+  table caption {
+    padding: 0.5em;
+  }
+  table th,
+  table td {
+    padding: 0.5em;
+    border: 1px solid lightgrey;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    position: relative;
+    margin: 1.5em 0 0.67em;
+    padding-left: 0;
+    a {
+      color: inherit;
+      cursor: initial;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  h3 {
+    color: #505050;
+    font-style: italic;
+  }
+  h1::before,
+  h2::before,
+  h3::before {
+    font-size: 16px;
+    position: absolute;
+    left: -32px;
+    bottom: 50%;
+    transform: translateY(50%);
+    color: #a1a1a1;
+    text-transform: uppercase;
+  }
+  h1::before {
+    content: "h1";
+  }
+  h2::before {
+    content: "h2";
+  }
+  h3::before {
+    content: "h3";
+    font-style: initial;
+  }
+  code {
+    font-family: 'JetBrains Mono', monospace;
+    display: inline-block;
+    background-color: #e8e8e8;
+    color: #d35959;
+    padding: 2px 4px;
+    line-height: 1;
+    border-radius: 4px;
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 1.6rem;
+  }
+  li:not(:first-child) {
+    margin-top: 4px;
+  }
+  
+  pre {
+    border-radius: 4px;
+  }
+  
+  code {
+    font-size: 13px;
+  }
+  
+  pre code {
+    padding: 12px;
+    font-size: 12px;
+    line-height: 1.44;
+    width: 100%;
+    background-color: #1f1f1f;
+    overflow-x: auto;
+    border-radius: 4px;
+  }
+  
+  pre code::-webkit-scrollbar-track {
+    background-color: transparent;
+    position: absolute;
+  }
+  pre code::-webkit-scrollbar {
+    height: 4px;
+    background-color: transparent;
+    position: absolute;
+  }
+  pre code::-webkit-scrollbar-thumb {
+    background-color: #717171;
+    position: absolute;
+  }
+  a {
+    color: var(--article-link);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
+    line-height: 1.7;
+  }
+  
+  li {
+    line-height: 1.7;
+    
+    & + & {
+      margin-top: 12px;
+    }
+  }
+  
+  li p {
+    margin: 0;
+  }
+</style>

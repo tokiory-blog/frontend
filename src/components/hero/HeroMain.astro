@@ -1,0 +1,36 @@
+---
+import HomeHeroAscii from "./HeroAscii.vue";
+---
+
+<div class="hero">
+  <div class="hero__text">Станция Киото.</div>
+  <HomeHeroAscii client:load class="hero__ascii" />
+  <div class="hero__description">
+    Место, где можно сесть и почитать о разработке.
+  </div>
+</div>
+
+<style lang="scss">
+  .hero {
+    text-align: center;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      font-size: 72px;
+      font-weight: 500;
+    
+      @media screen and (max-width: 425px) {
+        font-size: 52px;
+      }
+    }
+
+    &__description {
+      margin-top: 8px;
+      font-family: 'IBM Plex Mono', Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+</style>

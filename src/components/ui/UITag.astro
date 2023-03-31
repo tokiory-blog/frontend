@@ -1,0 +1,19 @@
+---
+interface Props {
+  name: string
+}
+const {name}: Props = Astro.props;
+---
+<div class="tag">
+  <span class="tag__hashtag">#</span>{name}
+</div>
+
+<style lang="scss">
+  .tag {
+    color: #3f3f3f;
+
+    &__hashtag {
+      color: #b3b3b3;
+    }
+  }
+</style>

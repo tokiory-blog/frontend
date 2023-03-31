@@ -1,0 +1,48 @@
+---
+import NavigationMenuItem from "./NavigationMenuItem.astro";
+
+interface Props {
+  navigation: {
+    title: string,
+    description: string,
+    url: string
+  }[],
+}
+
+const {navigation}: Props = Astro.props;
+---
+
+<div class="navigation-menu">
+  {
+    navigation.map(item => (
+      <div class="navigation-menu__item">
+        <NavigationMenuItem url={item.url}>
+          <div slot="title">{item.title}</div>
+          <div slot="description">{item.description}</div>
+        </NavigationMenuItem>
+      </div>
+    ))
+  }
+</div>
+
+<style lang="scss">
+  .navigation-menu {
+    display: block;
+    &__item:not(:first-child) {
+      margin-top: 12px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .navigation-menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+
+      &__item:not(:first-child) {
+         margin-top: 0;
+       }
+  }
+
+  }
+</style>

@@ -1,0 +1,44 @@
+---
+import StandardLayout from "../layouts/StandardLayout.astro";
+import HomeHero from "../components/hero/HeroMain.astro";
+import NavigationList from "../components/navigation-menu/NavigationMenu.astro";
+
+const navigation = [
+  {
+    title: 'Статьи',
+    description: 'Статьи написанные мной за все время. Здесь находятся статьи из habr, vc, vk и других ресурсов.',
+    url: '/article'
+  },
+  {
+    title: 'Туториалы',
+    description: 'Тщательно проработанные туториалы по различным технологиям, которые помогут вам выучить нужную вам технологию',
+    url: '/tutorial',
+  },
+  {
+    title: 'Полезные ссылки',
+    description: 'Коллекция ссылок, которая может пригодиться любому разработчику',
+    url: '/links'
+  },
+  {
+    title: 'О разработчике',
+    description: 'О том, кто разработал данную платформу 💁🏻‍♂️',
+    url: '/author'
+  },
+];
+
+---
+
+<StandardLayout>
+  <div class="container container_full container_center">
+    <HomeHero />
+    <div class="navigation">
+      <NavigationList navigation={navigation} />
+    </div>
+  </div>
+</StandardLayout>
+
+<style lang="scss">
+  .navigation {
+    margin-top: 24px;
+  }
+</style>

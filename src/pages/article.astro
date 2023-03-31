@@ -1,0 +1,38 @@
+---
+import PostList from "../components/post/PostList.astro";
+import UITitle from "../components/ui/UITitle.astro";
+import FullLayout from '../layouts/FullLayout.astro';
+import type { PostsFrontmatter } from "../types/posts.types";
+
+const contentList = await Astro.glob<PostsFrontmatter>('./article/**.mdx');
+const navigationList = contentList.map(item => {
+  return {
+    url: item.url ?? '',
+    title: item.frontmatter.title,
+    description: item.frontmatter.description,
+    tags: item.frontmatter.tags
+  }
+});
+---
+
+
+<FullLayout>
+  <div class="container container_full">
+    <div class="article-page">
+      <div class="article-page__title">
+        <UITitle>Статьи</UITitle>
+      </div>
+      <div class="article-page__list">
+        <PostList postList={navigationList} />
+      </div>
+    </div>
+  </div>
+</FullLayout>
+
+<style lang="scss">
+  .article-page {
+    &__list {
+     margin-top: 32px;
+    }
+  }
+</style>

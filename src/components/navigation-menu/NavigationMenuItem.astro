@@ -1,0 +1,42 @@
+---
+interface Props {
+  url: string;
+}
+
+const { url }: Props = Astro.props;
+---
+
+<a class="r-link" href={url}>
+  <div class="navigation-menu-item">
+    <div class="navigation-menu-item__title">
+      <slot name="title" />
+    </div>
+    <div class="navigation-menu-item__description">
+      <slot name="description" />
+    </div>
+  </div>
+</a>
+
+<style lang="scss">
+  .navigation-menu-item {
+    padding: 12px 24px 18px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+
+  &:hover {
+     border-color: var(--black);
+   }
+
+  &__title {
+     font-size: 32px;
+     font-weight: 500;
+   }
+
+  &__description {
+     margin-top: 12px;
+     font-size: 14px;
+     line-height: 1.4;
+   }
+  }
+</style>
