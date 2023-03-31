@@ -5,6 +5,7 @@ import '../composables/prelude';
 // Footer component
 import UIFooter from "../components/ui/UIFooter.astro";
 import UIHeader from '../components/ui/UIHeader.astro';
+import FaviconHead from '../components/favicon/FaviconHead.astro';
 ---
 
 <html lang="en">
@@ -13,7 +14,8 @@ import UIHeader from '../components/ui/UIHeader.astro';
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
   <meta name="viewport" content="width=device-width"/>
   <meta name="generator" content={Astro.generator}/>
-  <title>Astro</title>
+  <FaviconHead />
+  <title>[Station] KIOTO</title>
 </head>
 <body>
   <UIHeader client:load />
