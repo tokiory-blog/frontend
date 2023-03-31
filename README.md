@@ -1,6 +1,12 @@
 # Station
 ![Station](https://user-images.githubusercontent.com/101672047/229103541-c22b0cc1-f8c9-4e86-acbf-04e6767278a9.png)
 
+<p align="center">
+<a href="https://astro.build/" target="_blank"><img src="https://img.shields.io/badge/Made%20with-Astro-0D1117?logo=astro" alt="Made with Astro" height="20"></a>
+<a href="https://www.typescriptlang.org/" target="_blank"><img src="https://img.shields.io/badge/Built%20with-TypeScript-3178C6?logo=typescript" alt="Built with TypeScript" height="20"></a>
+<a href="https://vercel.com" target="_blank"><img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" alt="Powered by Vercel" height="20"></a>
+</p>
+
 ## Welcome!
 👋 Welcome to my programming blog about web development! I cover various programming languages such as Rust, TypeScript, Go, Vue, and JavaScript. My goal is to provide helpful and practical information for developers who want to create fast, secure, and efficient web applications.
 
@@ -11,6 +17,16 @@
 💡 Whether you're a seasoned developer or just starting out, my blog has something for everyone. I believe that everyone should have access to high-quality resources to help them succeed in web development.
 
 🙏 Thank you for visiting my blog, and we hope you find our content useful and informative. Don't forget to subscribe to our newsletter to stay up-to-date on the latest developments in web development!
+
+## Installation
+
+To get started with the project, you'll need to follow these steps:
+
+1. 🌀 Clone the repository: `git clone https://github.com/kiotosi/station.git`
+2. 🔧 Install the required dependencies: `pnpm install`
+3. 🚀 Run the development server: `pnpm dev`
+
+> 🎉 That's it! Your site is now running on your local machine. Happy hacking! 🎉
 
 ## 🚀 Stack
 
@@ -28,7 +44,7 @@ This repository is maintained by:
 
 We appreciate any contributions to this project and welcome all feedback! Thank you for your support. 🙏
 
-## License
+## ⚖️ License
 
 ```
 MIT License
