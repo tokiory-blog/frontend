@@ -1,18 +1,9 @@
 ---
-
-// Styles
-import '../styles/-colors.scss';
-import '../styles/+common.scss';
-import '../styles/-breakpoints.scss';
-import 'normalize.css';
+// Standard composable
+import '../composables/prelude';
 
 // Footer component
 import Footer from "../components/ui/UIFooter.astro";
-
-// Fonts
-import '@fontsource/jetbrains-mono';
-import '@fontsource/jetbrains-mono/500.css';
-import '@fontsource/manrope';
 ---
 
 <html lang="en">
@@ -34,7 +25,7 @@ import '@fontsource/manrope';
 <style lang="scss">
   .standard-layout {
     font-family: "JetBrains Mono", monospace;
-    min-height: calc(100vh - 32px);
+    min-height: calc(100vh - var(--size-footer));
     display: flex;
     justify-content: center;
     align-items: center;

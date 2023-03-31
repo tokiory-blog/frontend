@@ -1,18 +1,10 @@
 ---
-// Styles
-import '../styles/-colors.scss';
-import '../styles/+common.scss';
-import '../styles/-breakpoints.scss';
-import 'normalize.css';
+// Standard composable
+import '../composables/prelude';
 
 // Footer component
 import UIFooter from "../components/ui/UIFooter.astro";
 import UIHeader from '../components/ui/UIHeader.astro';
-
-// Fonts
-import '@fontsource/jetbrains-mono';
-import '@fontsource/jetbrains-mono/500.css';
-import '@fontsource/manrope';
 ---
 
 <html lang="en">
@@ -24,11 +16,11 @@ import '@fontsource/manrope';
   <title>Astro</title>
 </head>
 <body>
+  <UIHeader/>
   <div class="full-layout">
-    <UIHeader/>
     <slot/>
-    <UIFooter/>
   </div>
+  <UIFooter/>
 </body>
 </html>
 
@@ -38,6 +30,6 @@ import '@fontsource/manrope';
   }
   
   .container {
-    min-height: 100vh;
+    min-height: calc(100vh - var(--size-footer));
   }
 </style>

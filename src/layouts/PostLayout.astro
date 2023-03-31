@@ -1,15 +1,8 @@
 ---
-// Styles
-import "../styles/-colors.scss";
-import "../styles/+common.scss";
-import "normalize.css";
+// Standard composable
+import '../composables/prelude';
 
-// Footer component
-import Footer from "../components/ui/UIFooter.astro";
-
-// Fonts
-import '@fontsource/jetbrains-mono'
-import '@fontsource/manrope';
+// Additional fonts
 import '@fontsource/manrope/500.css';
 import '@fontsource/manrope/600.css';
 ---
@@ -47,7 +40,7 @@ import '@fontsource/manrope/600.css';
   blockquote {
     margin-left: 0;
     padding-left: 36px;
-    border-left: 3px solid var(--black);
+    border-left: 3px solid var(--color-black);
   }
   table {
     color: #333;
