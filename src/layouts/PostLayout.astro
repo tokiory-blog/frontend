@@ -2,6 +2,8 @@
 // Standard composable
 import '../composables/prelude';
 
+import UIHeader from '../components/ui/UIHeader.astro';
+
 // Additional fonts
 import '@fontsource/manrope/500.css';
 import '@fontsource/manrope/600.css';
@@ -16,6 +18,7 @@ import '@fontsource/manrope/600.css';
     <title>Astro</title>
   </head>
   <body>
+    <UIHeader client:load />
     <div class="post-layout">
       <slot />
     </div>
