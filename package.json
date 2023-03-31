@@ -12,7 +12,6 @@
   "dependencies": {
     "@astrojs/mdx": "^0.18.2",
     "@astrojs/vue": "^2.1.0",
-    "@fontsource/ibm-plex-mono": "^4.5.13",
     "@fontsource/jetbrains-mono": "^4.5.12",
     "@fontsource/manrope": "^4.5.13",
     "astro": "^2.1.8",

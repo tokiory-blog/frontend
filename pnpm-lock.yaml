@@ -4,7 +4,6 @@ specifiers:
   '@astrojs/mdx': ^0.18.2
   '@astrojs/vue': ^2.1.0
   '@babel/core': ^7.21.3
-  '@fontsource/ibm-plex-mono': ^4.5.13
   '@fontsource/jetbrains-mono': ^4.5.12
   '@fontsource/manrope': ^4.5.13
   astro: ^2.1.8
@@ -17,7 +16,6 @@ specifiers:
 dependencies:
   '@astrojs/mdx': 0.18.2_astro@2.1.8+rollup@3.20.2
   '@astrojs/vue': 2.1.0_lclvykntrucjjsgm22gwos2jhq
-  '@fontsource/ibm-plex-mono': 4.5.13
   '@fontsource/jetbrains-mono': 4.5.12
   '@fontsource/manrope': 4.5.13
   astro: 2.1.8_sass@1.60.0
@@ -643,10 +641,6 @@ packages:
     os: [win32]
     requiresBuild: true
     optional: true
-
-  /@fontsource/ibm-plex-mono/4.5.13:
-    resolution: {integrity: sha512-KAE7X2LgCV4X6p7vj1h2phRnhPX4YUa8FBAB0Jj9xW7Q+p+k2ce4HEAMJJ2RFHI075ClgQx+KZuDBNuiKgp5yw==}
-    dev: false
 
   /@fontsource/jetbrains-mono/4.5.12:
     resolution: {integrity: sha512-LJF1ala1/u+wXZmESFqIk08FA9yGX4/uAAleCHmXUMgEjvNAYFHUQQ7eK5hQQoBOwh99cU5suTrqYqEkgzwzPA==}
