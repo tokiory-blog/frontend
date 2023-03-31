@@ -2,3 +2,17 @@
   --black: #3e3e3e;
   --white: #fefefe;
 }
+
+// Current colorscheme
+:root {
+  --foreground: var(--black);
+  --background: var(--white);
+}
+
+// Night colorscheme
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --foreground: var(--white);
+    --foreground: var(--black);
+  }
+}
