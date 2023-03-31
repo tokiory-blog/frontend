@@ -1,18 +1,21 @@
 :root {
-  --black: #3e3e3e;
-  --white: #fefefe;
+  --color-black: #3e3e3e;
+  --color-white: #fefefe;
+  --color-gray: #eee;
+  --color-blue: #769fb6;
 }
 
 // Current colorscheme
 :root {
-  --foreground: var(--black);
-  --background: var(--white);
+  --foreground: var(--color-black);
+  --background: var(--color-white);
+  --link: var(--color-blue);
 }
 
 // Night colorscheme
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --foreground: var(--white);
-    --foreground: var(--black);
+    --foreground: var(--color-white);
+    --foreground: var(--color-black);
   }
 }
