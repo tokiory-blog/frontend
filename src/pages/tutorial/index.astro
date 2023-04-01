@@ -2,15 +2,20 @@
 import PostList from "@@/post/PostList.astro";
 import UITitle from "@@/ui/UITitle.astro";
 import FullLayout from '@l/FullLayout.astro';
-import type { PostsFrontmatter } from "@/types/posts.types";
+import { getCollection } from "astro:content";
 
-const contentList = await Astro.glob<PostsFrontmatter>('./tutorial/**.mdx');
-const navigationList = contentList.map(item => {
+const COLLECTION_SLUG = 'tutorial';
+// noinspection TypeScriptValidateTypes
+const articles = await getCollection(COLLECTION_SLUG);
+
+const navigationList = articles.map(item => {
   return {
-    url: item.url ?? '',
-    title: item.frontmatter.title,
-    description: item.frontmatter.description,
-    tags: item.frontmatter.tags
+    url: item?.slug ?
+      `${COLLECTION_SLUG}/${item.slug}` :
+      '/404',
+    title: item.data.title,
+    description: item.data.description,
+    tags: item.data.tags
   }
 });
 ---

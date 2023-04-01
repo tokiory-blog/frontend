@@ -1,0 +1,25 @@
+---
+import { getEntryBySlug } from "astro:content";
+
+const {slug} = Astro.params;
+
+if (slug === undefined) {
+  throw new Error(
+    `Slug is undefined!!!
+     Slug: ${slug}
+  `);
+}
+
+const entry = await getEntryBySlug("article", slug);
+
+if (!entry) {
+  // noinspection JSAnnotator
+  return Astro.redirect("/404");
+}
+
+const {Content} = await entry.render();
+---
+
+<Content />
+
+

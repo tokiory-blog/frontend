@@ -3,6 +3,8 @@ import { fileURLToPath } from "url";
 import vue from "@astrojs/vue";
 import mdx from "@astrojs/mdx";
 
+import vercel from "@astrojs/vercel/serverless";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [vue(), mdx()],
@@ -11,22 +13,26 @@ export default defineConfig({
       // Choose from Shiki's built-in themes (or add your own)
       // https://github.com/shikijs/shiki/blob/main/docs/themes.md
       theme: 'dark-plus',
-      wrap: true,
-    },
+      wrap: true
+    }
   },
   vite: {
     resolve: {
-      alias: [
-        {
-          find: '@', replacement: fileURLToPath(new URL('./src', import.meta.url))
-        },
-        {
-          find: '@@', replacement: fileURLToPath(new URL('./src/components', import.meta.url))
-        },
-        {
-          find: '@data', replacement: fileURLToPath(new URL('./src/data', import.meta.url))
-        },
-      ]
+      alias: [{
+        find: '@',
+        replacement: fileURLToPath(new URL('./src', import.meta.url))
+      }, {
+        find: '@@',
+        replacement: fileURLToPath(new URL('./src/components', import.meta.url))
+      }, {
+        find: '@data',
+        replacement: fileURLToPath(new URL('./src/data', import.meta.url))
+      }, {
+        find: '@l',
+        replacement: fileURLToPath(new URL('./src/layouts', import.meta.url))
+      }]
     }
-  }
+  },
+  output: "server",
+  adapter: vercel()
 });
