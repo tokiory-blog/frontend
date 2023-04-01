@@ -1,9 +1,9 @@
 ---
 // Standard composable
-import '../composables/prelude';
+import '@/composables/prelude';
 
-import UIHeader from '../components/ui/UIHeader.astro';
-import FaviconHead from '../components/favicon/FaviconHead.astro';
+import UIHeader from '@@/ui/UIHeader.astro';
+import FaviconHead from '@@/favicon/FaviconHead.astro';
 
 // Additional fonts
 import '@fontsource/manrope/500.css';
@@ -35,7 +35,7 @@ const {title} = Astro.props;
   }
 
   .post-layout {
-    padding: 40vh 12px;
+    padding: 20vh 12px;
     max-width: 960px;
     margin: 0 auto;
     font-size: 16px;

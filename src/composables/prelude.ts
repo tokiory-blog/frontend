@@ -1,8 +1,8 @@
 // Styles
-import '../styles/-colors.scss';
-import '../styles/-breakpoints.scss';
-import '../styles/-size.scss';
-import '../styles/+common.scss';
+import '@/styles/-colors.scss';
+import '@/styles/-breakpoints.scss';
+import '@/styles/-size.scss';
+import '@/styles/+common.scss';
 import 'normalize.css';
 
 // Jetbrains font

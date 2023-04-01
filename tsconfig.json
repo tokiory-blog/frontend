@@ -1,6 +1,14 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "importsNotUsedAsValues": "error",
+    "paths": {
+      "@/*": ["src/*"],
+      "@data/*": ["src/data/*"],
+      "@l/*": ["src/layouts/*"],
+      "@@/*": ["src/components/*"]
+    }
   }
 }
