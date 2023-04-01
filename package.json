@@ -13,8 +13,6 @@
     "@astrojs/mdx": "^0.18.2",
     "@astrojs/vercel": "^3.2.1",
     "@astrojs/vue": "^2.1.0",
-    "@fontsource/jetbrains-mono": "^4.5.12",
-    "@fontsource/manrope": "^4.5.13",
     "astro": "^2.1.8",
     "vue": "^3.2.30"
   },
@@ -23,6 +21,7 @@
     "autoprefixer": "^10.4.14",
     "normalize.css": "^8.0.1",
     "postcss": "^8.4.21",
+    "react": "^18.2.0",
     "rollup": "^3.20.2",
     "sass": "^1.60.0",
     "vite": "^4.2.1"

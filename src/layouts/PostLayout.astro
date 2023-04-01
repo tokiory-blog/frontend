@@ -5,10 +5,6 @@ import '@/composables/prelude';
 import UIHeader from '@@/ui/UIHeader.astro';
 import FaviconHead from '@@/favicon/FaviconHead.astro';
 
-// Additional fonts
-import '@fontsource/manrope/500.css';
-import '@fontsource/manrope/600.css';
-
 const {title} = Astro.props;
 ---
 
@@ -29,12 +25,9 @@ const {title} = Astro.props;
   </body>
 </html>
 
-<style is:global>
-  body {
-    font-family: 'Manrope', sans-serif;
-  }
-
+<style lang="scss" is:global>
   .post-layout {
+    
     padding: 20vh 12px;
     max-width: 960px;
     margin: 0 auto;
