@@ -44,8 +44,8 @@ const {title} = Astro.props;
     border-left: 3px solid var(--color-black);
   }
   table {
-    color: #333;
-    background: white;
+    color: var(--foreground);
+    background: var(--background);
     border: 1px solid grey;
     font-size: 12pt;
     border-collapse: collapse;
@@ -55,8 +55,8 @@ const {title} = Astro.props;
   table thead th,
   table tfoot th {
     word-wrap: none;
-    color: rgb(32, 32, 32);
-    background: rgba(162, 162, 162, 0.1);
+    color: var(--foreground);
+    background: var(--background);
   }
   table caption {
     padding: 0.5em;
@@ -64,7 +64,7 @@ const {title} = Astro.props;
   table th,
   table td {
     padding: 0.5em;
-    border: 1px solid lightgrey;
+    border: 1px solid var(--neutral);
   }
   h1,
   h2,
@@ -93,7 +93,7 @@ const {title} = Astro.props;
     left: -32px;
     bottom: 50%;
     transform: translateY(50%);
-    color: #a1a1a1;
+    color: var(--foreground);
     text-transform: uppercase;
   }
   h1::before {
@@ -107,13 +107,14 @@ const {title} = Astro.props;
     font-style: initial;
   }
   code {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
     display: inline-block;
-    background-color: #e8e8e8;
     color: #d35959;
     padding: 2px 4px;
     line-height: 1;
     border-radius: 4px;
+    font-size: 13px;
+    border: 1px solid var(--neutral);
   }
   ul {
     list-style-type: disc;
@@ -138,8 +139,13 @@ const {title} = Astro.props;
     width: 100%;
     background-color: #1f1f1f;
     overflow-x: auto;
+    border: none;
     border-radius: 4px;
-  }
+
+    @media (prefers-color-scheme: dark) {
+        border: 1px solid var(--neutral);
+      }
+    }
   
   pre code::-webkit-scrollbar-track {
     background-color: transparent;
@@ -155,7 +161,7 @@ const {title} = Astro.props;
     position: absolute;
   }
   a {
-    color: var(--article-link);
+    color: var(--link);
     &:hover {
       text-decoration: underline;
     }

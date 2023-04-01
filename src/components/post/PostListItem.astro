@@ -1,6 +1,7 @@
 ---
 import type { PostItem } from '@/types/posts.types';
 import UITag from '@@/ui/UITag.astro';
+import UICard from "../ui/UICard.astro";
 
 interface Props extends PostItem {};
 
@@ -8,31 +9,28 @@ const {title, description, url, tags}: Props = Astro.props;
 ---
 
 <a href={url} class="post">
-  <div class="post__title">
-    {title}
-  </div>
-  <div class="post__description">
-    {description}
-  </div>
-  <div class="post__tags">
-    {
-      tags.map(tag => (
-        <UITag name={tag} />
-      ))
-    }
-  </div>
+  <UICard isWithHover>
+    <div class="post__title">
+      {title}
+    </div>
+    <div class="post__description">
+      {description}
+    </div>
+    <div class="post__tags">
+      {
+        tags.map(tag => (
+          <UITag name={tag} />
+        ))
+      }
+    </div>
+  </UICard>
 </a>
 
 <style lang="scss">
   .post {
-    padding: 12px 24px 18px;
     display: block;
-    border: 1px solid #cecece;
-    border-radius: 4px;
-    transition: all 200ms ease-in-out;
     text-decoration: none;
     color: inherit;
-    user-select: none;
 
     &:hover {
       border-color: var(--color-black);

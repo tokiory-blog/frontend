@@ -1,4 +1,5 @@
 ---
+import UICard from "../ui/UICard.astro";
 interface Props {
   url: string;
 }
@@ -7,38 +8,31 @@ const { url }: Props = Astro.props;
 ---
 
 <a class="navigation-menu-item" href={url}>
-  <div class="navigation-menu-item__title">
-    <slot name="title" />
-  </div>
-  <div class="navigation-menu-item__description">
-    <slot name="description" />
-  </div>
+  <UICard isWithHover>
+    <div class="navigation-menu-item__title">
+      <slot name="title" />
+    </div>
+    <div class="navigation-menu-item__description">
+      <slot name="description" />
+    </div>
+  </UICard>
 </a>
 
 <style lang="scss">
   .navigation-menu-item {
-    padding: 12px 24px 18px;
-    border: 1px solid #cecece;
-    border-radius: 4px;
-    transition: all .2s ease-in-out;
     text-decoration: none;
     color: inherit;
     display: block;
-    user-select: none;
+  
+    &__title {
+       font-size: 32px;
+       font-weight: 500;
+     }
 
-  &:hover {
-     border-color: var(--color-black);
-   }
-
-  &__title {
-     font-size: 32px;
-     font-weight: 500;
-   }
-
-  &__description {
-     margin-top: 12px;
-     font-size: 14px;
-     line-height: 1.4;
-   }
+    &__description {
+       margin-top: 12px;
+       font-size: 14px;
+       line-height: 1.4;
+     }
   }
 </style>
