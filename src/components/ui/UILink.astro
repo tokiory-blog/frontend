@@ -1,13 +1,14 @@
 ---
 interface Props {
-  href: string,
-  isActive?: boolean
+  href: string;
+  isActive?: boolean;
+  isNewTab?: boolean;
 }
 
-const {href, isActive}: Props = Astro.props;
+const {href, isActive, isNewTab}: Props = Astro.props;
 ---
 
-<a href={href} class:list={['link', {link_active: isActive}]}>
+<a href={href} target={isNewTab ? '_blank' : '_self'} class:list={['link', {link_active: isActive}]}>
   <slot />
 </a>
 
@@ -17,7 +18,7 @@ const {href, isActive}: Props = Astro.props;
     color: var(--link);
     user-select: none;
   
-    &::hover {
+    &:hover {
       opacity: 0.9;
     }
     
