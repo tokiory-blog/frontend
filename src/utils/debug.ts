@@ -1,4 +1,4 @@
-import process from "process";
+import * as process from "process";
 
 const isDevelopment = () => process.env['NODE_ENV'] === '"development"';
 export function debugDo(callback: () => void): void {
