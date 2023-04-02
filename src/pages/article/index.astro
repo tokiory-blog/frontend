@@ -3,13 +3,33 @@ import PostList from "@@/post/PostList.astro";
 import UITitle from "@@/ui/UITitle.astro";
 import FullLayout from '@l/FullLayout.astro';
 import { getCollection } from "astro:content";
+import {debugDo} from "@/utils/debug";
 
 const COLLECTION_SLUG = 'article';
 
 // noinspection TypeScriptValidateTypes
 const articles = await getCollection(COLLECTION_SLUG);
 
-const navigationList = articles.map(item => {
+const navigationList = articles
+  .sort((a,b) => {
+    
+    // Dates
+    const firstArticleDate = new Date(a.data.publicationDate);
+    const secondArticleDate = new Date(b.data.publicationDate);
+    
+    // Debug info
+    debugDo(() => {
+      console.group(`Articles Date Sorting [${a.data.title}] and [${b.data.title}]`);
+      console.log('First Article Date:', firstArticleDate);
+      console.log('Second Article Date:', secondArticleDate);
+      console.log('Substraction:', secondArticleDate - firstArticleDate);
+      console.groupEnd();
+    });
+    
+    // Returning substraction for sorting
+    return secondArticleDate - firstArticleDate;
+  })
+  .map(item => {
   return {
     url: item?.slug ?
       `${COLLECTION_SLUG}/${item.slug}` :
