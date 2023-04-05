@@ -1,0 +1,21 @@
+<template>
+  <div class="text">
+    <slot/>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+@media screen and (max-width: 420px) {
+  .text {
+    font-size: 18px;
+  }
+}
+</style>

@@ -1,12 +1,10 @@
 # Station
 ![Station](https://user-images.githubusercontent.com/101672047/229103541-c22b0cc1-f8c9-4e86-acbf-04e6767278a9.png)
 
-
 <p align="center">
-<a href="https://astro.build/" target="_blank"><img src="https://img.shields.io/badge/Made%20with-Astro-0D1117?logo=astro" alt="Made with Astro" height="20"></a>
-<a href="https://vuejs.org/" target="_blank"><img src="https://img.shields.io/badge/Boosted%20with-Vue-4FC08D?logo=vue.js" alt="Made with Vue" height="20"></a>
-<a href="https://www.typescriptlang.org/" target="_blank"><img src="https://img.shields.io/badge/Built%20with-TypeScript-3178C6?logo=typescript" alt="Built with TypeScript" height="20"></a>
-<a href="https://vercel.com" target="_blank"><img src="https://img.shields.io/badge/Powered_by-Vercel-242424?logo=vercel" alt="Powered by - Vercel"></a>
+    <a href="https://nuxt.com/" target="_blank"><img src="https://img.shields.io/badge/Made%20with-Nuxt-darkgreen?style=flat&logo=nuxt.js" alt="Made with Next" /></a>
+    <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://img.shields.io/badge/Built%20with-TypeScript-3178C6?logo=typescript" alt="Built with TypeScript" height="20"></a>
+    <a href="https://vercel.com" target="_blank"><img src="https://img.shields.io/badge/Powered_by-Vercel-242424?logo=vercel" alt="Powered by - Vercel"></a>
 </p>
 
 ## Welcome!
@@ -32,11 +30,81 @@ To get started with the project, you'll need to follow these steps:
 
 ## 🚀 Stack
 
-This repository is built with the following technologies:
+🚀 This project is built using the following technologies:
 
-- ⭐️ [Astro](https://astro.build/) - A fast, flexible, and modern static site generator for building websites and web applications.
-- 🖥️ [Vue](https://vuejs.org/) - A progressive framework for building user interfaces.
+- 🌟 [Nuxt](https://nuxt.com) - A Vue framework for building server-side rendered and static web applications.
 - 🔍 [TypeScript](https://www.typescriptlang.org/) - A typed superset of JavaScript that compiles to plain JavaScript.
+- 📝 [MDX](https://mdxjs.com/) - A format that lets you write JSX embedded inside markdown documents, allowing for \
+  interactive and dynamic content.
+- 🔧 [ESLint](https://eslint.org/) - A pluggable and configurable linter tool for identifying and reporting on \
+  patterns in JavaScript code.
+- 📦 [PNPM](https://pnpm.js.org/) - A fast and efficient package manager that uses a single shared package store \
+  across projects.
+- ☁️ [Vercel](https://vercel.com/) - A cloud platform for deploying web applications and serverless functions.
+- 🐳 [Docker](https://www.docker.com/) - A platform for developing, shipping, and running applications in containers.
+
+### 🤔 Why this stack?
+
+💡 **Nuxt**: Nuxt provides many benefits such as built-in server-side rendering, automatic code splitting,
+and static site generation, which allows for faster performance and better SEO. Additionally, the framework has a
+vibrant community, great documentation, and is very developer-friendly.
+
+🤖 **TypeScript**: TypeScript allows for catching type-related errors before runtime, making code more maintainable and
+scalable. It also provides great editor support and helps in writing better documentation.
+
+🎨 **MDX**: MDX combines the best of both worlds, allowing for writing markdown files with embedded components, making
+it easy to include interactive and dynamic content within static pages.
+
+🔧 **ESLint**: ESLint helps maintain consistent code quality and enforces best practices across the project. It also
+provides instant feedback on code issues during development, making it easier to catch and fix bugs.
+
+📦 **PNPM**: PNPM provides a fast and efficient way to manage packages by using a single shared package store across
+multiple projects, reducing disk space usage and speeding up installs.
+
+☁️ **Vercel**: Vercel is a cloud platform that allows for deploying applications and serverless functions easily and
+quickly. It has great documentation, a generous free tier, and provides an easy way to set up continuous integration and
+deployment (CI/CD) pipelines.
+
+🐳 **Docker**: Docker provides a platform for developing, shipping, and running applications in containers, making it
+easy to set up a consistent and reproducible development environment and deploy the application to different
+environments with ease.
+
+## 🐳 Docker
+Docker is a containerization platform that allows you to package your application and its dependencies into a single
+unit called a container. Containers are lightweight and can be run on any platform that supports Docker, making it easy
+to deploy your application to a variety of environments.
+
+> **INFO**
+>
+> To follow along with this guide, you should have Docker installed on your machine.
+
+
+1. Clone this repo: `git clone https://github.com/kiotosi/station.git`;
+2. Run the following commands to run app:
+    ```bash
+    cd .docker
+    chmod +x ./docker
+    ./docker build:app
+    ./docker run:app
+    ```
+3. Done! You can visit site at `localhost:3000`.
+
+### Utility
+Docker utility script has the following help:
+
+```text
+Usage: build.sh [OPTION]
+Builds a Docker image for the app or testing environment
+
+Options:
+  -h, --help              Display this help message
+  -v, --version           Display the script version
+  build:app               Build the app Docker image
+  build:test              Build the testing Docker image
+  run:app                 Run image with app
+  run:test                Run image with app tests
+  kill                    Stop and remove any running containers
+```
 
 ## ✍️ Authors
 
@@ -70,6 +138,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
 ```

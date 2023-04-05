@@ -1,30 +1,21 @@
 {
   "name": "station",
-  "type": "module",
-  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/mdx": "^0.18.2",
-    "@astrojs/vercel": "^3.2.1",
-    "@astrojs/vue": "^2.1.0",
-    "astro": "^2.1.8",
-    "vue": "^3.2.30"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "types": "nuxt prepare",
+    "postinstall": "pnpm types"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.3",
+    "@nuxt/content": "^2.5.2",
     "@types/node": "^18.15.11",
-    "autoprefixer": "^10.4.14",
-    "normalize.css": "^8.0.1",
-    "postcss": "^8.4.21",
-    "react": "^18.2.0",
-    "rollup": "^3.20.2",
-    "sass": "^1.60.0",
-    "vite": "^4.2.1"
+    "nuxt": "^3.3.3",
+    "sass": "^1.60.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

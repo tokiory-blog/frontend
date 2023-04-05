@@ -1,14 +1,4 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "jsx": "preserve",
-    "baseUrl": ".",
-    "importsNotUsedAsValues": "error",
-    "paths": {
-      "@/*": ["src/*"],
-      "@data/*": ["src/data/*"],
-      "@l/*": ["src/layouts/*"],
-      "@@/*": ["src/components/*"]
-    }
-  }
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json"
 }
