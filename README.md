@@ -6,7 +6,7 @@
 <a href="https://astro.build/" target="_blank"><img src="https://img.shields.io/badge/Made%20with-Astro-0D1117?logo=astro" alt="Made with Astro" height="20"></a>
 <a href="https://vuejs.org/" target="_blank"><img src="https://img.shields.io/badge/Boosted%20with-Vue-4FC08D?logo=vue.js" alt="Made with Vue" height="20"></a>
 <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://img.shields.io/badge/Built%20with-TypeScript-3178C6?logo=typescript" alt="Built with TypeScript" height="20"></a>
-<a href="https://vercel.com" target="_blank"><img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" alt="Powered by Vercel" height="20"></a>
+<a href="https://vercel.com" target="_blank"><img src="https://img.shields.io/badge/Powered_by-Vercel-242424?logo=vercel" alt="Powered by - Vercel"></a>
 </p>
 
 ## Welcome!
