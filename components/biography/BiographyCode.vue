@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { AUTHOR_AGE, AUTHOR_DISCORD, AUTHOR_EMAIL, AUTHOR_GITHUB, AUTHOR_TELEGRAM } from "@/constants/author"
+import { AUTHOR_AGE, AUTHOR_DISCORD, AUTHOR_EMAIL, AUTHOR_GITHUB, AUTHOR_TELEGRAM } from "@/constants/author";
 
 const rawCode =
   `
@@ -30,9 +30,9 @@ stack = [
     class="code"
     title="info.toml"
     :content="{
-    language: 'toml',
-    code: rawCode
-  }"
+      language: 'toml',
+      code: rawCode
+    }"
   />
 </template>
 

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ShikiParams } from "@cms/useShiki"
+import { ShikiParams } from "@cms/useShiki";
 
 interface Props {
   content: ShikiParams;

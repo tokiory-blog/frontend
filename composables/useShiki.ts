@@ -8,7 +8,7 @@ export interface ShikiParams {
 
 export const useShiki = async ({code, language, theme}: ShikiParams) => {
   const highlighter = await getHighlighter({
-    theme: (theme ?? 'min-dark') as Theme,
+    theme: (theme ?? "min-dark") as Theme,
     langs: [language],
   });
   const tokens = highlighter.codeToThemedTokens(code);

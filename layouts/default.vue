@@ -21,13 +21,14 @@ useHead({
 
 <style lang="scss" scoped>
 .standard-layout {
-  font-family: "JetBrains Mono", monospace;
   min-height: calc(100vh - var(--size-footer));
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 1400px;
   margin: 0 auto;
+  @include container;
+  @include font-jetbrains;
+  @include default-ui-color;
 }
 </style>

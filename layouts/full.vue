@@ -23,11 +23,10 @@ useHead({
 
 <style lang="scss" scoped>
 .full-layout {
+  @include container;
+  @include font-jetbrains;
+  @include default-ui-color;
   min-height: calc(100vh - (var(--size-footer) + var(--size-header)));
-  font-family: "JetBrains Mono", monospace;
-  max-width: 1400px;
   margin: 0 auto;
-  color: var(--foreground);
-  background: var(--background);
 }
 </style>
