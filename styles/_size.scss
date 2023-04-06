@@ -57,8 +57,8 @@
   }
   
   // Adaptive font size
-  --fsize-standard: var(--fsize-bg);
-  --fsize-big: var(--fsize-lg-plus);
+  --fsize-standard: var(--fsize-md-plus);
+  --fsize-big: var(--fsize-lg);
 
   @media screen and (min-width: $bp-tablet) {
     --fsize-standard: var(--fsize-bg);
