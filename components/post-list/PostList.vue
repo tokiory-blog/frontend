@@ -1,11 +1,5 @@
 <script lang="ts" setup>
-interface Post {
-  title: string,
-  description: string,
-  tags: string[]
-  _path: string
-}
-
+import { Post } from "@/types/post.types";
 interface Props {
   postList: Post[];
 }
@@ -17,7 +11,7 @@ defineProps<Props>();
 
   <ul class="post-list">
     <li v-for="(post, idx) in postList" :key="idx" class="post-list__item">
-      <PostListItem v-bind="post"/>
+      <PostListItem :post="post"/>
     </li>
   </ul>
 </template>

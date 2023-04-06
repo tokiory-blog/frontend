@@ -1,49 +1,32 @@
 <script lang="ts" setup>
-const navigation = [
-  {
-    title: 'Главная',
-    link: '/',
-  },
-  {
-    title: 'Статьи',
-    link: '/article',
-  },
-  {
-    title: 'Туториалы',
-    link: '/tutorial',
-  },
-  {
-    title: 'Об авторе',
-    link: '/author',
-  },
-];
+import NAVIGATION from '@/data/navigation';
+
+const route = useRoute();
 
 const isLinkActive = (url: string): boolean => {
-  return location.pathname.endsWith(url);
+  return route.path.endsWith(url);
 };
 </script>
 
 <template>
-  <ClientOnly>
-    <header class="header">
-      <div class="header__logo">
-        <BaseLogo/>
-      </div>
-      <nav class="header__navigation navigation">
-        <ul class="navigation__list">
-          <li v-for="(navigationItem, idx) in navigation" :key="idx" class="navigation__item">
-            <BaseLink
-                :href="navigationItem.link"
-                :isActive="isLinkActive(navigationItem.link)"
-                class="navigation__link"
-            >
-              {{ navigationItem.title }}
-            </BaseLink>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </ClientOnly>
+  <header class="header">
+    <div class="header__logo">
+      <BaseLogo/>
+    </div>
+    <nav class="header__navigation navigation">
+      <ul class="navigation__list">
+        <li v-for="(navigationItem, idx) in NAVIGATION" :key="idx" class="navigation__item">
+          <BaseLink
+            :href="navigationItem.url"
+            :isActive="isLinkActive(navigationItem.url)"
+            class="navigation__link"
+          >
+            {{ navigationItem.title }}
+          </BaseLink>
+        </li>
+      </ul>
+    </nav>
+  </header>
 </template>
 
 <style lang="scss" scoped>

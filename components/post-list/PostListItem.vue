@@ -1,12 +1,20 @@
 <script lang="ts" setup>
+import { Post } from "@/types/post.types";
+
 interface Props {
-  _path: string;
-  title: string;
-  description: string;
-  tags: string[];
+  post: Omit<Post,
+    '_draft' |
+    '_empty' |
+    '_extension' |
+    '_file' |
+    '_id' |
+    '_locale' |
+    ''
+  >
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
+const {_path, description, tags, title} = props.post;
 </script>
 
 <template>

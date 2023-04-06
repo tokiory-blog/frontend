@@ -1,0 +1,34 @@
+<script setup lang="ts">
+</script>
+
+<template>
+  <div class="not-found">
+    <div class="container container_center container_full">
+      <div class="not-found__title">Не найдено((</div>
+      <div class="not-found__ascii">
+        <HeroAscii />
+      </div>
+      <div class="not-found__description">
+        К сожалению страница, которую вы запрашиваете не была найдена.<br>
+        Попробуйте перезайти по данному адресу позже. Если вы считаете что данная страница должна существовать,
+        но ее не существует - напишите письмо <a href="mailto:crackidocky@gmail.com">на данную почту</a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.not-found {
+  &__title {
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.024em;
+  }
+
+  &__description {
+    margin-top: 24px;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+</style>

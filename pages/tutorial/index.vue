@@ -1,18 +1,16 @@
 <script lang="ts" setup>
+import { Frontmatter } from "@/types/post.types";
+
 definePageMeta({
   layout: 'full'
 });
-import type { MarkdownParsedContent } from '@nuxt/content/dist/runtime/types'
 
 const COLLECTION = 'tutorial';
 
-interface Tutorial extends MarkdownParsedContent {
-  tags: string[]
-}
 
 const { data } = await useAsyncData(
   `${COLLECTION}-navigation`,
-  () => queryContent<Tutorial>(COLLECTION).find()
+  () => queryContent<Frontmatter>(COLLECTION).find()
 );
 
 const tutorialList = computed(() =>
