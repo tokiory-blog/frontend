@@ -11,6 +11,7 @@ useHead({
 </script>
 
 <template>
+  <NuxtLoadingIndicator />
   <div class="standard-layout">
     <slot />
   </div>

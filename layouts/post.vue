@@ -11,6 +11,7 @@ useHead({
 </script>
 
 <template>
+  <NuxtLoadingIndicator />
   <BaseHeader />
   <div class="post-layout">
     <slot />
