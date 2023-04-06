@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import '@/composables/usePrelude';
+import '@cms/usePrelude';
 import { SITE_NAME, META_LIST, META_LINK_LIST } from "~/constants/meta";
 
 // Setup meta tags

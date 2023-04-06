@@ -1,6 +1,6 @@
 import 'normalize.css';
-import '@/styles/common.scss';
-import '@/styles/font.scss';
-import '@/styles/_breakpoint.scss';
-import '@/styles/_color.scss';
-import '@/styles/_size.scss';
+import '@s/common.scss';
+import '@s/font.scss';
+import '@s/_breakpoint.scss';
+import '@s/_color.scss';
+import '@s/_size.scss';

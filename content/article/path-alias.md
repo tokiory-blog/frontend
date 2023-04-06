@@ -17,7 +17,7 @@ publicationDate: 01 Apr 2023
 import Data from '../../../data/someData';
 
 // В Nuxt можно было писать следующим образом:
-import Data from '@/data/someData';
+import Data from '@d/someData';
 ```
 
 Сегодня мы реализуем такую же возможность при помощи изменения конфигурации для

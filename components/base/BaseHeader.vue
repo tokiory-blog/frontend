@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import NAVIGATION from '@/data/navigation';
+import NAVIGATION from '@d/navigation';
 
 const route = useRoute();
 

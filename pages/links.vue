@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import USEFULL_LINKS from "@/data/usefullLinks";
+import USEFULL_LINKS from "@d/usefullLinks";
 import { SITE_NAME } from "~/constants/meta";
 
 const PAGE_TITLE = 'Ссылки';
