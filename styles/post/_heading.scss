@@ -1,0 +1,37 @@
+h1,
+h2,
+h3,
+h4 {
+  position: relative;
+  margin: 1.5em 0 0.67em;
+  padding-left: 0;
+  
+  &::before {
+    font-size: 16px;
+    position: absolute;
+    left: -32px;
+    bottom: 50%;
+    transform: translateY(50%);
+    color: var(--neutral);
+    text-transform: uppercase;
+  }
+  
+  a {
+    @include clear-link;
+  }
+}
+
+h1::before {
+  content: "h1";
+}
+h2::before {
+  content: "h2";
+}
+h3::before {
+  content: "h3";
+}
+
+h1:first-child {
+  margin-top: 0;
+}
+

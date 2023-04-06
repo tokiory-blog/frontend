@@ -1,0 +1,65 @@
+// Sizing container
+@mixin container {
+  max-width: 1432px;
+  padding: 0 16px;
+}
+
+@mixin sm-container {
+  max-width: 992px;
+  padding: 0 16px;
+}
+
+@mixin center-container {
+  margin: 0 auto;
+}
+
+// Fonts
+@mixin font-jetbrains {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+  Liberation Mono, Courier New, monospace;
+}
+
+@mixin font-manrope {
+  font-family: "Manrope", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+// Default things
+@mixin default-ui-color {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Resetting some default tags
+@mixin clear-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin clear-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+// Adaptive
+@mixin adaptive-flex {
+  display: flex;
+  flex-direction: column;
+  
+  @media screen and (min-width: var(--bp-tablet)) {
+    flex-direction: row;
+  }
+}
+
+@mixin adaptive-grid {
+  display: grid;
+  @media screen and (max-width: var(--bp-tablet)) {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+}

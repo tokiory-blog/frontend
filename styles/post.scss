@@ -1,0 +1,27 @@
+// Warning!
+// This is specific GLOBAL styles for post
+// Import it only in post layout
+
+@import "post/_heading";
+@import "post/_table";
+@import "post/_code";
+@import "post/_list";
+
+blockquote {
+  margin-left: 0;
+  padding-left: 36px;
+  border-left: 3px solid var(--neutral);
+}
+
+a {
+  color: var(--link);
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p {
+  line-height: 1.7;
+}
+

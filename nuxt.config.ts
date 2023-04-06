@@ -1,4 +1,16 @@
 import {fileURLToPath} from "url";
+
+const scssUtilityList = [
+  "styles/_mixins.scss",
+  "styles/_breakpoint.scss",
+  "styles/_color.scss",
+  "styles/_size.scss"
+];
+
+const scssMix = scssUtilityList
+  .map(mix => `@import "${mix}";`)
+  .join("");
+
 export default defineNuxtConfig({
   modules: [
     "@nuxt/content"
@@ -16,5 +28,14 @@ export default defineNuxtConfig({
     highlight: {
       theme: "dark-plus"
     }
-  }
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: scssMix,
+        },
+      },
+    },
+  },
 });
