@@ -5,12 +5,14 @@ specifiers:
   '@types/node': ^18.15.11
   '@typescript-eslint/eslint-plugin': ^5.57.1
   '@typescript-eslint/parser': ^5.57.1
+  emoji-type: ^1.0.4
   eslint: ^8.37.0
   eslint-plugin-nuxt: ^4.0.0
   eslint-plugin-vue: ^9.10.0
   normalize.css: ^8.0.1
   nuxt: ^3.3.3
   sass: ^1.60.0
+  shiki-es: ^0.2.0
   typescript: ^5.0.3
 
 dependencies:
@@ -21,11 +23,13 @@ devDependencies:
   '@types/node': 18.15.11
   '@typescript-eslint/eslint-plugin': 5.57.1_jwd5v5vphzanfmajybkjq25ld4
   '@typescript-eslint/parser': 5.57.1_vwh6htx42aidho2qgfca5u5rwm
+  emoji-type: 1.0.4
   eslint: 8.37.0
   eslint-plugin-nuxt: 4.0.0_eslint@8.37.0
   eslint-plugin-vue: 9.10.0_eslint@8.37.0
   nuxt: 3.3.3_t534mkclhplfei5q3mcf25ekwe
   sass: 1.60.0
+  shiki-es: 0.2.0
   typescript: 5.0.3
 
 packages:
@@ -2335,6 +2339,10 @@ packages:
 
   /emoji-regex/9.2.2:
     resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==}
+    dev: true
+
+  /emoji-type/1.0.4:
+    resolution: {integrity: sha512-jhpNuIBcpwYrLrKQnuJHuWQ6HTozbdDsc+z57XsO2sNmwWhoJqvIFHQc0vJya3yu8GLPTEk2d+FwxFTgEilqBw==}
     dev: true
 
   /emoticon/4.0.1:

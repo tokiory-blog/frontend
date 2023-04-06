@@ -2,6 +2,10 @@
   --color-black: #1e1e1e;
   --color-white: #fefefe;
   --color-blue: #769fb6;
+  --color-pink: #b676ab;
+  
+  --shadow-black: hsla(0, 0%, 12%, 0.08);
+  --shadow-white: hsla(0, 0%, 100%, 0.04);
 
   /* Color styles */
   --color-neutral-1: #ffffff;
@@ -22,6 +26,7 @@
 :root {
   --foreground: var(--color-black);
   --background: var(--color-white);
+  --shadow: var(--shadow-black);
   --link: var(--color-blue);
   --neutral: var(--color-neutral-5);
   --neutral-hover: var(--color-neutral-7);
@@ -32,6 +37,7 @@
   :root {
     --foreground: var(--color-white);
     --background: var(--color-black);
+    --shadow: var(--shadow-white);
     --neutral: var(--color-neutral-12);
     --neutral-hover: var(--color-neutral-10);
   }

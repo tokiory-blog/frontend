@@ -47,6 +47,9 @@ module.exports = {
       "error",
       "as-needed",
     ],
+    "vue/no-v-html": [
+      "off"
+    ],
     "vue/max-attributes-per-line": ["error", {
       singleline: {
         max: 1

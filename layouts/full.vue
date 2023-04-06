@@ -8,13 +8,14 @@ useHead({
   meta: META_LIST,
   link: META_LINK_LIST,
 });
-
 </script>
 
 <template>
   <NuxtLoadingIndicator />
   <BaseHeader />
-  <div class="full-layout">
+  <div
+    class="full-layout"
+  >
     <slot />
   </div>
   <BaseFooter />
@@ -26,5 +27,7 @@ useHead({
   font-family: "JetBrains Mono", monospace;
   max-width: 1400px;
   margin: 0 auto;
+  color: var(--foreground);
+  background: var(--background);
 }
 </style>

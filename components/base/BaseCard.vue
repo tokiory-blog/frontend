@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 interface Props {
   hasHover?: boolean;
+  hasShadow?: boolean;
 }
 
 defineProps<Props>();
@@ -8,7 +9,7 @@ defineProps<Props>();
 
 <template>
   <div
-    :class="{'card_hover': hasHover}"
+    :class="{hover: hasHover, shadow: hasShadow}"
     class="card"
   >
     <slot />
@@ -26,8 +27,12 @@ defineProps<Props>();
   display: block;
   user-select: none;
 
-  &_hover:hover {
+  &.hover:hover {
     border-color: var(--neutral-hover);
+  }
+  
+  &.shadow {
+    box-shadow: 0px 0px 8px 0px var(--shadow);
   }
 }
 </style>

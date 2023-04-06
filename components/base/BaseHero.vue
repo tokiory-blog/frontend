@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .hero {
   text-align: center;
   color: var(--foreground);
