@@ -42,13 +42,13 @@ const props = defineProps<Props>();
   }
 
   &__title {
-    font-size: 24px;
+    font-size: var(--fsize-big);
     font-weight: 500;
   }
 
   &__description {
     margin-top: 4px;
-    font-size: 14px;
+    font-size: var(--fsize-standard);
   }
 
   &__tags {

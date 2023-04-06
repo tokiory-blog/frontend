@@ -43,6 +43,12 @@ const isLinkActive = (url: string): boolean => {
 }
 
 .navigation {
+  display: none;
+  
+  @include adaptive-from-tablet {
+    display: block;
+  }
+  
   &__list {
     list-style-type: none;
     margin: 0;

@@ -6,7 +6,7 @@
 
 <style lang="scss" scoped>
 .gallery {
-  display: flex;
+  @include adaptive-flex;
   gap: 32px;
   justify-content: center;
   flex-wrap: wrap;

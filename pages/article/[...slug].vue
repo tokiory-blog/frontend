@@ -5,5 +5,5 @@ definePageMeta({
 </script>
 
 <template>
-  <ContentDoc />
+  <ContentDoc class="post" />
 </template>

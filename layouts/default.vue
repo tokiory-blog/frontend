@@ -21,12 +21,12 @@ useHead({
 
 <style lang="scss" scoped>
 .standard-layout {
-  min-height: calc(100vh - var(--size-footer));
+  min-height: calc(100vh - var(--size-footer) - 32px);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 16px auto;
   @include container;
   @include font-jetbrains;
   @include default-ui-color;

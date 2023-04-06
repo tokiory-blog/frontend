@@ -29,13 +29,13 @@ defineProps<Props>();
   display: block;
 
   &__title {
-    font-size: 32px;
+    font-size: var(--fsize-big);
     font-weight: 500;
   }
 
   &__description {
     margin-top: 12px;
-    font-size: 14px;
+    font-size: var(--fsize-standard);
     line-height: 1.4;
   }
 }

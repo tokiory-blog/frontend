@@ -32,8 +32,16 @@ import { AUTHOR_GITHUB, AUTHOR_NAME_RU, AUTHOR_NICKNAME } from "~/constants/auth
   width: 100%;
 
   &__title {
-    font-size: 52px;
+    font-size: 32px;
     font-weight: 700;
+    
+    @include adaptive-from-tablet {
+      font-size: 48px;
+    }
+    
+    @include adaptive-from-laptop {
+      font-size: 52px;
+    }
   }
 
   &__divider {

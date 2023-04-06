@@ -25,8 +25,8 @@ const PRINCIPLES = [
     <BaseCard
       v-for="(line, idx) in PRINCIPLES"
       :key="idx"
-      has-shadow
       class="gallery__card"
+      has-shadow
     >
       <BaseSubtitle class="gallery__title">
         {{ line.title }}
@@ -40,16 +40,25 @@ const PRINCIPLES = [
 
 <style lang="scss" scoped>
 .gallery {
-  
+
   &__card {
-    width: calc(50% - 16px);
+    width: 100%;
   }
-  
+
   &__text {
     margin-top: 12px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 14px;
     line-height: 1.4;
+  }
+}
+
+// Tablet styles
+@media screen and (min-width: $bp-tablet) {
+  .gallery {
+    &__card {
+      width: calc(50% - 16px);
+    }
   }
 }
 </style>

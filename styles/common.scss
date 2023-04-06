@@ -4,7 +4,6 @@
 
 body {
   font-family: 'Manrope', monospace;
-  font-size: 14px;
-  color: var(--foreground);
-  background: var(--background);
+  @include default-ui-color;
+  @include default-ui-fsize;
 }

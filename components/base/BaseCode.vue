@@ -54,20 +54,27 @@ const code = await useShiki({
     border: 1px solid var(--neutral);
     border-top: none;
     font-size: 13px;
-    line-height: 1.5;
   }
 }
 
 </style>
 
 <style lang="scss">
-pre.shiki {
-  margin: 0;
-  background: var(--color-black) !important;
-  padding: 12px;
+.code {
+  pre {
+    margin: 0;
+    background: var(--color-black) !important;
+    padding: 12px;
 
-  code {
-    font-family: 'JetBrains Mono', monospace;
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      line-height: 1.4;
+
+      .line {
+        display: initial;
+        min-height: initial;
+      }
+    }
   }
 }
 </style>
