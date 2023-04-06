@@ -7,18 +7,18 @@ interface Props {
 
 const props = defineProps<Props>();
 const target = computed(() =>
-  props.isNewTab ? '_blank' : '_self'
+  props.isNewTab ? "_blank" : "_self"
 );
 </script>
 
 <template>
   <NuxtLink
-      :class="{link_active: isActive}"
-      :href="href"
-      :target="target"
-      class="link"
+    :class="{link_active: isActive}"
+    :href="href"
+    :target="target"
+    class="link"
   >
-    <slot/>
+    <slot />
   </NuxtLink>
 </template>
 

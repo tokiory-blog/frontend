@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import '@cms/usePrelude';
+import "@cms/usePrelude";
 import { SITE_NAME, META_LIST, META_LINK_LIST } from "~/constants/meta";
 
 useHead({
@@ -12,7 +12,7 @@ useHead({
 
 <template>
   <div class="standard-layout">
-    <slot/>
+    <slot />
   </div>
   <BaseFooter />
 </template>

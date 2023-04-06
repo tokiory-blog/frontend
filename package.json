@@ -7,13 +7,20 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "types": "nuxt prepare",
+    "lint": "eslint --ext .js,.ts,.vue --fix",
     "postinstall": "pnpm types"
   },
   "devDependencies": {
     "@nuxt/content": "^2.5.2",
     "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.10.0",
     "nuxt": "^3.3.3",
-    "sass": "^1.60.0"
+    "sass": "^1.60.0",
+    "typescript": "^5.0.3"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"

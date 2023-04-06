@@ -12,10 +12,18 @@ defineProps<Props>();
 
 <template>
   <div class="navigation-menu">
-    <div v-for="(item, idx) in navigation" :key="idx" class="navigation-menu__item">
+    <div
+      v-for="(item, idx) in navigation"
+      :key="idx"
+      class="navigation-menu__item"
+    >
       <NavigationMenuItem :url="item.url">
-        <template #title>{{item.title}}</template>
-        <template #description>{{item.description}}</template>
+        <template #title>
+          {{ item.title }}
+        </template>
+        <template #description>
+          {{ item.description }}
+        </template>
       </NavigationMenuItem>
     </div>
   </div>

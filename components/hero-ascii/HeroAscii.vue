@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { LOGO_FRAMES } from "@/constants/logo";
-import { onMounted, onUnmounted, ref } from 'vue';
+import { onMounted, onUnmounted, ref } from "vue";
 
 let intervalId: ReturnType<typeof setInterval> | number = -1;
 const ANIMATION_FRAME_DURATION = 500; // Duration of one frame in MS
@@ -26,12 +26,12 @@ onMounted(() => {
 
 onUnmounted(() => {
   clearInterval(intervalId);
-})
+});
 </script>
 
 
 <template>
-    <pre class="hero-ascii">
+  <pre class="hero-ascii">
       {{ LOGO_FRAMES[currentSlideIndex] }}
     </pre>
 </template>

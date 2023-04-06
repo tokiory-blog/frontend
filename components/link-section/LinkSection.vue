@@ -5,7 +5,7 @@ interface Props {
   section: LinkSection
 }
 
-const props = defineProps<Props>();
+defineProps<Props>();
 </script>
 
 <template>
@@ -16,8 +16,12 @@ const props = defineProps<Props>();
       </BaseSubtitle>
     </div>
     <ul class="link-section__list">
-      <li v-for="(child, idx) in section.child" :key="idx" class="link-section__item">
-        <LinkSectionItem :link="child"/>
+      <li
+        v-for="(child, idx) in section.child"
+        :key="idx"
+        class="link-section__item"
+      >
+        <LinkSectionItem :link="child" />
       </li>
     </ul>
   </div>

@@ -8,7 +8,7 @@ defineProps<Props>();
 
 <template>
   <div class="tag">
-    <span class="tag__hashtag">#</span>{{name}}
+    <span class="tag__hashtag">#</span>{{ name }}
   </div>
 </template>
 

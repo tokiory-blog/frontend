@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 definePageMeta({
-  layout: 'full'
+  layout: "full"
 });
 
-const COLLECTION = 'tutorial';
+const COLLECTION = "tutorial";
 </script>
 
 <template>
@@ -11,9 +11,12 @@ const COLLECTION = 'tutorial';
     <div class="article-page__title">
       <BaseTitle>Туториалы</BaseTitle>
     </div>
-    <ContentList v-slot="{list}" :path="COLLECTION">
+    <ContentList
+      v-slot="{list}"
+      :path="COLLECTION"
+    >
       <div class="article-page__list">
-        <PostList :postList="list" />
+        <PostList :post-list="list" />
       </div>
     </ContentList>
   </div>

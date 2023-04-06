@@ -7,7 +7,10 @@ defineProps<Props>();
 </script>
 
 <template>
-  <NuxtLink class="navigation-menu-item" :href="url">
+  <NuxtLink
+    class="navigation-menu-item"
+    :href="url"
+  >
     <BaseCard has-hover>
       <div class="navigation-menu-item__title">
         <slot name="title" />

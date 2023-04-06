@@ -3,17 +3,26 @@
 
 <template>
   <div class="not-found">
-    <div class="not-found__title">Не найдено((</div>
+    <div class="not-found__title">
+      Не найдено((
+    </div>
     <div class="not-found__ascii">
-      <HeroAscii/>
+      <HeroAscii />
     </div>
     <div class="not-found__description">
       К сожалению страница, которую вы запрашиваете не была найдена.<br>
       Попробуйте перезайти по данному адресу позже. Если вы считаете что данная страница должна существовать,
       но ее не существует - напишите письмо
-      <BaseLink href="mailto:crackidocky@gmail.com">на данную почту</BaseLink>
+      <BaseLink href="mailto:crackidocky@gmail.com">
+        на данную почту
+      </BaseLink>
     </div>
-    <BaseLink class="not-found__home" href="/">Вернуться на главную</BaseLink>
+    <BaseLink
+      class="not-found__home"
+      href="/"
+    >
+      Вернуться на главную
+    </BaseLink>
   </div>
 </template>
 

@@ -3,7 +3,9 @@
 
 <template>
   <div class="hero">
-    <div class="hero__text">Станция Киото.</div>
+    <div class="hero__text">
+      Станция Киото.
+    </div>
     <HeroAscii class="hero__ascii" />
     <div class="hero__description">
       Место, где можно сесть и почитать о разработке.

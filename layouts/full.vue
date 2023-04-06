@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import '@cms/usePrelude';
+import "@cms/usePrelude";
 import { SITE_NAME, META_LIST, META_LINK_LIST } from "~/constants/meta";
 
 // Setup meta tags
@@ -12,11 +12,11 @@ useHead({
 </script>
 
 <template>
-  <BaseHeader/>
+  <BaseHeader />
   <div class="full-layout">
-    <slot/>
+    <slot />
   </div>
-  <BaseFooter/>
+  <BaseFooter />
 </template>
 
 <style lang="scss" scoped>

@@ -4,7 +4,7 @@ import NAVIGATION from "@d/navigation";
 
 <template>
   <div class="home-page">
-    <HeroMain />
+    <BaseHero />
     <div class="navigation">
       <NavigationMenu :navigation="NAVIGATION" />
     </div>

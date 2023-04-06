@@ -1,7 +1,10 @@
 <template>
-  <NuxtLink class="logo" href="/">
+  <NuxtLink
+    class="logo"
+    href="/"
+  >
     <pre class="logo__image">
-      {{Logo}}
+      {{ Logo }}
     </pre>
   </NuxtLink>
 </template>

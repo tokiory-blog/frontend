@@ -8,10 +8,13 @@ defineProps<Props>();
 </script>
 
 <template>
-
   <ul class="post-list">
-    <li v-for="(post, idx) in postList" :key="idx" class="post-list__item">
-      <PostListItem :post="post"/>
+    <li
+      v-for="(post, idx) in postList"
+      :key="idx"
+      class="post-list__item"
+    >
+      <PostListItem :post="post" />
     </li>
   </ul>
 </template>

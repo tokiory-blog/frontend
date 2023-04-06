@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { LinkSectionItem } from '@d/usefullLinks';
+import type { LinkSectionItem } from "@d/usefullLinks";
 
 interface Props {
   link: LinkSectionItem
@@ -10,14 +10,17 @@ defineProps<Props>();
 
 <template>
   <a
-      :href="link.url"
-      class="link-item"
-      target="_blank"
+    :href="link.url"
+    class="link-item"
+    target="_blank"
   >
     <div class="link-item__name">
       {{ link.name }}
     </div>
-    <div v-if="link?.description" class="link-item__description">
+    <div
+      v-if="link?.description"
+      class="link-item__description"
+    >
       {{ link.description }}
     </div>
   </a>

@@ -2,12 +2,12 @@
 import USEFULL_LINKS from "@d/usefullLinks";
 import { SITE_NAME } from "~/constants/meta";
 
-const PAGE_TITLE = 'Ссылки';
+const PAGE_TITLE = "Ссылки";
 const PAGE_DESCRIPTION = `В данном разделе описаны ссылки, которые часто пригождались мне во время разработки. Здесь находятся все ссылки, которые я собрал во время разработки продуктов начиная от создания дизайна и заканчивая деплоем.
 Я специально рассортировал их в порядке создания продукта: от архитектуры и создания дизайна до выпуска в продакшен (деплой).`;
 
 definePageMeta({
-  layout: 'full',
+  layout: "full",
 });
 
 useHead({
@@ -25,9 +25,9 @@ useHead({
       </BaseText>
     </div>
     <LinkSection
-        v-for="(section, idx) in USEFULL_LINKS"
-        :key="idx"
-        :section="section"
+      v-for="(section, idx) in USEFULL_LINKS"
+      :key="idx"
+      :section="section"
     />
   </div>
 </template>

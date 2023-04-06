@@ -8,10 +8,10 @@ defineProps<Props>();
 
 <template>
   <div
-      :class="{'card_hover': hasHover}"
-      class="card"
+    :class="{'card_hover': hasHover}"
+    class="card"
   >
-    <slot/>
+    <slot />
   </div>
 </template>
 

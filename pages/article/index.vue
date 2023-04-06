@@ -1,21 +1,24 @@
 <script lang="ts" setup>
 definePageMeta({
-  layout: 'full'
+  layout: "full"
 });
-const COLLECTION = 'article';
+const COLLECTION = "article";
 </script>
 
 <template>
-    <div class="article-page">
-      <div class="article-page__title">
-        <BaseTitle>Статьи</BaseTitle>
-      </div>
-      <ContentList v-slot="{list}" :path="COLLECTION">
-        <div class="article-page__list">
-          <PostList :postList="list" />
-        </div>
-      </ContentList>
+  <div class="article-page">
+    <div class="article-page__title">
+      <BaseTitle>Статьи</BaseTitle>
     </div>
+    <ContentList
+      v-slot="{list}"
+      :path="COLLECTION"
+    >
+      <div class="article-page__list">
+        <PostList :post-list="list" />
+      </div>
+    </ContentList>
+  </div>
 </template>
 
 <style lang="scss" scoped>

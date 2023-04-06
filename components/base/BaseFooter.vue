@@ -11,8 +11,12 @@ const author = {
   <footer class="footer">
     <div class="footer__contact contact">
       Made with love by
-      <BaseLink is-new-tab class="footer__link" :href="author.link">
-        {{author.name}}
+      <BaseLink
+        is-new-tab
+        class="footer__link"
+        :href="author.link"
+      >
+        {{ author.name }}
       </BaseLink>
     </div>
   </footer>
