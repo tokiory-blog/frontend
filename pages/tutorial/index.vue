@@ -1,21 +1,9 @@
 <script lang="ts" setup>
-import { Frontmatter } from "@/types/post.types";
-
 definePageMeta({
   layout: 'full'
 });
 
 const COLLECTION = 'tutorial';
-
-
-const { data } = await useAsyncData(
-  `${COLLECTION}-navigation`,
-  () => queryContent<Frontmatter>(COLLECTION).find()
-);
-
-const tutorialList = computed(() =>
-  data.value ?? []
-);
 </script>
 
 <template>
@@ -23,9 +11,11 @@ const tutorialList = computed(() =>
     <div class="article-page__title">
       <BaseTitle>Туториалы</BaseTitle>
     </div>
-    <div class="article-page__list">
-      <PostList :postList="tutorialList" />
-    </div>
+    <ContentList v-slot="{list}" :path="COLLECTION">
+      <div class="article-page__list">
+        <PostList :postList="list" />
+      </div>
+    </ContentList>
   </div>
 </template>
 

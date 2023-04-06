@@ -2,22 +2,7 @@
 definePageMeta({
   layout: 'full'
 });
-import type { MarkdownParsedContent } from '@nuxt/content/dist/runtime/types'
-
 const COLLECTION = 'article';
-
-interface Tutorial extends MarkdownParsedContent {
-  tags: string[]
-}
-
-const { data } = await useAsyncData(
-  `${COLLECTION}-navigation`,
-  () => queryContent<Tutorial>(COLLECTION).find()
-);
-
-const articleList = computed(() =>
-  data.value ?? []
-);
 </script>
 
 <template>
@@ -25,9 +10,11 @@ const articleList = computed(() =>
       <div class="article-page__title">
         <BaseTitle>Статьи</BaseTitle>
       </div>
-      <div class="article-page__list">
-        <PostList :postList="articleList" />
-      </div>
+      <ContentList v-slot="{list}" :path="COLLECTION">
+        <div class="article-page__list">
+          <PostList :postList="list" />
+        </div>
+      </ContentList>
     </div>
 </template>
 
