@@ -18,7 +18,7 @@ const {_path, description, tags, title} = props.post;
 </script>
 
 <template>
-  <a :href="_path" class="post">
+  <NuxtLink :href="_path" class="post">
     <BaseCard has-hover>
       <div class="post__title">
         {{ title }}
@@ -34,7 +34,7 @@ const {_path, description, tags, title} = props.post;
         />
       </div>
     </BaseCard>
-  </a>
+  </NuxtLink>
 </template>
 
 <style lang="scss" scoped>

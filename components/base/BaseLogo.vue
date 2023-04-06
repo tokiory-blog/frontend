@@ -1,9 +1,9 @@
 <template>
-  <a class="logo" href="/public">
+  <NuxtLink class="logo" href="/">
     <pre class="logo__image">
       {{Logo}}
     </pre>
-  </a>
+  </NuxtLink>
 </template>
 
 <script lang="ts" setup>

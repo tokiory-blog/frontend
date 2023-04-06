@@ -12,14 +12,14 @@ const target = computed(() =>
 </script>
 
 <template>
-  <a
+  <NuxtLink
       :class="{link_active: isActive}"
       :href="href"
       :target="target"
       class="link"
   >
     <slot/>
-  </a>
+  </NuxtLink>
 </template>
 
 <style lang="scss" scoped>
