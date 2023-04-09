@@ -4,9 +4,9 @@
 <!-- Update: 07 Apr 2023 -->
 
 <script lang="ts">
-import { defineComponent } from "#imports"
-import { Lang } from "shiki-es"
-import { PropType } from "@vue/runtime-core"
+import { defineComponent } from "#imports";
+import { Lang } from "shiki-es";
+import { PropType } from "vue";
 
 export default defineComponent({
   props: {
@@ -31,7 +31,7 @@ export default defineComponent({
       default: null
     }
   }
-})
+});
 
 </script>
 
@@ -47,7 +47,7 @@ export default defineComponent({
       <span class="post-formatted-code__language">Language: {{ language.toUpperCase() }}</span>
     </div>
     <div class="post-formatted-code__body">
-      <slot/>
+      <slot />
     </div>
   </div>
 </template>
@@ -90,7 +90,7 @@ export default defineComponent({
   }
 
   pre {
-    font-size: 12px;
+    font-size: 13px;
     margin: 0;
     padding: 12px;
     background-color: var(--color-black);
@@ -99,6 +99,7 @@ export default defineComponent({
     border-radius: 0 0 4px 4px;
 
     code {
+      @include font-jetbrains;
       &::-webkit-scrollbar-track {
         background-color: transparent;
         position: absolute;
