@@ -42,7 +42,7 @@ const STYLE = {
     padding-bottom: 8px;
   `,
   description: `
-    font-size: 24px;
+    font-size: 32px;
   `,
   url: `
     display: flex;
