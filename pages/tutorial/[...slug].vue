@@ -5,5 +5,5 @@ definePageMeta({
 </script>
 
 <template>
-  <ContentDoc class="post" />
+  <BaseContent has-navigation />
 </template>

@@ -1,6 +1,5 @@
 ---
 title: HTML
-layout: '../../layouts/PostLayout.astro'
 tags:
   - html
   - web

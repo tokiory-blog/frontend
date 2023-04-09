@@ -18,14 +18,9 @@ defineProps<Props>();
 
 <style lang="scss" scoped>
 .card {
+  @include default-ui-card;
   padding: 12px 24px 18px;
-  border: 1px solid var(--neutral);
-  border-radius: 4px;
-  transition: all .2s ease-in-out;
-  text-decoration: none;
-  color: inherit;
   display: block;
-  user-select: none;
 
   &.hover:hover {
     border-color: var(--neutral-hover);

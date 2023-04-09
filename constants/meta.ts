@@ -2,7 +2,7 @@ import type { Link, Meta } from "@unhead/schema";
 
 export const SITE_NAME = "[station] kioto";
 export const SITE_DESCRIPTION =
-  "Your place to rest and read some informative articles [Kiotosi's blog]";
+  "Место где можно спокойно сесть и почитать о разработке.";
 export const THEME_COLOR = "#ffffff";
 export const ENCODING = "UTF-8";
 export const VIEWPORT = "width=device-width, initial-scale=1";

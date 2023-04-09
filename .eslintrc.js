@@ -43,6 +43,8 @@ module.exports = {
       "error",
       "always"
     ],
+    "object-curly-spacing": ["warn", "always"],
+    "array-bracket-spacing": ["warn", "never"],
     "quote-props": [
       "error",
       "as-needed",

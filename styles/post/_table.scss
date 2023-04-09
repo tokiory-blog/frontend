@@ -1,8 +1,14 @@
-.post {
+.post-content {
   table {
     @include default-ui-color;
     border: 1px solid grey;
-    font-size: 12pt;
+    
+    // Adaptive for mobile fonts
+    font-size: var(--fsize-sm);
+    @include adaptive-from-phone {
+      font-size: var(--fsize-standard);
+    }
+    
     border-collapse: collapse;
     margin: 1em 0;
     width: 100%;
@@ -11,6 +17,13 @@
   table thead th,
   table tfoot th {
     @include default-ui-color;
+
+    // Adaptive for mobile fonts
+    font-size: calc(var(--fsize-sm) + 2px);
+    @include adaptive-from-phone {
+      font-size: calc(var(--fsize-standard) + 2px);
+    }
+    
     word-wrap: normal;
   }
 

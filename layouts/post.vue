@@ -24,8 +24,9 @@ useHead({
 .post-layout {
   @include sm-container;
   @include center-container;
-  @include font-jetbrains;
+  @include font-manrope;
   @include default-ui-color;
+  font-size: var(--fsize-standard);
   padding: 20vh 12px;
 }
 

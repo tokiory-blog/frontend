@@ -33,6 +33,15 @@
   font-size: var(--fsize-standard);
 }
 
+@mixin default-ui-card {
+  border: 1px solid var(--neutral);
+  border-radius: 4px;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+  color: inherit;
+  user-select: none;
+}
+
 @mixin center {
   display: flex;
   justify-content: center;

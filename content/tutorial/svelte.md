@@ -1,6 +1,5 @@
 ---
 title: Svelte
-layout: '../../layouts/PostLayout.astro'
 tags:
   - svelte
   - web

@@ -1,4 +1,4 @@
-import {fileURLToPath} from "url";
+import { fileURLToPath } from "url";
 
 const scssUtilityList = [
   "styles/_mixins.scss",
@@ -13,7 +13,7 @@ const scssMix = scssUtilityList
 
 export default defineNuxtConfig({
   modules: [
-    "@nuxt/content"
+    "@nuxt/content",
   ],
   alias: {
     "@": fileURLToPath(new URL("./", import.meta.url)),
@@ -26,7 +26,13 @@ export default defineNuxtConfig({
   },
   content: {
     highlight: {
-      theme: "dark-plus"
+      theme: "min-dark"
+    }
+  },
+  runtimeConfig: {
+    public: {
+      URL: process.env["NODE_ENV"] === "development" ? "http://localhost:3000" :
+        "https://kiotosi.vercel.app",
     }
   },
   vite: {

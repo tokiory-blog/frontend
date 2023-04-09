@@ -49,6 +49,7 @@ const props = defineProps<Props>();
   &__description {
     margin-top: 4px;
     font-size: var(--fsize-standard);
+    line-height: 1.6;
   }
 
   &__tags {

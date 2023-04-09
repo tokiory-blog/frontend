@@ -1,18 +1,19 @@
 <script lang="ts" setup>
 import { ShikiParams } from "@cms/useShiki";
 
+// Props
 interface Props {
   content: ShikiParams;
   title: string;
 }
-
 const props = defineProps<Props>();
 
 // Using shiki for parsing code
-const code = await useShiki({
+const processedCodeHtml = await useShiki({
   ...props.content,
   code: props.content.code.trim()
 });
+
 </script>
 
 <template>
@@ -24,7 +25,7 @@ const code = await useShiki({
     </div>
     <div
       class="code__body"
-      v-html="code"
+      v-html="processedCodeHtml"
     />
   </div>
 </template>

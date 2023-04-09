@@ -24,12 +24,16 @@
     <inspection_tool class="CucumberMissedExamples" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="CucumberTableInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="CucumberUndefinedStep" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="GherkinBrokenTableInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="GherkinMisplacedBackground" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="GherkinScenarioToScenarioOutline" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="GrazieInspection" enabled="false" level="GRAMMAR_ERROR" enabled_by_default="false" />
     <inspection_tool class="HbEmptyBlock" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="LanguageDetectionInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SassScssResolvedByNameOnly" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="SassScssUnresolvedMixin" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SassScssUnresolvedVariable" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SyntaxError" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="TsLint" enabled="true" level="WARNING" enabled_by_default="true" />
   </profile>

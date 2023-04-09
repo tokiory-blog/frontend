@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import USEFULL_LINKS from "@d/usefullLinks";
-import { SITE_NAME } from "~/constants/meta";
+import { SITE_DESCRIPTION, SITE_NAME } from "~/constants/meta";
 
 const PAGE_TITLE = "Ссылки";
 const PAGE_DESCRIPTION = `В данном разделе описаны ссылки, которые часто пригождались мне во время разработки. Здесь находятся все ссылки, которые я собрал во время разработки продуктов начиная от создания дизайна и заканчивая деплоем.
@@ -12,6 +12,12 @@ definePageMeta({
 
 useHead({
   title: `${SITE_NAME}: ${PAGE_TITLE}`
+});
+
+useOpenGraph({
+  gradient: "rainbow",
+  title: `${SITE_NAME}: ${PAGE_TITLE}`,
+  description: SITE_DESCRIPTION,
 });
 
 </script>

@@ -1,0 +1,50 @@
+//@keyframes dropdown {
+//  from {
+//    margin-top: -100%;
+//  }
+//  
+//  to {
+//    margin-top: 0;
+//  }
+//}
+
+@keyframes sweep-left {
+  from    {opacity: 0; margin-left: -10px}
+  to      {opacity: 1; margin-left: 0}
+}
+
+@keyframes sweep-left {
+  from    {opacity: 0; margin-right: -10px}
+  to      {opacity: 1; margin-right: 0}
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  
+  50% {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes monkey-blink {
+  from {
+    opacity: 1;
+    content: '🙈';
+  }
+
+  50% {
+    opacity: .758;
+    content: '🙉';
+  }
+
+  to {
+    opacity: 1;
+    content: '🙈';
+  }
+}

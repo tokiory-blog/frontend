@@ -6,6 +6,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "start": "NODE_ENV=\"production\" && node .output/server/index.mjs",
     "types": "nuxt prepare",
     "lint": "eslint --ext .js,.ts,.vue --fix",
     "postinstall": "pnpm types"
@@ -21,10 +22,16 @@
     "eslint-plugin-vue": "^9.10.0",
     "nuxt": "^3.3.3",
     "sass": "^1.60.0",
-    "shiki-es": "^0.2.0",
-    "typescript": "^5.0.3"
+    "typescript": "^5.0.4"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "@resvg/resvg-js": "^2.4.1",
+    "h3": "^1.6.4",
+    "h3-zod": "^0.4.2",
+    "normalize.css": "^8.0.1",
+    "satori": "^0.4.7",
+    "satori-html": "^0.3.2",
+    "shiki-es": "^0.2.0",
+    "zod": "^3.21.4"
   }
 }

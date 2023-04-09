@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import NAVIGATION from "@d/navigation";
+import { SITE_DESCRIPTION, SITE_NAME } from "~/constants/meta";
+useOpenGraph({
+  gradient: "green",
+  title: SITE_NAME,
+  description: SITE_DESCRIPTION,
+});
 </script>
 
 <template>

@@ -1,6 +1,16 @@
 <script lang="ts" setup>
+import { SITE_DESCRIPTION, SITE_NAME } from "~/constants/meta";
+
+const PAGE_TITLE = `${SITE_NAME}: Автор`;
+
 definePageMeta({
   layout: "full"
+});
+useHead({ title: PAGE_TITLE });
+useOpenGraph({
+  gradient: "yellow",
+  title: PAGE_TITLE,
+  description: SITE_DESCRIPTION,
 });
 </script>
 
@@ -10,6 +20,7 @@ definePageMeta({
     <BiographyDescription class="author-page__description" />
     <BiographyGallery class="author-page__gallery" />
     <BiographyCode />
+    <ContentCode />
   </div>
 </template>
 
