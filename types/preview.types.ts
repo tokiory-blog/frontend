@@ -1,6 +1,14 @@
 import { z } from "zod";
 
-export type PreviewGradientColor = "red" | "green" | "blue" | "rainbow" | "yellow";
+export type PreviewGradientColor = "pink" |
+  "red" |
+  "green" |
+  "blue" |
+  "rainbow" |
+  "yellow" |
+  "orange" |
+  "purple" |
+  "black";
 
 export interface PreviewTemplate {
   title: string;

@@ -14,7 +14,7 @@ useHead({
 useOpenGraph({
   title: PAGE_TITLE,
   description: SITE_DESCRIPTION,
-  gradient: "blue"
+  gradient: "purple"
 });
 const COLLECTION = "article";
 </script>

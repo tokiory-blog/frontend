@@ -68,6 +68,26 @@ const getGradientCss = (color: PreviewGradientColor) => {
         background-image: linear-gradient( 109.6deg,  rgba(254,87,98,1) 11.2%, rgba(255,107,161,1) 99.1% );
         color: ${WHITE_COLOR};
       `;
+    case "pink":
+      return `
+        background-image: linear-gradient(45deg, rgba(255,191,217,1) 0%, rgba(194,255,193,1) 100%);
+        color: ${BLACK_COLOR};
+      `;
+    case "orange":
+      return `
+        background-image: linear-gradient(77deg, rgba(247,217,171,1) 0%, rgba(221,111,128,1) 100%);
+        color: ${WHITE_COLOR};
+      `;
+    case "black":
+      return `
+        background-image: linear-gradient(162deg, rgba(0,0,0,1) 0%, rgba(83,83,83,1) 100%);
+        color: ${WHITE_COLOR};
+      `;
+    case "purple":
+      return `
+        background-image: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+        color: ${WHITE_COLOR};
+      `;
     case "yellow":
       return `
         background-image: linear-gradient(143deg, rgba(255,239,145,1) 0%, rgba(181,255,143,1) 100%);
