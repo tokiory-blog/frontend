@@ -1,7 +1,20 @@
 <script lang="ts" setup>
+import { SITE_NAME, SITE_DESCRIPTION } from "@/constants/meta";
+
+const PAGE_TITLE = `${SITE_NAME}: Туториалы`;
 
 definePageMeta({
   layout: "full"
+});
+
+useHead({
+  title: PAGE_TITLE
+});
+
+useOpenGraph({
+  title: PAGE_TITLE,
+  description: SITE_DESCRIPTION,
+  gradient: "rainbow"
 });
 
 const COLLECTION = "tutorial";
