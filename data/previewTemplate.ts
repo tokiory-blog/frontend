@@ -65,7 +65,7 @@ const getGradientCss = (color: PreviewGradientColor) => {
   switch (color) {
     case "red":
       return `
-        background-image: linear-gradient( 109.6deg,  rgba(254,87,98,1) 11.2%, rgba(255,107,161,1) 99.1% );
+        background-image: linear-gradient(90deg, rgb(242, 132, 105) 0%, rgb(255, 82, 131) 100%);
         color: ${WHITE_COLOR};
       `;
     case "pink":
