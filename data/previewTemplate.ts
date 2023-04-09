@@ -86,7 +86,7 @@ const getGradientCss = (color: PreviewGradientColor) => {
     case "purple":
       return `
         background-image: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
-        color: ${WHITE_COLOR};
+        color: ${BLACK_COLOR};
       `;
     case "yellow":
       return `
