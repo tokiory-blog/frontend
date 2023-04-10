@@ -14,7 +14,6 @@ const bannerStyle = ref<Partial<CSSStyleDeclaration>>({});
 // Lazy load for banner
 const isLoading = ref(true);
 onMounted(async () => {
-  const startTime = Date.now();
   const backgroundResponse = await fetch(props.src);
   const imageBlob = await backgroundResponse.blob();
 
