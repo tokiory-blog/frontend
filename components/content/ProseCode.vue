@@ -12,7 +12,7 @@ export default defineComponent({
   props: {
     code: {
       type: String,
-      default: ""
+      default: "text"
     },
     language: {
       type: String as PropType<Lang>,
