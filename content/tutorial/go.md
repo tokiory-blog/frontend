@@ -9,6 +9,7 @@ description: >
   Благодаря данному гайду можно выучить Go в одном месте.
 publicationDate: 02 Apr 2023
 _draft: true
+banner: /banners/go.webp
 ---
 
 # Ознакомление

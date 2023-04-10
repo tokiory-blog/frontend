@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 interface Props {
   name: string
+  withoutTag?: boolean;
 }
 
 defineProps<Props>();
@@ -8,7 +9,10 @@ defineProps<Props>();
 
 <template>
   <div class="tag">
-    <span class="tag__hashtag">#</span>{{ name }}
+    <span
+      v-if="!withoutTag"
+      class="tag__hashtag"
+    >#</span>{{ name }}
   </div>
 </template>
 

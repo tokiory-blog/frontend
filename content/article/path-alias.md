@@ -1,11 +1,11 @@
 ---
 title: Сокращение путей с помощью алиасов
-layout: '../../layouts/PostLayout.astro'
 tags:
   - typescript
   - web
 description: В данной статье рассмотрим как с помощью алиасов сократить пути для импортов.
 publicationDate: 01 Apr 2023
+banner: "/banners/path-alias.webp"
 ---
 
 # Предистория

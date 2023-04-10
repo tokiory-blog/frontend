@@ -5,6 +5,7 @@ export interface Post extends Pick<MarkdownParsedContent, "_path"> {
   tags: string[];
   description: string;
   publicationDate: string;
+  banner: string;
 }
 
 export type Frontmatter = Post & MarkdownParsedContent;

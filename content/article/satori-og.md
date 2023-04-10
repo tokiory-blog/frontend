@@ -1,6 +1,5 @@
 ---
 title: Автогенерация превью с помощью Satori
-layout: '../../layouts/PostLayout.astro'
 tags:
   - open-graph
   - web
@@ -10,6 +9,7 @@ description: >
   того чтобы превращать HTML-верстку в SVG картинки. С помощью данной библиотеки мы будем динамически генерировать
   Open Graph превью для страниц. В данном блоге превью сделаны именно по этому принципу, так что вперед под кат :)
 publicationDate: 08 Apr 2023
+banner: /banners/satori-og.webp
 ---
 
 # Задача

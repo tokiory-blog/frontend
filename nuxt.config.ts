@@ -1,4 +1,6 @@
 import { fileURLToPath } from "url";
+import autoprefixer from "autoprefixer";
+
 
 const scssUtilityList = [
   "styles/_mixins.scss",
@@ -34,6 +36,11 @@ export default defineNuxtConfig({
       URL: process.env["NODE_ENV"] === "development" ? "http://localhost:3000" :
         "https://kiotosi.vercel.app",
     }
+  },
+  postcss: {
+    plugins: {
+      autoprefixer: autoprefixer()
+    },
   },
   vite: {
     css: {

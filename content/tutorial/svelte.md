@@ -5,6 +5,7 @@ tags:
   - web
 description: Гайд для Svelte, нового фреймворка для построения реактивных интерфейсов.
 publicationDate: 11 Feb 2023
+banner: /banners/svelte.webp
 ---
 
 # Svelte
