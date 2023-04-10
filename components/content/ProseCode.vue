@@ -150,6 +150,7 @@ export default defineComponent({
     border: 1px solid var(--neutral);
     border-top: none;
     border-radius: 0 0 4px 4px;
+    overflow-x: auto;
     
     .line {
       min-height: 1rem;
