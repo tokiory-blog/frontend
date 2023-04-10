@@ -7,8 +7,10 @@
 import { defineComponent } from "#imports";
 import { Lang } from "shiki-es";
 import { PropType } from "vue";
+import BaseButton from "@cmp/base/BaseButton.vue";
 
 export default defineComponent({
+  components: { BaseButton },
   props: {
     code: {
       type: String,
@@ -30,6 +32,25 @@ export default defineComponent({
       type: String,
       default: null
     }
+  },
+  data() {
+    return {
+      isNotificationVisible: false,
+      notificationDuration: 2000 // ms
+    };
+  },
+  methods: {
+    async copyCode() {
+      await navigator.clipboard.writeText(this.$props.code?.trim() ?? "");
+    },
+    toggleCopyNotification() {
+      this.isNotificationVisible = true;
+      setTimeout(() => this.isNotificationVisible = false, this.notificationDuration);
+    },
+    async onCopyButtonClick() {
+      await this.copyCode();
+      this.toggleCopyNotification();
+    }
   }
 });
 
@@ -44,11 +65,27 @@ export default defineComponent({
       <div class="post-formatted-code__description">
         {{ meta }}
       </div>
-      <span class="post-formatted-code__language">Language: {{ language.toUpperCase() }}</span>
+      <div class="post-formatted-code__info">
+        <div class="post-formatted-code__language">
+          Language: {{ language.toUpperCase() }}
+        </div>
+        <BaseButton
+          class="post-formatted-code__copy"
+          @click="onCopyButtonClick"
+        >
+          Copy
+        </BaseButton>
+      </div>
     </div>
     <div class="post-formatted-code__body">
       <slot />
     </div>
+    <NotificationPopover
+      v-if="isNotificationVisible"
+      :animation-duration="notificationDuration"
+    >
+      Код скопирован
+    </NotificationPopover>
   </div>
 </template>
 
@@ -75,6 +112,22 @@ export default defineComponent({
   &__filename {
     color: var(--color-blue);
     margin-right: auto;
+  }
+  
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    
+  }
+  
+  &__copy {
+    &::after {
+      content: "📋";
+    }
+    &:active &::after {
+      content: "✅";
+    }
   }
 
   &__language {

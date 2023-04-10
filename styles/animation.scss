@@ -32,6 +32,20 @@
   }
 }
 
+@keyframes blink-reverse {
+  from {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 @keyframes monkey-blink {
   from {
     opacity: 1;
