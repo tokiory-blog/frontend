@@ -16,11 +16,13 @@
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
+    "autoprefixer": "^10.4.14",
     "emoji-type": "^1.0.4",
     "eslint": "^8.37.0",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-vue": "^9.10.0",
     "nuxt": "^3.3.3",
+    "postcss": "^8.4.21",
     "sass": "^1.60.0",
     "typescript": "^5.0.4"
   },
@@ -33,5 +35,15 @@
     "satori-html": "^0.3.2",
     "shiki-es": "^0.2.0",
     "zod": "^3.21.4"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not dead",
+    "last 3 version",
+    "Chrome >= 35",
+    "Firefox >= 38",
+    "ie >= 10",
+    "iOS >= 8",
+    "Safari >= 12"
+  ]
 }

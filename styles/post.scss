@@ -4,10 +4,12 @@
 @import "post/_heading";
 @import "post/_table";
 @import "post/_list";
+@import "post/_scroll";
 
 
 .post-content {
   @include font-manrope;
+  
   blockquote {
     margin-left: 0;
     padding-left: 36px;

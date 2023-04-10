@@ -30,18 +30,33 @@ useOpenGraph({
 </script>
 
 <template>
-  <BaseHeadingNavigation
-    v-if="hasNavigation"
-    :content="data"
+  <BaseBanner
+    :title="data.title"
+    :src="data.banner ?? '#'"
+    :description="data.description"
+    :tags="data.tags"
   />
-  <ContentRenderer
-    class="post-content"
-    :value="data"
-  />
+  <div class="post-content">
+    <BaseHeadingNavigation
+      v-if="hasNavigation"
+      :content="data"
+    />
+    <ContentRenderer
+      :value="data"
+    />
+  </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
+@import "@s/post";
+
 .post-content {
   margin-top: 64px;
+  @include sm-container;
+  @include center-container;
+  @include font-manrope;
+  @include default-ui-color;
+  font-size: var(--fsize-standard);
+  padding: 20vh 12px;
 }
 </style>
