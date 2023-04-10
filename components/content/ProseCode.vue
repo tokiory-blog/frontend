@@ -97,6 +97,10 @@ export default defineComponent({
     border: 1px solid var(--neutral);
     border-top: none;
     border-radius: 0 0 4px 4px;
+    
+    .line {
+      min-height: 1rem;
+    }
 
     code {
       @include font-jetbrains;
