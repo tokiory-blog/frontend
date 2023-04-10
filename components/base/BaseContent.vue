@@ -22,9 +22,8 @@ useHead({
 
 useOpenGraph({
   title: SITE_NAME,
-  description: data.value.description.split(".")[0],
   subtitle: data.value.title,
-  gradient: "red",
+  gradient: "pink",
 });
 
 </script>

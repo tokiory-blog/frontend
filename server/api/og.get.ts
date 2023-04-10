@@ -58,7 +58,7 @@ export default defineEventHandler(async (event) => {
   const template = generatePreviewTemplate({
     title: decodeURIComponent(query.data.title),
     subtitle: decodeURIComponent(query.data.subtitle ?? ""),
-    description: decodeURIComponent(query.data.description),
+    description: decodeURIComponent(query.data.description ?? ""),
     url: decodeURIComponent(query.data.url).replaceAll(/[\\{2}"]/g, ""),
     gradient: query.data.gradient as PreviewGradientColor ??
       "red"

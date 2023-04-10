@@ -128,7 +128,7 @@ const generatePreviewTemplate = ({ title, subtitle, description, url, gradient =
     <div style="${STYLE.blockInfo}">
       <div style="${STYLE.title}">${title}</div>
       ${subtitle && `<div style="${STYLE.subtitle}">${subtitle}</div>`}
-      <div style="${STYLE.description}">${description}</div>
+      ${description && `<div style="${STYLE.description}">${description}</div>`}
       <pre style="${STYLE.logo}">${FULL_LOGO_PREVIEW}</pre>
       <div style="${STYLE.url}">${url}</div>
     </div>

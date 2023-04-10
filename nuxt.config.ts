@@ -29,6 +29,11 @@ export default defineNuxtConfig({
   content: {
     highlight: {
       theme: "min-dark"
+    },
+    markdown: {
+      anchorLinks: {
+        depth: 3,
+      }
     }
   },
   runtimeConfig: {

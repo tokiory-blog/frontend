@@ -13,7 +13,7 @@ export type PreviewGradientColor = "pink" |
 export interface PreviewTemplate {
   title: string;
   subtitle?: string;
-  description: string;
+  description?: string;
   url: string;
   gradient?: PreviewGradientColor;
 }
@@ -21,7 +21,7 @@ export interface PreviewTemplate {
 export const previewTemplateSchema = {
   title: z.string(),
   subtitle: z.optional(z.string()),
-  description: z.string(),
+  description: z.optional(z.string()),
   url: z.string(),
   gradient: z.optional(z.string()),
 };

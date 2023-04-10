@@ -9,25 +9,20 @@ import { OPEN_GRAPH_PREVIEW_SIZE } from "~/constants/openGraph";
  */
 const generatePreviewURL = (rootUrl: string, params: PreviewTemplate): string => {
   const title = encodeURIComponent(params.title);
-  const description = encodeURIComponent(params.description);
   const url = encodeURIComponent(params.url);
+  
   const queryParams = new URLSearchParams({
     title,
-    description,
     url,
   });
   
+  const addParamIfExists = (name: string, param?: string) => {
+    param && queryParams.append(name, encodeURIComponent(param));
+  };
   
-  if (params.subtitle) {
-    queryParams.append(
-      "subtitle",
-      encodeURIComponent(params.subtitle)
-    );
-  }
-  
-  if (params.gradient) {
-    queryParams.append("gradient", params.gradient);
-  }
+  addParamIfExists("subtitle", params.subtitle);
+  addParamIfExists("gradient", params.gradient);
+  addParamIfExists("description", params.description);
   
   return `${rootUrl}/api/og?${queryParams.toString()}`;
 };
