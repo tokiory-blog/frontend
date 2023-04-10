@@ -20,7 +20,6 @@ useOpenGraph({
     <BiographyDescription class="author-page__description" />
     <BiographyGallery class="author-page__gallery" />
     <BiographyCode />
-    <ContentCode />
   </div>
 </template>
 
