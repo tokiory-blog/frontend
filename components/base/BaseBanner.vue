@@ -9,9 +9,31 @@ interface Props {
 
 const props = defineProps<Props>();
 
-const bannerStyle = computed(() => {
-  return {
-    backgroundImage: `url(${props.src})`,
+const bannerStyle = ref<Partial<CSSStyleDeclaration>>({});
+
+// Lazy load for banner
+const isLoading = ref(true);
+const COOLDOWN = 200;
+onMounted(async () => {
+  const startTime = Date.now();
+  const backgroundResponse = await fetch(props.src);
+  const imageBlob = await backgroundResponse.blob();
+
+  const file = new FileReader();
+  file.readAsDataURL(imageBlob);
+  
+  const setBackground = () => {
+    bannerStyle.value.backgroundImage = `url(${file.result})` || "";
+    isLoading.value = false;
+  };
+
+  file.onloadend = () => {
+    const resultTime = Date.now() - startTime;
+    if (resultTime < COOLDOWN) {
+      setTimeout(setBackground, COOLDOWN - resultTime);
+    } else {
+      setBackground();
+    }
   };
 });
 </script>
@@ -37,11 +59,19 @@ const bannerStyle = computed(() => {
         without-tag
       />
     </div>
+    <BaseSpinner
+      v-show="isLoading"
+      class="banner__spinner"
+      :width="52"
+      :height="52"
+      color="var(--foreground)"
+    />
   </div>
 </template>
 
 <style lang="scss" scoped>
 .banner {
+  position: relative;
   width: 100%;
   height: 300px;
   background-size: cover;
@@ -59,6 +89,13 @@ const bannerStyle = computed(() => {
   padding: 15% var(--spacing-lg) var(--spacing-lg);
   gap: var(--spacing-md);
   box-shadow: 0px -40px 300px 20px black inset;
+  
+  &__spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   
   &__text {
     text-shadow: 0 1px black;
