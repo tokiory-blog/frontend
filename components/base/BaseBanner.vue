@@ -13,7 +13,6 @@ const bannerStyle = ref<Partial<CSSStyleDeclaration>>({});
 
 // Lazy load for banner
 const isLoading = ref(true);
-const COOLDOWN = 200;
 onMounted(async () => {
   const startTime = Date.now();
   const backgroundResponse = await fetch(props.src);
@@ -28,12 +27,7 @@ onMounted(async () => {
   };
 
   file.onloadend = () => {
-    const resultTime = Date.now() - startTime;
-    if (resultTime < COOLDOWN) {
-      setTimeout(setBackground, COOLDOWN - resultTime);
-    } else {
-      setBackground();
-    }
+    setBackground();
   };
 });
 </script>
