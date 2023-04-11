@@ -1,0 +1,39 @@
+### Search for posts with tag
+
+POST {{url}}/api/search
+Content-Type: application/json
+
+{
+  "type": "article",
+  "query": "typescript"
+}
+
+### Search for posts with name
+
+POST {{url}}/api/search
+Content-Type: application/json
+
+{
+  "type": "article",
+  "query": "satori"
+}
+
+### Search for posts with description
+
+POST {{url}}/api/search
+Content-Type: application/json
+
+{
+  "type": "article",
+  "query": "стать"
+}
+
+### Search for tutorials
+
+POST {{url}}/api/search
+Content-Type: application/json
+
+{
+  "type": "tutorial",
+  "query": "html"
+}

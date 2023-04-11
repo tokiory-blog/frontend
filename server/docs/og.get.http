@@ -1,0 +1,27 @@
+### Get preview with title and url (MINIMAL)
+
+GET {{url}}/api/og?title=Hello, World&url=123
+
+## ## ## ## ## ## ##
+### Get preview with subtitle
+
+GET {{url}}/api/og?
+  title=Hello,%20World&
+  url=google.com&
+  subtitle=Subtitle!
+
+## ## ## ## ## ## ##
+### Get preview with description
+
+GET {{url}}/api/og?
+  title=Hello,%20World&
+  url=google.com&
+  description=Looooo%20ooooooo%20ooooooooo%20oooooooo%20oooooo%20ooooo%20ooooo%20ooooo%20ng%20description
+
+## ## ## ## ## ## ##
+### Get preview with black gradient
+
+GET {{url}}/api/og?
+  title=Black%20Gradient&
+  url=google.com&
+  gradient=black

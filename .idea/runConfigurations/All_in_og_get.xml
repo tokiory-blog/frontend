@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="All in og.get" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" path="$PROJECT_DIR$/server/docs/og.get.http">
+    <method v="2" />
+  </configuration>
+</component>
