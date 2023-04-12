@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>/api/og - Docs of the [station]</title>
+<title>Server api og get - Docs of the [station]</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <meta name="generator" content="mkdocs-1.4.2, mkdocs-gitbook-1.0.7">
 
-<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon">
 <meta name="HandheldFriendly" content="true"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta rel="next" href="" />
-<link href="../../css/style.min.css" rel="stylesheet"> 
+<link href="../../../css/style.min.css" rel="stylesheet"> 
 </head>
 
 <body>
@@ -24,13 +24,13 @@
 <nav role="navigation">
 <ul class="summary">
 <li>
-<a href="../.." target="_blank" class="custom-link">Docs of the [station]</a>
+<a href="../../.." target="_blank" class="custom-link">Docs of the [station]</a>
 </li>
 <li class="divider"></li>
 <li class="chapter" data-path="">
-<a href="../..">Home</a>
+<a href="../../..">Home</a>
 <li class="chapter" data-path="tech/modules/">
-<a href="../../tech/modules/">Modules Documentation</a>
+<a href="../">Modules Documentation</a>
 <li class="header">API</li>
 
 <li>
@@ -38,7 +38,7 @@
 <ul>
 
 <li>
-<a href="./" class="active">/api/og</a>
+<a href="../../../api/get_api-og/" class="">/api/og</a>
 </li>
 </ul>
 </li>
@@ -48,7 +48,7 @@
 <ul>
 
 <li>
-<a href="../post_api-search/" class="">/api/search</a>
+<a href="../../../api/post_api-search/" class="">/api/search</a>
 </li>
 </ul>
 </li>
@@ -89,39 +89,35 @@ Theme by GitBook
 
 
 
-<h1 id="apiog">/api/og</h1>
-<p>Get Open Graph preview</p>
-<h2 id="params">Params</h2>
-<p><strong>Required</strong>:</p>
+<p><a href="../../">station</a> / <a href="../">Modules</a> / server/api/og.get</p>
+<h1 id="module-serverapiogget">Module: server/api/og.get</h1>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="functions">Functions</h3>
 <ul>
-<li><code>title</code> : string*</li>
-<li><code>url</code> : string*</li>
+<li><a href="./#default">default</a></li>
 </ul>
-<p><strong>Optional</strong>:</p>
-<ul>
-<li><code>subtitle</code> : string</li>
-<li><code>description</code> : string</li>
-<li><code>gradient</code> : PreviewGradientColor</li>
-</ul>
-<h2 id="response">Response</h2>
-<ul>
-<li>Will return open graph preview image on success;</li>
-<li>Will return <code>400</code> code if there is missed required param.</li>
-</ul>
-<h2 id="plain-response-info">Plain response info</h2>
-<pre><code class="language-yaml">GET: /api/og
-
-# Params
-title: string*
-url: string*
-subtitle: string
-description: string
-gradient: PreviewGradientColor
-
-# Response codes
-200: Image
-400: Wrong query params
-</code></pre>
+<h2 id="functions_1">Functions</h2>
+<h3 id="default">default</h3>
+<p>▸ <strong>default</strong>(<code>event</code>): <code>EventHandlerResponse</code>&lt;<code>void</code> | <code>"400! Bad Request :("</code>></p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>event</code></td>
+<td align="left"><code>H3Event</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p><code>EventHandlerResponse</code>&lt;<code>void</code> | <code>"400! Bad Request :("</code>></p>
+<h4 id="defined-in">Defined in</h4>
+<p>node_modules/.pnpm/h3@1.6.4/node_modules/h3/dist/index.d.ts:50</p>
 
 
 </section>
@@ -132,8 +128,8 @@ gradient: PreviewGradientColor
 </div> <!-- end of body-inner -->
 
 </div> <!-- end of book-body -->
-<script src="../../js/main.js"></script>
-<script src="../../js/gitbook.min.js"></script>
-<script src="../../js/theme.min.js"></script>
+<script src="../../../js/main.js"></script>
+<script src="../../../js/gitbook.min.js"></script>
+<script src="../../../js/theme.min.js"></script>
 </body>
 </html>
