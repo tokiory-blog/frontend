@@ -28,6 +28,9 @@ To get started with the project, you'll need to follow these steps:
 
 > 🎉 That's it! Your site is now running on your local machine. Happy hacking! 🎉
 
+## Documentation
+<p><strong>Gitbook</strong>: <a href="https://yikiotsi.gitbook.io/station/">https://yikiotsi.gitbook.io/station/</a></p>
+
 ## 🚀 Stack
 
 🚀 This project is built using the following technologies:
