@@ -10,7 +10,7 @@
     "types": "nuxt prepare",
     "lint": "eslint --ext .js,.ts,.vue --fix",
     "postinstall": "pnpm types",
-    "test": "vitest --config ./vitest.config.ts",
+    "test": "vitest --config ./vitest.config.ts"
   },
   "devDependencies": {
     "@nuxt/content": "^2.5.2",
