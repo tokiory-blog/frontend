@@ -31,4 +31,4 @@ Titles navigation list
 
 #### Defined in
 
-[composables/useContentNavigation.ts:116](https://github.com/kiotosi/station/blob/cfb6b0e/composables/useContentNavigation.ts#L116)
+[composables/useContentNavigation.ts:116](https://github.com/kiotosi/station/blob/f3aa893/composables/useContentNavigation.ts#L116)

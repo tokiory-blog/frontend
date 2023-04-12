@@ -28,4 +28,4 @@
 
 #### Defined in
 
-[types/search.types.ts:9](https://github.com/kiotosi/station/blob/cfb6b0e/types/search.types.ts#L9)
+[types/search.types.ts:9](https://github.com/kiotosi/station/blob/f3aa893/types/search.types.ts#L9)

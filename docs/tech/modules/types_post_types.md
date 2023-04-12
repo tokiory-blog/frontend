@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[types/post.types.ts:3](https://github.com/kiotosi/station/blob/cfb6b0e/types/post.types.ts#L3)
+[types/post.types.ts:3](https://github.com/kiotosi/station/blob/f3aa893/types/post.types.ts#L3)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[types/post.types.ts:15](https://github.com/kiotosi/station/blob/cfb6b0e/types/post.types.ts#L15)
+[types/post.types.ts:15](https://github.com/kiotosi/station/blob/f3aa893/types/post.types.ts#L15)

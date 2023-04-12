@@ -26,4 +26,4 @@
 
 #### Defined in
 
-[utils/debug.ts:1](https://github.com/kiotosi/station/blob/cfb6b0e/utils/debug.ts#L1)
+[utils/debug.ts:1](https://github.com/kiotosi/station/blob/f3aa893/utils/debug.ts#L1)

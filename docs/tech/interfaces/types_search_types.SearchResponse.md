@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[types/search.types.ts:16](https://github.com/kiotosi/station/blob/cfb6b0e/types/search.types.ts#L16)
+[types/search.types.ts:16](https://github.com/kiotosi/station/blob/f3aa893/types/search.types.ts#L16)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[types/search.types.ts:15](https://github.com/kiotosi/station/blob/cfb6b0e/types/search.types.ts#L15)
+[types/search.types.ts:15](https://github.com/kiotosi/station/blob/f3aa893/types/search.types.ts#L15)

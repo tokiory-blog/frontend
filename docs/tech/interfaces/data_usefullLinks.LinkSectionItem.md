@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[data/usefullLinks.ts:137](https://github.com/kiotosi/station/blob/cfb6b0e/data/usefullLinks.ts#L137)
+[data/usefullLinks.ts:137](https://github.com/kiotosi/station/blob/f3aa893/data/usefullLinks.ts#L137)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[data/usefullLinks.ts:135](https://github.com/kiotosi/station/blob/cfb6b0e/data/usefullLinks.ts#L135)
+[data/usefullLinks.ts:135](https://github.com/kiotosi/station/blob/f3aa893/data/usefullLinks.ts#L135)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[data/usefullLinks.ts:136](https://github.com/kiotosi/station/blob/cfb6b0e/data/usefullLinks.ts#L136)
+[data/usefullLinks.ts:136](https://github.com/kiotosi/station/blob/f3aa893/data/usefullLinks.ts#L136)

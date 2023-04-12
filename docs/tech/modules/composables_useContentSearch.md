@@ -32,4 +32,4 @@
 
 #### Defined in
 
-[composables/useContentSearch.ts:4](https://github.com/kiotosi/station/blob/cfb6b0e/composables/useContentSearch.ts#L4)
+[composables/useContentSearch.ts:4](https://github.com/kiotosi/station/blob/f3aa893/composables/useContentSearch.ts#L4)

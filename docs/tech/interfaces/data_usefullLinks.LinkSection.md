@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[data/usefullLinks.ts:131](https://github.com/kiotosi/station/blob/cfb6b0e/data/usefullLinks.ts#L131)
+[data/usefullLinks.ts:131](https://github.com/kiotosi/station/blob/f3aa893/data/usefullLinks.ts#L131)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[data/usefullLinks.ts:130](https://github.com/kiotosi/station/blob/cfb6b0e/data/usefullLinks.ts#L130)
+[data/usefullLinks.ts:130](https://github.com/kiotosi/station/blob/f3aa893/data/usefullLinks.ts#L130)

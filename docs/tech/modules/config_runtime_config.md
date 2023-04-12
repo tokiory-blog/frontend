@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[config/runtime.config.ts:8](https://github.com/kiotosi/station/blob/cfb6b0e/config/runtime.config.ts#L8)
+[config/runtime.config.ts:8](https://github.com/kiotosi/station/blob/f3aa893/config/runtime.config.ts#L8)
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 #### Defined in
 
-[config/runtime.config.ts:3](https://github.com/kiotosi/station/blob/cfb6b0e/config/runtime.config.ts#L3)
+[config/runtime.config.ts:3](https://github.com/kiotosi/station/blob/f3aa893/config/runtime.config.ts#L3)

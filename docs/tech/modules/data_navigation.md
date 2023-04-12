@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[data/navigation.ts:1](https://github.com/kiotosi/station/blob/cfb6b0e/data/navigation.ts#L1)
+[data/navigation.ts:1](https://github.com/kiotosi/station/blob/f3aa893/data/navigation.ts#L1)

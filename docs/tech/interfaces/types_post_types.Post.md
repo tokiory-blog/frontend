@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[types/post.types.ts:12](https://github.com/kiotosi/station/blob/cfb6b0e/types/post.types.ts#L12)
+[types/post.types.ts:12](https://github.com/kiotosi/station/blob/f3aa893/types/post.types.ts#L12)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[types/post.types.ts:10](https://github.com/kiotosi/station/blob/cfb6b0e/types/post.types.ts#L10)
+[types/post.types.ts:10](https://github.com/kiotosi/station/blob/f3aa893/types/post.types.ts#L10)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[types/post.types.ts:11](https://github.com/kiotosi/station/blob/cfb6b0e/types/post.types.ts#L11)
+[types/post.types.ts:11](https://github.com/kiotosi/station/blob/f3aa893/types/post.types.ts#L11)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[types/post.types.ts:9](https://github.com/kiotosi/station/blob/cfb6b0e/types/post.types.ts#L9)
+[types/post.types.ts:9](https://github.com/kiotosi/station/blob/f3aa893/types/post.types.ts#L9)
 
 ___
 
@@ -85,4 +85,4 @@ ___
 
 #### Defined in
 
-[types/post.types.ts:8](https://github.com/kiotosi/station/blob/cfb6b0e/types/post.types.ts#L8)
+[types/post.types.ts:8](https://github.com/kiotosi/station/blob/f3aa893/types/post.types.ts#L8)

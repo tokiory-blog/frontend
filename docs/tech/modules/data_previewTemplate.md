@@ -26,4 +26,4 @@
 
 #### Defined in
 
-[data/previewTemplate.ts:123](https://github.com/kiotosi/station/blob/cfb6b0e/data/previewTemplate.ts#L123)
+[data/previewTemplate.ts:123](https://github.com/kiotosi/station/blob/f3aa893/data/previewTemplate.ts#L123)
