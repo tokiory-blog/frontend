@@ -29,7 +29,35 @@ To get started with the project, you'll need to follow these steps:
 > 🎉 That's it! Your site is now running on your local machine. Happy hacking! 🎉
 
 ## Documentation
-<p><strong>Gitbook</strong>: <a href="https://yikiotsi.gitbook.io/station/">https://yikiotsi.gitbook.io/station/</a></p>
+You can see documentation here: []().
+
+### Run documentation locally
+
+You can install [mkDocs](https://www.mkdocs.org/) and run documentation locally.
+
+First of all, you need Python 3. You can install it via cli:
+
+```bash
+# Linux
+sudo apt install python # Debian-like
+sudo dnf install python # RHEL-like
+sudo pacman -Sy python  # Arch-like
+
+# MacOS
+brew install python
+
+# Windows
+choco install python
+```
+If you have [asdf](https://asdf-vm.com/), python will install automatically.
+
+Now you can simply run following command:
+
+```bash
+pnpm docs
+```
+
+> 👾 You can view documentation at `localhost:8000`
 
 ## 🚀 Stack
 

@@ -1,0 +1,18 @@
+site_name: Docs of the [station]
+site_url: https://yikiotsi.vercel.app
+theme:
+  name: gitbook
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - django
+nav:
+  - Home: index.md
+  - API:
+      - GET:
+        - /api/og: 'api/get_api-og.md'
+      - POST:
+        - /api/search: 'api/post_api-search.md'
+
+repo_url: https://github.com/yikiotso/station
+plugins: []
