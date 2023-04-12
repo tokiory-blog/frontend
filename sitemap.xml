@@ -6,7 +6,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://yikiotsi.vercel.app/api/</loc>
+         <loc>https://yikiotsi.vercel.app/api/get_api-og/</loc>
+         <lastmod>2023-04-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yikiotsi.vercel.app/api/post_api-search/</loc>
          <lastmod>2023-04-12</lastmod>
          <changefreq>daily</changefreq>
     </url>

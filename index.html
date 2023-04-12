@@ -20,9 +20,6 @@
 <body>
 <div class="book">
 <div class="book-summary">
-<div id="book-search-input" role="search">
-<input type="text" placeholder="Type to search" />
-</div> <!-- end of book-search-input -->
 
 <nav role="navigation">
 <ul class="summary">
@@ -32,8 +29,28 @@
 <li class="divider"></li>
 <li class="chapter active" data-path="">
 <a href=".">Home</a>
-<li class="chapter" data-path="api/">
-<a href="api/">API</a>
+<li class="header">API</li>
+
+<li>
+<a href="#">GET</a>
+<ul>
+
+<li>
+<a href="api/get_api-og/" class="">/api/og</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a href="#">POST</a>
+<ul>
+
+<li>
+<a href="api/post_api-search/" class="">/api/search</a>
+</li>
+</ul>
+</li>
+
 <li class="divider"></li>
 
 
@@ -65,14 +82,11 @@ Theme by GitBook
 
 <div class="page-wrapper" tabindex="-1" role="main">
 <div class="page-inner">
-<div id="book-search-results">
-<div class="search-noresults">
 
 <section class="normal markdown-section">
 
 
 
-<h1 id="station">Station</h1>
 <p><img alt="Station" src="https://user-images.githubusercontent.com/101672047/229103541-c22b0cc1-f8c9-4e86-acbf-04e6767278a9.png" /></p>
 <p align="center">
     <a href="https://nuxt.com/" target="_blank"><img src="https://img.shields.io/badge/Made%20with-Nuxt-darkgreen?style=flat&logo=nuxt.js" alt="Made with Next" /></a>
@@ -101,21 +115,6 @@ Theme by GitBook
 
 
 </section>
-</div> <!-- end of search-noresults -->
-<div class="search-results">
-<div class="has-results">
-
-<h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-<ul class="search-results-list"></ul>
-
-</div> <!-- end of has-results -->
-<div class="no-results">
-
-<h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-
-</div> <!-- end of no-results -->
-</div> <!-- end of search-results -->
-</div> <!-- end of book-search-results -->
 
 </div> <!-- end of page-inner -->
 </div> <!-- end of page-wrapper -->
@@ -124,7 +123,6 @@ Theme by GitBook
 
 </div> <!-- end of book-body -->
 <script src="./js/main.js"></script>
-<script src="search/main.js"></script>
 <script src="./js/gitbook.min.js"></script>
 <script src="./js/theme.min.js"></script>
 </body>

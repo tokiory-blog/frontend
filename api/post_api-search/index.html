@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>/api/search - Docs of the [station]</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="generator" content="mkdocs-1.4.2, mkdocs-gitbook-1.0.7">
+
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta rel="next" href="" />
+<link href="../../css/style.min.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="book">
+<div class="book-summary">
+
+<nav role="navigation">
+<ul class="summary">
+<li>
+<a href="../.." target="_blank" class="custom-link">Docs of the [station]</a>
+</li>
+<li class="divider"></li>
+<li class="chapter" data-path="">
+<a href="../..">Home</a>
+<li class="header">API</li>
+
+<li>
+<a href="#">GET</a>
+<ul>
+
+<li>
+<a href="../get_api-og/" class="">/api/og</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a href="#">POST</a>
+<ul>
+
+<li>
+<a href="./" class="active">/api/search</a>
+</li>
+</ul>
+</li>
+
+<li class="divider"></li>
+
+
+
+<li><a href="http://www.mkdocs.org">
+Published with MkDocs
+</a></li>
+
+<li><a href="https://github.com/GitbookIO/theme-default">
+Theme by GitBook
+</a></li>
+</ul>
+
+</nav>
+
+</div> <!-- end of book-summary -->
+
+<div class="book-body">
+<div class="body-inner">
+<div class="book-header" role="navigation">
+
+<!-- Title -->
+<h1>
+<i class="fa fa-circle-o-notch fa-spin"></i>
+<a href="." ></a>
+</h1>
+
+</div> <!-- end of book-header -->
+
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="page-inner">
+
+<section class="normal markdown-section">
+
+
+
+<h1 id="apisearch">/api/search</h1>
+<p>Search for the content</p>
+<h2 id="params">Params</h2>
+<p><strong>Required</strong>:</p>
+<ul>
+<li><code>type</code> : "article" | "tutorial" (*)</li>
+<li><code>query</code> : string*</li>
+</ul>
+<p><strong>Example</strong>:</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;article&quot;,
+  &quot;query&quot;: &quot;с&quot;
+}
+</code></pre>
+<h2 id="response">Response</h2>
+<ul>
+<li>With the correct set of arguments, it will return the type of search and list of articles</li>
+<li>Return <code>400</code> if there's missing param in body</li>
+</ul>
+<p><strong>Example</strong>:</p>
+<pre><code class="language-json">{                                                                                                                                                                           16:01:28
+  &quot;type&quot;: &quot;article&quot;,
+  &quot;posts&quot;: [
+    {
+    &quot;_path&quot;: &quot;/article/path-alias&quot;,
+    &quot;title&quot;: &quot;Сокращение путей с помощью алиасов&quot;,
+    &quot;description&quot;: &quot;В данной статье рассмотрим как с помощью алиасов сократить пути для импортов.&quot;,
+    &quot;tags&quot;: [&quot;typescript&quot;, &quot;web&quot;],
+    &quot;publicationDate&quot;: &quot;01 Apr 2023&quot;
+    },
+    {
+    &quot;_path&quot;: &quot;/article/satori-og&quot;,
+    &quot;title&quot;: &quot;Автогенерация превью с помощью Satori&quot;,
+    &quot;description&quot;: &quot;В данной статье рассказывается об автогенерации превью с помощью Satori. Satori - библиотека от Vercel, которая создана для того чтобы превращать HTML-верстку в SVG картинки. С помощью данной библиотеки мы будем динамически генерировать Open Graph превью для страниц. В данном блоге превью сделаны именно по этому принципу, так что вперед под кат :)\n&quot;,
+    &quot;tags&quot;: [&quot;backend&quot;, &quot;satori&quot;],
+    &quot;publicationDate&quot;: &quot;08 Apr 2023&quot;
+    }
+  ]
+}
+</code></pre>
+<h2 id="plain-response-info">Plain response info</h2>
+<pre><code class="language-yaml">GET: /api/og
+
+# Params
+title: string*
+url: string*
+subtitle: string
+description: string
+gradient: PreviewGradientColor
+
+# Response codes
+200: Image
+400: Wrong query params
+</code></pre>
+
+
+</section>
+
+</div> <!-- end of page-inner -->
+</div> <!-- end of page-wrapper -->
+
+</div> <!-- end of body-inner -->
+
+</div> <!-- end of book-body -->
+<script src="../../js/main.js"></script>
+<script src="../../js/gitbook.min.js"></script>
+<script src="../../js/theme.min.js"></script>
+</body>
+</html>
