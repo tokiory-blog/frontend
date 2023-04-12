@@ -9,9 +9,7 @@ export default defineNuxtConfig({
   content: nuxtContentConfig,
   runtimeConfig: runtimeConfig,
   postcss: postcssConfig,
-  vite: {
-    ...viteConfig
-  },
+  vite: viteConfig,
   modules: [
     "@nuxt/content",
   ],

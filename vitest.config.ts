@@ -7,6 +7,7 @@ export default defineConfig({
     alias: VITE_ALIASES
   },
   test: {
+    globals: true,
     testTimeout: 15000
   }
 });
