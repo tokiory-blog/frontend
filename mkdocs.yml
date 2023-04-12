@@ -8,11 +8,12 @@ theme:
     - django
 nav:
   - Home: index.md
+  - Modules Documentation: tech/modules.md
   - API:
       - GET:
-        - /api/og: 'api/get_api-og.md'
+        - /api/og: api/get_api-og.md
       - POST:
-        - /api/search: 'api/post_api-search.md'
+        - /api/search: api/post_api-search.md
 
 repo_url: https://github.com/yikiotso/station
 plugins: []
