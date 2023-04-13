@@ -23,4 +23,4 @@
 
 #### Defined in
 
-[constants/openGraph.ts:1](https://github.com/kiotosi/station/blob/f3aa893/constants/openGraph.ts#L1)
+[constants/openGraph.ts:1](https://github.com/kiotosi/station/blob/4059bc9/constants/openGraph.ts#L1)

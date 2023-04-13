@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[constants/author.ts:11](https://github.com/kiotosi/station/blob/f3aa893/constants/author.ts#L11)
+[constants/author.ts:11](https://github.com/kiotosi/station/blob/4059bc9/constants/author.ts#L11)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[constants/author.ts:10](https://github.com/kiotosi/station/blob/f3aa893/constants/author.ts#L10)
+[constants/author.ts:10](https://github.com/kiotosi/station/blob/4059bc9/constants/author.ts#L10)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[constants/author.ts:15](https://github.com/kiotosi/station/blob/f3aa893/constants/author.ts#L15)
+[constants/author.ts:15](https://github.com/kiotosi/station/blob/4059bc9/constants/author.ts#L15)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[constants/author.ts:12](https://github.com/kiotosi/station/blob/f3aa893/constants/author.ts#L12)
+[constants/author.ts:12](https://github.com/kiotosi/station/blob/4059bc9/constants/author.ts#L12)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[constants/author.ts:13](https://github.com/kiotosi/station/blob/f3aa893/constants/author.ts#L13)
+[constants/author.ts:13](https://github.com/kiotosi/station/blob/4059bc9/constants/author.ts#L13)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[constants/author.ts:2](https://github.com/kiotosi/station/blob/f3aa893/constants/author.ts#L2)
+[constants/author.ts:2](https://github.com/kiotosi/station/blob/4059bc9/constants/author.ts#L2)
 
 ___
 
@@ -98,24 +98,24 @@ ___
 
 #### Defined in
 
-[constants/author.ts:6](https://github.com/kiotosi/station/blob/f3aa893/constants/author.ts#L6)
+[constants/author.ts:6](https://github.com/kiotosi/station/blob/4059bc9/constants/author.ts#L6)
 
 ___
 
 ### AUTHOR\_NICKNAME
 
-• `Const` **AUTHOR\_NICKNAME**: ``"kiotosi"``
+• `Const` **AUTHOR\_NICKNAME**: ``"okiow"``
 
 #### Defined in
 
-[constants/author.ts:1](https://github.com/kiotosi/station/blob/f3aa893/constants/author.ts#L1)
+[constants/author.ts:1](https://github.com/kiotosi/station/blob/4059bc9/constants/author.ts#L1)
 
 ___
 
 ### AUTHOR\_TELEGRAM
 
-• `Const` **AUTHOR\_TELEGRAM**: ``"@kiotosi"``
+• `Const` **AUTHOR\_TELEGRAM**: ``"@okiow"``
 
 #### Defined in
 
-[constants/author.ts:14](https://github.com/kiotosi/station/blob/f3aa893/constants/author.ts#L14)
+[constants/author.ts:14](https://github.com/kiotosi/station/blob/4059bc9/constants/author.ts#L14)

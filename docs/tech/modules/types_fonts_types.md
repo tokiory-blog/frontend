@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[types/fonts.types.ts:11](https://github.com/kiotosi/station/blob/f3aa893/types/fonts.types.ts#L11)
+[types/fonts.types.ts:11](https://github.com/kiotosi/station/blob/4059bc9/types/fonts.types.ts#L11)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[types/fonts.types.ts:5](https://github.com/kiotosi/station/blob/f3aa893/types/fonts.types.ts#L5)
+[types/fonts.types.ts:5](https://github.com/kiotosi/station/blob/4059bc9/types/fonts.types.ts#L5)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[types/fonts.types.ts:1](https://github.com/kiotosi/station/blob/f3aa893/types/fonts.types.ts#L1)
+[types/fonts.types.ts:1](https://github.com/kiotosi/station/blob/4059bc9/types/fonts.types.ts#L1)

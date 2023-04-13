@@ -21,4 +21,4 @@
 
 #### Defined in
 
-[data/usefullLinks.ts:120](https://github.com/kiotosi/station/blob/f3aa893/data/usefullLinks.ts#L120)
+[data/usefullLinks.ts:120](https://github.com/kiotosi/station/blob/4059bc9/data/usefullLinks.ts#L120)

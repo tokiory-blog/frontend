@@ -30,4 +30,4 @@
 
 #### Defined in
 
-[composables/useShiki.ts:9](https://github.com/kiotosi/station/blob/f3aa893/composables/useShiki.ts#L9)
+[composables/useShiki.ts:9](https://github.com/kiotosi/station/blob/4059bc9/composables/useShiki.ts#L9)

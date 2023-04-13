@@ -23,4 +23,4 @@
 
 #### Defined in
 
-[constants/apiPath.ts:1](https://github.com/kiotosi/station/blob/f3aa893/constants/apiPath.ts#L1)
+[constants/apiPath.ts:1](https://github.com/kiotosi/station/blob/4059bc9/constants/apiPath.ts#L1)

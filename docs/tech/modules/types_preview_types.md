@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[types/preview.types.ts:3](https://github.com/kiotosi/station/blob/f3aa893/types/preview.types.ts#L3)
+[types/preview.types.ts:3](https://github.com/kiotosi/station/blob/4059bc9/types/preview.types.ts#L3)
 
 ## Variables
 
@@ -44,4 +44,4 @@
 
 #### Defined in
 
-[types/preview.types.ts:21](https://github.com/kiotosi/station/blob/f3aa893/types/preview.types.ts#L21)
+[types/preview.types.ts:21](https://github.com/kiotosi/station/blob/4059bc9/types/preview.types.ts#L21)

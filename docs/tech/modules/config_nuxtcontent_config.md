@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[config/nuxtcontent.config.ts:2](https://github.com/kiotosi/station/blob/f3aa893/config/nuxtcontent.config.ts#L2)
+[config/nuxtcontent.config.ts:2](https://github.com/kiotosi/station/blob/4059bc9/config/nuxtcontent.config.ts#L2)

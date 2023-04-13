@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[types/preview.types.ts:16](https://github.com/kiotosi/station/blob/f3aa893/types/preview.types.ts#L16)
+[types/preview.types.ts:16](https://github.com/kiotosi/station/blob/4059bc9/types/preview.types.ts#L16)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[types/preview.types.ts:18](https://github.com/kiotosi/station/blob/f3aa893/types/preview.types.ts#L18)
+[types/preview.types.ts:18](https://github.com/kiotosi/station/blob/4059bc9/types/preview.types.ts#L18)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[types/preview.types.ts:15](https://github.com/kiotosi/station/blob/f3aa893/types/preview.types.ts#L15)
+[types/preview.types.ts:15](https://github.com/kiotosi/station/blob/4059bc9/types/preview.types.ts#L15)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[types/preview.types.ts:14](https://github.com/kiotosi/station/blob/f3aa893/types/preview.types.ts#L14)
+[types/preview.types.ts:14](https://github.com/kiotosi/station/blob/4059bc9/types/preview.types.ts#L14)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[types/preview.types.ts:17](https://github.com/kiotosi/station/blob/f3aa893/types/preview.types.ts#L17)
+[types/preview.types.ts:17](https://github.com/kiotosi/station/blob/4059bc9/types/preview.types.ts#L17)

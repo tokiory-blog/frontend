@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[constants/fonts.ts:17](https://github.com/kiotosi/station/blob/f3aa893/constants/fonts.ts#L17)
+[constants/fonts.ts:17](https://github.com/kiotosi/station/blob/4059bc9/constants/fonts.ts#L17)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[constants/fonts.ts:9](https://github.com/kiotosi/station/blob/f3aa893/constants/fonts.ts#L9)
+[constants/fonts.ts:9](https://github.com/kiotosi/station/blob/4059bc9/constants/fonts.ts#L9)

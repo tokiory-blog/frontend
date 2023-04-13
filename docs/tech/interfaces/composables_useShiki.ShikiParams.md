@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[composables/useShiki.ts:4](https://github.com/kiotosi/station/blob/f3aa893/composables/useShiki.ts#L4)
+[composables/useShiki.ts:4](https://github.com/kiotosi/station/blob/4059bc9/composables/useShiki.ts#L4)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[composables/useShiki.ts:5](https://github.com/kiotosi/station/blob/f3aa893/composables/useShiki.ts#L5)
+[composables/useShiki.ts:5](https://github.com/kiotosi/station/blob/4059bc9/composables/useShiki.ts#L5)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[composables/useShiki.ts:6](https://github.com/kiotosi/station/blob/f3aa893/composables/useShiki.ts#L6)
+[composables/useShiki.ts:6](https://github.com/kiotosi/station/blob/4059bc9/composables/useShiki.ts#L6)

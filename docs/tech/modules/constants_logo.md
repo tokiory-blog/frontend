@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[constants/logo.ts:28](https://github.com/kiotosi/station/blob/f3aa893/constants/logo.ts#L28)
+[constants/logo.ts:28](https://github.com/kiotosi/station/blob/4059bc9/constants/logo.ts#L28)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[constants/logo.ts:36](https://github.com/kiotosi/station/blob/f3aa893/constants/logo.ts#L36)
+[constants/logo.ts:36](https://github.com/kiotosi/station/blob/4059bc9/constants/logo.ts#L36)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[constants/logo.ts:9](https://github.com/kiotosi/station/blob/f3aa893/constants/logo.ts#L9)
+[constants/logo.ts:9](https://github.com/kiotosi/station/blob/4059bc9/constants/logo.ts#L9)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[constants/logo.ts:1](https://github.com/kiotosi/station/blob/f3aa893/constants/logo.ts#L1)
+[constants/logo.ts:1](https://github.com/kiotosi/station/blob/4059bc9/constants/logo.ts#L1)

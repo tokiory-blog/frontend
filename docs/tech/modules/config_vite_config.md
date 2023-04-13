@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[config/vite.config.ts:14](https://github.com/kiotosi/station/blob/f3aa893/config/vite.config.ts#L14)
+[config/vite.config.ts:14](https://github.com/kiotosi/station/blob/4059bc9/config/vite.config.ts#L14)

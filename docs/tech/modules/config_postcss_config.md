@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[config/postcss.config.ts:4](https://github.com/kiotosi/station/blob/f3aa893/config/postcss.config.ts#L4)
+[config/postcss.config.ts:4](https://github.com/kiotosi/station/blob/4059bc9/config/postcss.config.ts#L4)

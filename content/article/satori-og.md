@@ -362,7 +362,7 @@ import { Resvg } from "@resvg/resvg-js";
 3. `getFontUrl` нужен для того чтобы достать полный путь к шрифту;
 4. `OPEN_GRAPH_PREVIEW_SIZE` - константа с размером для картинки превью. Золотой стандарт - 1200px x 630px;
 5. `Fonts` - типизация для шрифтов. Ее можно посмотреть
-  [вот тут](https://github.com/kiotosi/station/blob/master/types/fonts.types.ts);
+  [вот тут](https://github.com/okiow/station/blob/master/types/fonts.types.ts);
 6. `PreviewGradientColor` и `previewTemplateSchema` нужны для того чтобы типизировать наши параметры у GET-запроса;
 7. `useSafeValidatedQuery` используется для того чтобы проверить пришли ли все параметры в GET-запросе, исходя из zod-схемы;
 8. `Resvg` - библиотека для конвертации из svg в png.
@@ -384,7 +384,7 @@ interface Font {
 
 > **Важно**. Нужно достать абсолютный путь для шрифтов:
 > - `dev`: `http://localhost:3000/fonts/manrope/Manrope-Regular.ttf`,
-> - `prod`: `https://kiotosi.vercel.app/fonts/manrope/Manrope-Regular.ttf`.
+> - `prod`: `https://okiow.vercel.app/fonts/manrope/Manrope-Regular.ttf`.
 
 Все шрифты как можно увидеть мы специально оборачиваем в `arrayBuffer` после получения. Это нужно чтобы передать их Satori.
 
@@ -469,7 +469,7 @@ return send(event, pngBuffer, "image/png");
 
 Вот и все, теперь мы можем обратиться к API по урлу, где с помощью GET-параметров укажем все данные и API отдаст нам картинку.
 
-[Вот пример такой ссылки](https://kiotosi.vercel.app/api/og?title=%255Bstation%255D%2520kioto&description=%25D0%259C%25D0%25B5%25D1%2581%25D1%2582%25D0%25BE%2520%25D0%25B3%25D0%25B4%25D0%25B5%2520%25D0%25BC%25D0%25BE%25D0%25B6%25D0%25BD%25D0%25BE%2520%25D1%2581%25D0%25BF%25D0%25BE%25D0%25BA%25D0%25BE%25D0%25B9%25D0%25BD%25D0%25BE%2520%25D1%2581%25D0%25B5%25D1%2581%25D1%2582%25D1%258C%2520%25D0%25B8%2520%25D0%25BF%25D0%25BE%25D1%2587%25D0%25B8%25D1%2582%25D0%25B0%25D1%2582%25D1%258C%2520%25D0%25BE%2520%25D1%2580%25D0%25B0%25D0%25B7%25D1%2580%25D0%25B0%25D0%25B1%25D0%25BE%25D1%2582%25D0%25BA%25D0%25B5.&url=%2522http%253A%252F%252Flocalhost%253A3000%252F%2522&gradient=green)
+[Вот пример такой ссылки](https://okiow.vercel.app/api/og?title=%255Bstation%255D%2520kioto&description=%25D0%259C%25D0%25B5%25D1%2581%25D1%2582%25D0%25BE%2520%25D0%25B3%25D0%25B4%25D0%25B5%2520%25D0%25BC%25D0%25BE%25D0%25B6%25D0%25BD%25D0%25BE%2520%25D1%2581%25D0%25BF%25D0%25BE%25D0%25BA%25D0%25BE%25D0%25B9%25D0%25BD%25D0%25BE%2520%25D1%2581%25D0%25B5%25D1%2581%25D1%2582%25D1%258C%2520%25D0%25B8%2520%25D0%25BF%25D0%25BE%25D1%2587%25D0%25B8%25D1%2582%25D0%25B0%25D1%2582%25D1%258C%2520%25D0%25BE%2520%25D1%2580%25D0%25B0%25D0%25B7%25D1%2580%25D0%25B0%25D0%25B1%25D0%25BE%25D1%2582%25D0%25BA%25D0%25B5.&url=%2522http%253A%252F%252Flocalhost%253A3000%252F%2522&gradient=green)
 
 # Composable
 Теперь нужно сделать так, чтобы страницы в Nuxt динамически встраивали в себя Open Graph мета-теги, которые мы укажем.

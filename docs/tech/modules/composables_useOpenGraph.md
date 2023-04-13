@@ -28,4 +28,4 @@ Include Open Graph meta tags (and twitter too🐦) into page head tag
 
 #### Defined in
 
-[composables/useOpenGraph.ts:37](https://github.com/kiotosi/station/blob/f3aa893/composables/useOpenGraph.ts#L37)
+[composables/useOpenGraph.ts:37](https://github.com/kiotosi/station/blob/4059bc9/composables/useOpenGraph.ts#L37)

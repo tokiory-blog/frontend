@@ -32,7 +32,7 @@ Relative font path
 
 #### Defined in
 
-[utils/fontPath.ts:10](https://github.com/kiotosi/station/blob/f3aa893/utils/fontPath.ts#L10)
+[utils/fontPath.ts:10](https://github.com/kiotosi/station/blob/4059bc9/utils/fontPath.ts#L10)
 
 ___
 
@@ -57,4 +57,4 @@ Absolute url for the font
 
 #### Defined in
 
-[utils/fontPath.ts:31](https://github.com/kiotosi/station/blob/f3aa893/utils/fontPath.ts#L31)
+[utils/fontPath.ts:31](https://github.com/kiotosi/station/blob/4059bc9/utils/fontPath.ts#L31)

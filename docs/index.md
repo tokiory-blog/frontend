@@ -21,7 +21,7 @@ Welcome to my programming blog about web development! I cover various programmin
 
 To get started with the project, you'll need to follow these steps:
 
-1. 🌀 Clone the repository: `git clone https://github.com/kiotosi/station.git`
+1. 🌀 Clone the repository: `git clone https://github.com/okiow/station.git`
 2. 🔧 Install the required dependencies: `pnpm install`
 3. 🚀 Run the development server: `pnpm dev`
 
