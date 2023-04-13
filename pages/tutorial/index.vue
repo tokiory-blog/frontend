@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import { SITE_DESCRIPTION, SITE_NAME } from "@/constants/meta";
-import { SearchRequest, SearchResponse } from "@/types/search.types";
-import type { Post } from "@/types/post.types";
+import type { Frontmatter } from "@/types/post.types";
 
 const PAGE_TITLE = `${SITE_NAME}: Туториалы`;
 const COLLECTION = "tutorial";
@@ -25,11 +24,15 @@ useOpenGraph({
 const { searchInput, searchResult, isLoading } = useContentSearch(COLLECTION);
 
 // Content list generation
-const fullContentList = await queryContent(COLLECTION).find();
+const fullContentList = await queryContent<Frontmatter>(COLLECTION).find();
 const filteredContentList = computed(() => {
   return searchInput.value.length > 0 ?
     searchResult.value :
-    fullContentList;
+    fullContentList.sort((a, b) => {
+      const firstPostDate = new Date(a.publicationDate),
+        secondPostDate = new Date(b.publicationDate);
+      return secondPostDate - firstPostDate;
+    });
 });
 </script>
 

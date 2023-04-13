@@ -81,7 +81,7 @@ onMounted(async () => {
   align-items: flex-start;
   padding: 15% var(--spacing-lg) var(--spacing-lg);
   gap: var(--spacing-md);
-  box-shadow: 0px -40px 300px 20px black inset;
+  box-shadow: 0px -150px 420px 15px black inset;
   
   &__spinner {
     position: absolute;
@@ -95,7 +95,7 @@ onMounted(async () => {
   }
   
   &.light {
-    box-shadow: 0px -40px 300px 20px white inset;
+    box-shadow: 0px -150px 420px 15px white inset;
     color: var(--color-black);
   }
   
