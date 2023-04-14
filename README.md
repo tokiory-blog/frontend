@@ -1,10 +1,11 @@
+<h3 align="center">Tokiory's station</h3>
+
 <p align="center">
     <a href="https://nuxt.com/" target="_blank"><img src="https://img.shields.io/badge/Made%20with-Nuxt-darkgreen?style=flat&logo=nuxt.js" alt="Made with Next" /></a>
     <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://img.shields.io/badge/Built%20with-TypeScript-3178C6?logo=typescript" alt="Built with TypeScript" height="20"></a>
     <a href="https://vercel.com" target="_blank"><img src="https://img.shields.io/badge/Powered_by-Vercel-242424?logo=vercel" alt="Powered by - Vercel"></a>
 </p>
 
-## Welcome!
 Welcome to my programming blog about web development! I cover various programming languages such as Rust, TypeScript, Go, Vue, and JavaScript. My goal is to provide helpful and practical information for developers who want to create fast, secure, and efficient web applications.
 
 > 💻 On this blog, you'll find tutorials and guides to help you get started with web development, as well as in-depth analysis of different programming languages and frameworks.
