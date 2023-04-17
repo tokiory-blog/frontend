@@ -57,7 +57,7 @@ pnpm docs
 
 > 👾 You can view documentation at `localhost:8000`
 
-## 👺 Deploy
+## 👺 Deploy on Vercel
 
 - Run `pnpm vercel` or `pnpm vercel:dev` to login to vercel and deploy your site to test environment.
 - Run `pnpm vercel:prod` to deploy your site to production environment
