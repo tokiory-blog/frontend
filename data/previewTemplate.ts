@@ -1,7 +1,7 @@
 //
 // Template for satori rendering
 // Documentation: <https://github.com/vercel/satori>
-// Author of the template: Daniil Shilo <crackidocky@gmail.com>
+// Author of the template: Daniil Shilo <tokiory.personal@gmail.com>
 // License: MIT <https://mit-license.org>
 // Used fonts: Manrope [fw: 400, 600] <https://fonts.google.com/specimen/Manrope>,
 //             Jetbrains Mono [fw: 400] <https://fonts.google.com/specimen/JetBrains+Mono>

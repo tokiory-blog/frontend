@@ -139,7 +139,7 @@ Options:
 
 This repository is maintained by:
 
-- [Daniil Shilo [tokiory]](https://github.com/tokiory) \<crackidocky@gmail.com\>
+- [Daniil Shilo [tokiory]](https://github.com/tokiory) \<tokiory.personal@gmail.com\>
 
 We appreciate any contributions to this project and welcome all feedback! Thank you for your support. 🙏
 

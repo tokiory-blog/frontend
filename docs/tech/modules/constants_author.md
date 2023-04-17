@@ -50,7 +50,7 @@ ___
 
 ### AUTHOR\_EMAIL
 
-• `Const` **AUTHOR\_EMAIL**: ``"crackidocky@gmail.com"``
+• `Const` **AUTHOR\_EMAIL**: ``"tokiory.personal@gmail.com"``
 
 #### Defined in
 
@@ -104,7 +104,7 @@ ___
 
 ### AUTHOR\_NICKNAME
 
-• `Const` **AUTHOR\_NICKNAME**: ``"okiow"``
+• `Const` **AUTHOR\_NICKNAME**: ``"tokiory"``
 
 #### Defined in
 
@@ -114,7 +114,7 @@ ___
 
 ### AUTHOR\_TELEGRAM
 
-• `Const` **AUTHOR\_TELEGRAM**: ``"@okiow"``
+• `Const` **AUTHOR\_TELEGRAM**: ``"@tokiory"``
 
 #### Defined in
 

@@ -1,6 +1,6 @@
 import type { Link, Meta } from "@unhead/schema";
 
-export const SITE_NAME = "[station] okiow";
+export const SITE_NAME = "[station] tokiory";
 export const SITE_DESCRIPTION =
   "Место где можно спокойно сесть и почитать о разработке.";
 export const THEME_COLOR = "#ffffff";

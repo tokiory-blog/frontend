@@ -1,6 +1,6 @@
 <!-- Code component for markdown content -->
 <!-- Info: https://content.nuxtjs.org/api/components/prose -->
-<!-- Author: Daniil Shilo <crackidocky@gmail.com -->
+<!-- Author: Daniil Shilo <tokiory.personal@gmail.com -->
 <!-- Update: 07 Apr 2023 -->
 
 <script lang="ts">

@@ -1,5 +1,5 @@
 site_name: Docs of the [station]
-site_url: https://okiow.vercel.app
+site_url: https://tokiory.vercel.app
 theme:
   name: gitbook
   highlightjs: true
@@ -15,5 +15,5 @@ nav:
       - POST:
         - /api/search: api/post_api-search.md
 
-repo_url: https://github.com/okiow/station
+repo_url: https://github.com/tokiory/station
 plugins: []

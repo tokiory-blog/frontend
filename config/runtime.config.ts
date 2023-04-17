@@ -2,7 +2,7 @@ import { NuxtConfig } from "nuxt/config";
 
 export const url = {
   dev: "http://localhost:3000",
-  prod: "https://okiow.vercel.app"
+  prod: "https://tokiory.vercel.app"
 };
 
 export default {
