@@ -27,7 +27,7 @@ To get started with the project, you'll need to follow these steps:
 > 🎉 That's it! Your site is now running on your local machine. Happy hacking! 🎉
 
 ## Documentation
-You can see documentation here: []().
+You can see documentation here [on Github Pages](https://tokiory-blog.github.io/frontend).
 
 ### Run documentation locally
 
