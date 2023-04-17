@@ -4,7 +4,7 @@
 <template>
   <div class="hero">
     <div class="hero__text">
-      Станция Окио.
+      Станция Токиори.
     </div>
     <HeroAscii class="hero__ascii" />
     <div class="hero__description">
