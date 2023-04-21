@@ -1,6 +1,8 @@
 :root {
   --color-black: #1e1e1e;
   --color-white: #fefefe;
+  --color-white-alpha: rgba(254, 254, 254, 0.87);
+  --color-black-alpha: rgba(30, 30, 30, 0.87);
   --color-blue: #769fb6;
   --color-pink: #b676ab;
   --color-red: #d35959;
@@ -27,6 +29,7 @@
 :root {
   --foreground: var(--color-black);
   --background: var(--color-white);
+  --background-alpha: var(--color-white-alpha);
   --shadow: var(--shadow-black);
   --link: var(--color-blue);
   --neutral: var(--color-neutral-5);
@@ -38,6 +41,7 @@
   :root {
     --foreground: var(--color-white);
     --background: var(--color-black);
+    --background-alpha: var(--color-black-alpha);
     --shadow: var(--shadow-white);
     --neutral: var(--color-neutral-12);
     --neutral-hover: var(--color-neutral-10);

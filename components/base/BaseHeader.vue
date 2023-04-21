@@ -35,6 +35,11 @@ const isLinkActive = (url: string): boolean => {
 
 <style lang="scss" scoped>
 .header {
+  position: sticky;
+  top: 0;
+  background: var(--background-alpha);
+  backdrop-filter: saturate(20%) blur(10px);
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
