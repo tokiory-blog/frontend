@@ -95,6 +95,71 @@ const cats: Record<CatName, CatInfo> = {
 > Дело в том что Typescript будет думать, что внутрь объекта с типом `Record<string, ...>` можно положить любую строку
 > в виде ключа и не будет анализировать те ключи, которые вы предоставили внутри объекта.
 
+
+::ContentDetails
+---
+title: Как сделать так, чтобы значения были типизированы, а у полей было автодополнение
+---
+Если мы просто создадим `Record<string, ...>`, то автодополнения нам не видать. Typescript как уже было
+сказано выше будет считать, что `Record<string, ...>` может иметь любое поле, что попадает под тип `string`:
+
+```typescript
+interface PersonInfo {
+  isOnline: boolean;
+  age: number;
+}
+
+type PersonalInfo = Record<string, PersonInfo>;
+
+const persons: PersonalInfo = {
+  john12: {
+    isOnline: true,
+    age: 20
+  },
+  tokiory: {
+    isOnline: false,
+    age: 20
+  },
+};
+
+// Если мы напишем "persons." - то Intellisense не поймет чего мы от него хотим
+```
+
+Вместо этого подхода мы должны использовать оператор `satisfies`, который ввели в Typescript 4.9.
+
+```typescript
+interface PersonInfo {
+  isOnline: boolean;
+  age: number;
+}
+
+type PersonalInfo = Record<string, PersonInfo>;
+
+const persons = {
+  john12: {
+    isOnline: true,
+    age: 20
+  },
+  tokiory: {
+    isOnline: false,
+    age: 20
+  },
+} satisfies PersonalInfo;
+
+// Если мы напишем "persons." - то Intellisense заработает!!!
+```
+Идея состоит в том, что оператор `satisfies` будет проверять каждое свойство и значение из `persons` на совместимость
+с исходными типами в `PersonalInfo`. Например, поле `john12` является частным случаем типа `string`, `satisfies` видит это
+и понимает что ключ объекта удовлетворяет тому, что все ключи должны быть типом `string` и не выводит никакой ошибки.
+
+Важно отметить, что в отличии от первого подхода, второй - только проверяет совместимость с исходными типами, сами
+типы объекту `persons` не назначены, то есть `persons` имеет тип:
+
+```typescript
+const persons: {john12: {isOnline: boolean, age: number}, tokiory: {isOnline: boolean, age: number}}
+```
+::
+
 ## Типы для функций - Parameters\<T\> и ReturnType\<T\>
 Данные типы используются для того чтобы извлечь типы из функций.
 
