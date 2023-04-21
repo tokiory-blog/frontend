@@ -32,7 +32,7 @@ const copyCode = async () => {
 };
 
 const toggleCopyNotification = () => {
-  this.isNotificationVisible = true;
+  isNotificationVisible.value = true;
   setTimeout(() => isNotificationVisible.value = false, NOTIFICATION_DURATION);
 };
 
