@@ -3,57 +3,43 @@
 <!-- Author: Daniil Shilo <tokiory.personal@gmail.com -->
 <!-- Update: 07 Apr 2023 -->
 
-<script lang="ts">
-import { defineComponent } from "#imports";
+<script lang="ts" setup>
 import { Lang } from "shiki-es";
-import { PropType } from "vue";
-import BaseButton from "@cmp/base/BaseButton.vue";
+import { ref } from "#imports";
+import { capitalize } from "vue";
 
-export default defineComponent({
-  components: { BaseButton },
-  props: {
-    code: {
-      type: String,
-      default: "text"
-    },
-    language: {
-      type: String as PropType<Lang>,
-      default: null
-    },
-    filename: {
-      type: String,
-      default: null
-    },
-    highlights: {
-      type: Array as () => number[],
-      default: () => []
-    },
-    meta: {
-      type: String,
-      default: null
-    }
-  },
-  data() {
-    return {
-      isNotificationVisible: false,
-      notificationDuration: 2000 // ms
-    };
-  },
-  methods: {
-    async copyCode() {
-      await navigator.clipboard.writeText(this.$props.code?.trim() ?? "");
-    },
-    toggleCopyNotification() {
-      this.isNotificationVisible = true;
-      setTimeout(() => this.isNotificationVisible = false, this.notificationDuration);
-    },
-    async onCopyButtonClick() {
-      await this.copyCode();
-      this.toggleCopyNotification();
-    }
-  }
+interface Props {
+  language?: Lang;
+  highlights?: number[],
+  code?: string;
+  filename?: string;
+  meta?: string;
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  code: "text",
+  filename: "",
+  meta: "",
+  language: "markdown",
+  highlights: () => [],
 });
 
+const NOTIFICATION_DURATION = 2000;
+const isNotificationVisible = ref(false);
+
+const copyCode = async () => {
+  await navigator.clipboard.writeText(props.code?.trim() ?? "");
+};
+
+const toggleCopyNotification = () => {
+  this.isNotificationVisible = true;
+  setTimeout(() => isNotificationVisible.value = false, NOTIFICATION_DURATION);
+};
+
+const onCopyButtonClick = async () => {
+  await copyCode();
+  toggleCopyNotification();
+};
 </script>
 
 <template>
@@ -67,7 +53,12 @@ export default defineComponent({
       </div>
       <div class="post-formatted-code__info">
         <div class="post-formatted-code__language">
-          Language: {{ language.toUpperCase() }}
+          Language:
+          {{
+            language.length > 0 ?
+              capitalize(language) :
+              ""
+          }}
         </div>
         <BaseButton
           class="post-formatted-code__copy"
@@ -82,7 +73,7 @@ export default defineComponent({
     </div>
     <NotificationPopover
       v-if="isNotificationVisible"
-      :animation-duration="notificationDuration"
+      :animation-duration="NOTIFICATION_DURATION"
     >
       Код скопирован
     </NotificationPopover>
