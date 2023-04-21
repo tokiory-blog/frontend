@@ -14,7 +14,7 @@
     "docs:serve": "mkdocs serve",
     "docs:deploy": "bash scripts/deploy-docs.sh",
     "vercel:dev": "vercel",
-    "vercel:prod": "vercel --prod"
+    "vercel:prod": "pnpm build && pnpm vercel --prod"
   },
   "devDependencies": {
     "@nuxt/content": "^2.5.2",
