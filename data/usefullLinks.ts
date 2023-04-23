@@ -75,6 +75,11 @@ const documentationSection: LinkSection = {
       name: "Libraries.io",
       url: "https://libraries.io/",
       description: "Сервис для поиска пакетов для разных ЯП и технологий"
+    },
+    {
+      name: "Sourcegraph",
+      url: "https://searchcode.com/",
+      description: "Сервис, который предлагает поиск по кодовой базе Github с всевозможными фильтрами"
     }
   ]
 };
