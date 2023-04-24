@@ -6,6 +6,11 @@ interface Props {
 }
 const props = defineProps<Props>();
 
+const localizedPublicationDate = computed(() =>
+  new Date(props.post.publicationDate)
+    .toLocaleDateString("ru-RU", { day: "2-digit", month: "long", year: "numeric" })
+);
+
 </script>
 
 <template>
@@ -20,12 +25,17 @@ const props = defineProps<Props>();
       <div class="post__description">
         {{ props.post.description }}
       </div>
-      <div class="post__tags">
-        <BaseTag
-          v-for="(tag, idx) in props.post.tags"
-          :key="idx"
-          :name="tag"
-        />
+      <div class="post__info">
+        <div class="post__date">
+          {{ localizedPublicationDate }}
+        </div>
+        <div class="post__tags">
+          <BaseTag
+            v-for="(tag, idx) in props.post.tags"
+            :key="idx"
+            :name="tag"
+          />
+        </div>
       </div>
     </BaseCard>
   </NuxtLink>
@@ -36,6 +46,7 @@ const props = defineProps<Props>();
   display: block;
   text-decoration: none;
   color: inherit;
+  position: relative;
 
   &:hover {
     border-color: var(--color-black);
@@ -51,12 +62,23 @@ const props = defineProps<Props>();
     font-size: var(--fsize-standard);
     line-height: 1.6;
   }
-
+  
+  &__date {
+    color: var(--neutral-hover)
+  }
+  
   &__tags {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  &__info {
     display: flex;
     gap: 12px;
     margin-top: 8px;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 </style>
