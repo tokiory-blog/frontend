@@ -27,6 +27,7 @@
 <style lang="scss" scoped>
 .notification-popover {
   @include default-ui-card;
+  background-color: var(--background);
   padding: 12px 32px;
   position: fixed;
   bottom: 20%;

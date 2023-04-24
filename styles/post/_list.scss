@@ -5,6 +5,7 @@
   }
 
   li {
+    font-size: calc(var(--fsize-standard) + 2px);
     line-height: 1.7;
 
     p {
