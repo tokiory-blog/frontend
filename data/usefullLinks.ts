@@ -133,6 +133,11 @@ const extraSection: LinkSection = {
       name: "Termius",
       description: "ПО для удобного управления SSH-ключами и SSH-соединениями",
       url: "https://termius.com/",
+    },
+    {
+      name: "Roadmap.sh",
+      description: "Сайт с детальными роадмапами для развития разных скиллов у разработчиков",
+      url: "https://roadmap.sh",
     }
   ]
 };
