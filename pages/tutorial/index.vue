@@ -20,11 +20,17 @@ useOpenGraph({
   gradient: "rainbow"
 });
 
+const getFullContentList = () => {
+  const query = queryContent<Frontmatter>(COLLECTION);
+  return process["dev"] ? query.find() : query.where({ _draft: false }).find();
+};
+
+
 // Search
 const { searchInput, searchResult, isLoading } = useContentSearch(COLLECTION);
 
 // Content list generation
-const fullContentList = await queryContent<Frontmatter>(COLLECTION).find();
+const fullContentList = await getFullContentList();
 const filteredContentList = computed(() => {
   return searchInput.value.length > 0 ?
     searchResult.value :
