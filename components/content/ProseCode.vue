@@ -49,7 +49,7 @@ const onCopyButtonClick = async () => {
         {{ filename }}
       </div>
       <div class="post-formatted-code__description">
-        {{ meta.replaceAll(`[${filename}]`, "") }}
+        {{ meta?.replaceAll(`[${filename}]`, "") }}
       </div>
       <div class="post-formatted-code__info">
         <div class="post-formatted-code__language">
