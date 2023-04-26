@@ -20,24 +20,18 @@ useOpenGraph({
   gradient: "rainbow"
 });
 
-const getFullContentList = () => {
-  const query = queryContent<Frontmatter>(COLLECTION);
-  return process["dev"] ? query.find() : query.where({ _draft: false }).find();
-};
-
-
 // Search
 const { searchInput, searchResult, isLoading } = useContentSearch(COLLECTION);
 
 // Content list generation
-const fullContentList = await getFullContentList();
+const fullContentList = await queryContent<Frontmatter>(COLLECTION).where({ _draft: false }).find();
 const filteredContentList = computed(() => {
   return searchInput.value.length > 0 ?
     searchResult.value :
     fullContentList.sort((a, b) => {
       const firstPostDate = new Date(a.publicationDate),
         secondPostDate = new Date(b.publicationDate);
-      return secondPostDate - firstPostDate;
+      return secondPostDate.getDate() - firstPostDate.getDate();
     });
 });
 </script>

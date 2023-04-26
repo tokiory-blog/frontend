@@ -8,7 +8,7 @@ const props = defineProps<Props>();
 
 const localizedPublicationDate = computed(() =>
   new Date(props.post.publicationDate)
-    .toLocaleDateString("ru-RU", { day: "2-digit", month: "long", year: "numeric" })
+    .toLocaleDateString("ru-RU", { year: "2-digit", day: "2-digit", month: "2-digit" })
 );
 
 </script>
