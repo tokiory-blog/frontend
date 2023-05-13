@@ -145,6 +145,7 @@ const onCopyButtonClick = async () => {
     
     .line {
       min-height: 1rem;
+      color: var(--color-white);
     }
 
     code {

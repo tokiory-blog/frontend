@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import NAVIGATION from "@d/navigation";
+import { REPO_GITHUB } from "@/constants/author";
 
 const route = useRoute();
 
@@ -29,6 +30,13 @@ const isLinkActive = (url: string): boolean => {
           </base-link>
         </li>
       </ul>
+      <NuxtLink :to="REPO_GITHUB">
+        <img
+          class="navigation__github"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+          alt="Github icon"
+        >
+      </NuxtLink>
     </nav>
   </header>
 </template>
@@ -39,6 +47,7 @@ const isLinkActive = (url: string): boolean => {
   top: 0;
   background: var(--background-alpha);
   backdrop-filter: saturate(20%) blur(10px);
+  box-shadow: 0 4px 3px var(--color-white-alpha);
   z-index: 1;
   display: flex;
   align-items: center;
@@ -51,7 +60,8 @@ const isLinkActive = (url: string): boolean => {
   display: none;
   
   @include adaptive-from-tablet {
-    display: block;
+    display: flex;
+    gap: 20px;
   }
   
   &__list {
@@ -61,6 +71,23 @@ const isLinkActive = (url: string): boolean => {
     display: flex;
     align-items: center;
     gap: 24px;
+  }
+
+  &__github {
+    opacity: 0.5;
+    cursor: pointer;
+    
+    @include adaptive-from-tablet {
+      width: 25px;
+    }
+    
+    @include adaptive-from-laptop {
+      width: 20px;
+    }
+    
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &__item {
