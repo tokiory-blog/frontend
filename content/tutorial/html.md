@@ -6,6 +6,7 @@ tags:
 description: Гайд для HTML, в котором описываются все основные правила для освоения HTML + важные теги.
 publicationDate: 05 Jan 2023
 banner: /banners/html.webp
+_draft: true
 ---
 
 

@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   postcss: postcssConfig,
   vite: viteConfig,
   modules: [
+    "nuxt-content-assets", // make sure to add before content!
     "@nuxt/content",
   ],
   alias: ALIASES,
