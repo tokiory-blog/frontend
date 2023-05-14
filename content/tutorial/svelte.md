@@ -1,5 +1,5 @@
 ---
-title: Svelte
+title: "[In one Paper]: Svelte"
 tags:
   - svelte
   - web
