@@ -47,7 +47,6 @@ const isLinkActive = (url: string): boolean => {
   top: 0;
   background: var(--background-alpha);
   backdrop-filter: saturate(20%) blur(10px);
-  box-shadow: 0 4px 3px var(--color-white-alpha);
   z-index: 1;
   display: flex;
   align-items: center;
@@ -87,6 +86,10 @@ const isLinkActive = (url: string): boolean => {
     
     &:hover {
       opacity: 0.7;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      filter: contrast(0);
     }
   }
 
