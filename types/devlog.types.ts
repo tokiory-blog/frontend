@@ -3,11 +3,18 @@ import type { Post } from "./post.types";
 
 export type DevlogContentType = "devlog";
 
-type DevlogVendor = "gitlab" | "github" | "bitbucket";
+export type DevlogVendor = "gitlab" | "github" | "bitbucket";
 
 export interface DevlogSource {
-  type: DevlogVendor,
-  link: string[];
+  name: DevlogVendor,
+  url: string[];
+}
+
+export interface DevlogProject {
+  name: string;
+  type: DevlogVendor;
+  url: string;
+  description: string;
 }
 
 export interface DevlogPost extends Post {
