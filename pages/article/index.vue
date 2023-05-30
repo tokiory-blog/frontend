@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { SITE_DESCRIPTION, SITE_NAME } from "@/constants/meta";
 import { Frontmatter } from "@/types/post.types";
+import { SITE_DESCRIPTION, SITE_NAME } from "@/constants/meta";
 
 const PAGE_TITLE = `${SITE_NAME}: Статьи`;
 const COLLECTION = "article";

@@ -11,7 +11,10 @@ defineProps<Props>();
     class="navigation-menu-item"
     :href="url"
   >
-    <BaseCard has-hover>
+    <BaseCard
+      class="navigation-menu-item__card"
+      has-hover
+    >
       <div class="navigation-menu-item__title">
         <slot name="title" />
       </div>
@@ -27,6 +30,11 @@ defineProps<Props>();
   text-decoration: none;
   color: inherit;
   display: block;
+  height: 100%;
+  
+  &__card {
+    height: 100%;
+  }
 
   &__title {
     font-size: var(--fsize-big);

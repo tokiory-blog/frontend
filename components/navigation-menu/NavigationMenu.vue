@@ -40,13 +40,21 @@ defineProps<Props>();
 }
 
 @media screen and (min-width: 768px) {
+  $gap: 16px;
   .navigation-menu {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    grid-template-areas: 
+      ". ."
+      ". ."
+      "bottom bottom";
+    gap: $gap;
 
     &__item:not(:first-child) {
       margin-top: 0;
+    }
+    
+    &__item:last-child {
+      grid-area: bottom;
     }
   }
 

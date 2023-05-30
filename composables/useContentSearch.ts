@@ -1,4 +1,5 @@
 import type { ContentType, Post } from "@/types/post.types";
+import type { DevlogContentType } from "@/types/devlog.types";
 import type { SearchRequest } from "~/types/search.types";
 import { Ref } from "vue";
 
@@ -8,7 +9,7 @@ interface ContentSearchComposableReturn {
   searchResult: Ref<Post[]>;
 }
 
-export const useContentSearch = (type: ContentType): ContentSearchComposableReturn => {
+export const useContentSearch = (type: ContentType | DevlogContentType): ContentSearchComposableReturn => {
 
   // Search
   const searchInput = ref("");

@@ -1,8 +1,9 @@
 import { Post, ContentType } from "./post.types";
+import { DevlogContentType } from "@/types/devlog.types";
 import { z } from "zod";
 
 export interface SearchRequest {
-  type: ContentType;
+  type: ContentType | DevlogContentType;
   query: string;
 }
 
