@@ -39,16 +39,23 @@ const filteredContentList = computed(() => {
 <template>
   <div class="article-page">
     <div class="article-page__title">
-      <BaseTitle>Статьи</BaseTitle>
+      <BTitle :level="1">
+        Статьи
+      </BTitle>
     </div>
-    <BaseSearch
+    <BSearch
       v-model="searchInput"
       class="article-page__search"
       :is-loading="isLoading"
       placeholder="Найти статьи по названию, описанию, тегам"
     />
     <div class="article-page__list">
-      <PostList :post-list="filteredContentList" />
+      <BPost
+        v-for="(post, idx) in filteredContentList"
+        :key="idx"
+        class="article-page__post"
+        :post="post"
+      />
     </div>
   </div>
 </template>
@@ -63,6 +70,10 @@ const filteredContentList = computed(() => {
   
   &__list {
     margin-top: 32px;
+  }
+  
+  &__post:not(:first-child) {
+    margin-top: 16px;
   }
 }
 </style>

@@ -24,13 +24,15 @@ useOpenGraph({
 
 <template>
   <div class="link-page">
-    <BaseTitle>{{ PAGE_TITLE }}</BaseTitle>
+    <BTitle :level="1">
+      {{ PAGE_TITLE }}
+    </BTitle>
     <div class="link-page__text">
-      <BaseText>
+      <BText>
         {{ PAGE_DESCRIPTION }}
-      </BaseText>
+      </BText>
     </div>
-    <LinkSection
+    <LinksSection
       v-for="(section, idx) in USEFULL_LINKS"
       :key="idx"
       :section="section"

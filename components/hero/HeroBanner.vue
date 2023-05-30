@@ -6,7 +6,7 @@
     <div class="hero__text">
       Станция Токиори.
     </div>
-    <HeroAscii class="hero__ascii" />
+    <HeroBannerAscii class="hero__ascii" />
     <div class="hero__description">
       Место, где можно сесть и почитать о разработке.
     </div>

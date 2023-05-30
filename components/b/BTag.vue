@@ -9,16 +9,20 @@ defineProps<Props>();
 
 <template>
   <div class="tag">
-    <span
+    <div
       v-if="!withoutTag"
       class="tag__hashtag"
-    >#</span>{{ name }}
+    >
+      #
+    </div>
+    {{ name }}
   </div>
 </template>
 
 <style lang="scss" scoped>
 .tag {
   color: var(--neutral-hover);
+  display: flex;
 
   &__hashtag {
     color: var(--neutral);

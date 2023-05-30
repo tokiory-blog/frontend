@@ -6,20 +6,76 @@ useOpenGraph({
   title: SITE_NAME,
   description: SITE_DESCRIPTION,
 });
+
+const router = useRouter();
 </script>
 
 <template>
   <div class="home-page">
-    <BaseHero />
+    <HeroBanner />
     <div class="navigation">
-      <NavigationMenu :navigation="NAVIGATION" />
+      <BCard
+        v-for="(navItem, idx) in NAVIGATION"
+        :key="idx"
+        class="navigation__item"
+        has-hover
+        @click="router.push(navItem.url)"
+      >
+        <div class="navigation__title">
+          {{ navItem.title }}
+        </div>
+        <div class="navigation__description">
+          {{ navItem.description }}
+        </div>
+      </BCard>
     </div>
   </div>
 </template>
 
 
 <style lang="scss" scoped>
+$gap: 16px;
 .navigation {
   margin-top: 32px;
+  
+  &__item {
+    height: 100%;
+    cursor: pointer;
+    
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+  }
+  
+  &__title {
+    font-size: var(--fsize-big);
+    font-weight: 500;
+  }
+
+  &__description {
+    margin-top: 12px;
+    font-size: var(--fsize-standard);
+    line-height: 1.4;
+  }
+  
+  @media screen and (min-width: 768px) {
+    //display: grid;
+    //grid-template-areas: 
+    //  ". ."
+    //  ". ."
+    //  "bottom bottom";
+    //gap: $gap;
+    //
+    //&__item:not(:first-child) {
+    //  margin-top: 0;
+    //}
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 16px;
+
+    &__item:not(:first-child) {
+      margin-top: 0;
+    }
+  }
 }
 </style>

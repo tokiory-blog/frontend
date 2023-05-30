@@ -12,7 +12,7 @@ useHead({
 
 <template>
   <NuxtLoadingIndicator />
-  <BaseHeader />
+  <BHeader />
   <div class="post-layout">
     <slot />
   </div>

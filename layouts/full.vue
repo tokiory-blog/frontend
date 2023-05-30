@@ -12,13 +12,13 @@ useHead({
 
 <template>
   <NuxtLoadingIndicator />
-  <BaseHeader />
+  <BHeader />
   <div
     class="full-layout"
   >
     <slot />
   </div>
-  <BaseFooter />
+  <BFooter />
 </template>
 
 <style lang="scss" scoped>

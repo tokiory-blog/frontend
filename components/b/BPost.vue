@@ -18,7 +18,7 @@ const localizedPublicationDate = computed(() =>
     :href="props.post._path"
     class="post"
   >
-    <BaseCard has-hover>
+    <BCard has-hover>
       <div class="post__title">
         {{ props.post.title }}
       </div>
@@ -30,14 +30,14 @@ const localizedPublicationDate = computed(() =>
           {{ localizedPublicationDate }}
         </div>
         <div class="post__tags">
-          <BaseTag
+          <BTag
             v-for="(tag, idx) in props.post.tags"
             :key="idx"
             :name="tag"
           />
         </div>
       </div>
-    </BaseCard>
+    </BCard>
   </NuxtLink>
 </template>
 
@@ -62,17 +62,17 @@ const localizedPublicationDate = computed(() =>
     font-size: var(--fsize-standard);
     line-height: 1.6;
   }
-  
+
   &__date {
     color: var(--neutral-hover)
   }
-  
+
   &__tags {
     display: flex;
     align-items: center;
     gap: 12px;
   }
-  
+
   &__info {
     display: flex;
     gap: 12px;

@@ -17,12 +17,12 @@ import { AUTHOR_GITHUB, AUTHOR_NAME_RU, AUTHOR_NICKNAME } from "~/constants/auth
     />
     <div class="hero__subtitle">
       Вы также можете знать меня под никнеймом
-      <BaseLink
+      <BLink
         :href="AUTHOR_GITHUB"
         class="hero__gradient-text hero__gradient-text_alt"
       >
         [{{ AUTHOR_NICKNAME }}]
-      </BaseLink>
+      </BLink>
     </div>
   </div>
 </template>

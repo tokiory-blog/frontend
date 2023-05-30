@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { MarkdownParsedContent } from "@nuxt/content/dist/runtime/types";
-import { SITE_NAME } from "@/constants/meta";
+import { SITE_NAME } from "~/constants/meta";
 
 const route = useRoute();
 const { data, error } = await useAsyncData<MarkdownParsedContent>("post", () => queryContent(route.path).findOne());
@@ -29,14 +29,14 @@ useOpenGraph({
 </script>
 
 <template>
-  <BaseBanner
+  <ContentBanner
     :title="data.title"
     :src="data.banner ?? '#'"
     :description="data.description"
     :tags="data.tags"
   />
   <div class="post-content">
-    <BaseHeadingNavigation
+    <ContentNavigation
       v-if="hasNavigation"
       :content="data"
     />

@@ -26,7 +26,7 @@ stack = [
 </script>
 
 <template>
-  <BaseCode
+  <BCode
     class="code"
     title="info.toml"
     :content="{

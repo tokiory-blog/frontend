@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AUTHOR_GITHUB, AUTHOR_NICKNAME } from "@/constants/author";
+import { AUTHOR_GITHUB, AUTHOR_NICKNAME } from "~/constants/author";
 
 const author = {
   name: AUTHOR_NICKNAME,
@@ -11,13 +11,13 @@ const author = {
   <footer class="footer">
     <div class="footer__contact contact">
       Made with love by
-      <BaseLink
+      <BLink
         is-new-tab
         class="footer__link"
         :href="author.link"
       >
         {{ author.name }}
-      </BaseLink>
+      </BLink>
     </div>
   </footer>
 </template>

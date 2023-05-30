@@ -15,7 +15,7 @@
       {{ alt }}
     </span>
     <teleport to="body">
-      <BaseImageView
+      <ContentImageZoom
         class="image__view"
         :active="isImageViewActive"
         :src="src"
@@ -27,6 +27,7 @@
 </template>
 
 <script setup lang="ts">
+
 const props = defineProps({
   src: {
     type: String,

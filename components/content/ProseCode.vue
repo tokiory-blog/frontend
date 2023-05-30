@@ -60,12 +60,12 @@ const onCopyButtonClick = async () => {
               ""
           }}
         </div>
-        <BaseButton
+        <BButton
           class="post-formatted-code__copy"
           @click="onCopyButtonClick"
         >
           Copy
-        </BaseButton>
+        </BButton>
       </div>
     </div>
     <div class="post-formatted-code__body">

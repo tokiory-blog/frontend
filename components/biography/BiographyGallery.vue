@@ -21,25 +21,32 @@ const PRINCIPLES = [
 </script>
 
 <template>
-  <BaseGallery class="gallery">
-    <BaseCard
+  <div class="gallery">
+    <BCard
       v-for="(line, idx) in PRINCIPLES"
       :key="idx"
       class="gallery__card"
       has-shadow
     >
-      <BaseSubtitle class="gallery__title">
+      <BTitle
+        level="2"
+        class="gallery__title"
+      >
         {{ line.title }}
-      </BaseSubtitle>
-      <BaseText class="gallery__text">
+      </BTitle>
+      <BText class="gallery__text">
         {{ line.text }}
-      </BaseText>
-    </BaseCard>
-  </BaseGallery>
+      </BText>
+    </BCard>
+  </div>
 </template>
 
 <style lang="scss" scoped>
 .gallery {
+  @include adaptive-flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
 
   &__card {
     width: 100%;

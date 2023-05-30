@@ -32,7 +32,7 @@ const onInput = (e: Event) => {
       :placeholder="placeholder ?? 'Поиск'"
       @input="onInput"
     >
-    <BaseSpinner
+    <BLoader
       :style="{visibility: isLoading ? 'initial' : 'hidden'}"
       :width="18"
       :height="18"

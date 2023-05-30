@@ -28,22 +28,25 @@ onMounted(() => {
 
 <template>
   <div class="navigation">
-    <BaseTitle class="navigation__title">
+    <BTitle
+      :level="1"
+      class="navigation__title"
+    >
       Навигация
-    </BaseTitle>
+    </BTitle>
     <ul class="navigation__list">
       <li
         v-for="(navigationItem, idx) in navigationList"
         :key="idx"
         :class="`navigation__item navigation__item_${navigationItem.level}`"
       >
-        <BaseLink
+        <BLink
           :href="navigationItem.url"
           class="navigation__link"
           @click="saveStorageLastEntry(navigationItem.url)"
         >
           {{ navigationItem.title }}
-        </BaseLink>
+        </BLink>
         <div
           v-if="navigationItem.url === lastEntryUrl"
           class="navigation__note"

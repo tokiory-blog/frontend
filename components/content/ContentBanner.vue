@@ -37,14 +37,17 @@ onMounted(async () => {
     :style="bannerStyle"
     :class="{light: hasLightShadow}"
   >
-    <BaseTitle class="banner__title">
+    <BTitle
+      :level="1"
+      class="banner__title"
+    >
       {{ title }}
-    </BaseTitle>
-    <BaseText class="banner__text">
+    </BTitle>
+    <BText class="banner__text">
       {{ description }}
-    </BaseText>
+    </BText>
     <div class="banner__tags">
-      <BaseTag
+      <BTag
         v-for="(tag, idx) in tags"
         :key="idx"
         class="banner__tag"
@@ -52,7 +55,7 @@ onMounted(async () => {
         without-tag
       />
     </div>
-    <BaseSpinner
+    <BLoader
       v-show="isLoading"
       class="banner__spinner"
       :width="52"

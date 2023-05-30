@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import NAVIGATION from "@d/navigation";
-import { REPO_GITHUB } from "@/constants/author";
+import { REPO_GITHUB } from "~/constants/author";
 
 const route = useRoute();
 
@@ -12,7 +12,7 @@ const isLinkActive = (url: string): boolean => {
 <template>
   <header class="header">
     <div class="header__logo">
-      <base-logo />
+      <BLogo />
     </div>
     <nav class="header__navigation navigation">
       <ul class="navigation__list">
@@ -21,13 +21,13 @@ const isLinkActive = (url: string): boolean => {
           :key="idx"
           class="navigation__item"
         >
-          <base-link
+          <BLink
             :href="navigationItem.url"
             :is-active="isLinkActive(navigationItem.url)"
             class="navigation__link"
           >
             {{ navigationItem.title }}
-          </base-link>
+          </BLink>
         </li>
       </ul>
       <NuxtLink :to="REPO_GITHUB">

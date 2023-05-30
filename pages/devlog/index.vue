@@ -28,11 +28,11 @@ console.log(fullContentList);
 <template>
   <div class="devlog-page">
     <div class="devlog-page__title">
-      <BaseTitle>Devlog</BaseTitle>
+      <BTitle :level="1">
+        Devlog
+      </BTitle>
     </div>
-    <div class="devlog-page__list">
-      <DevlogList :list="fullContentList" />
-    </div>
+    <div class="devlog-page__list" />
   </div>
 </template>
 

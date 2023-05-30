@@ -11,9 +11,9 @@ defineProps<Props>();
 <template>
   <div class="link-section">
     <div class="link-section__title">
-      <BaseSubtitle>
+      <BTitle :level="2">
         {{ section.name }}
-      </BaseSubtitle>
+      </BTitle>
     </div>
     <ul class="link-section__list">
       <li
@@ -21,7 +21,7 @@ defineProps<Props>();
         :key="idx"
         class="link-section__item"
       >
-        <LinkSectionItem :link="child" />
+        <LinksSectionItem :link="child" />
       </li>
     </ul>
   </div>

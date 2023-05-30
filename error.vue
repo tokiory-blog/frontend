@@ -13,16 +13,16 @@
       К сожалению страница, которую вы запрашиваете не была найдена.<br>
       Попробуйте перезайти по данному адресу позже. Если вы считаете что данная страница должна существовать,
       но ее не существует - напишите письмо
-      <BaseLink href="mailto:tokiory.personal@gmail.com">
+      <BLink href="mailto:tokiory.personal@gmail.com">
         на данную почту
-      </BaseLink>
+      </BLink>
     </div>
-    <BaseLink
+    <BLink
       class="not-found__home"
       href="/"
     >
       Вернуться на главную
-    </BaseLink>
+    </BLink>
   </div>
 </template>
 
