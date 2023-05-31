@@ -1,5 +1,4 @@
-import type { MarkdownParsedContent } from "@nuxt/content/dist/runtime/types";
-import type { Post } from "./post.types";
+import { ParsedContentInternalMeta } from "@nuxt/content/dist/runtime/types";
 
 export type DevlogContentType = "devlog";
 
@@ -10,15 +9,10 @@ export interface DevlogSource {
   url: string[];
 }
 
-export interface DevlogProject {
+export interface DevlogProject extends ParsedContentInternalMeta {
   name: string;
   type: DevlogVendor;
   url: string;
   description: string;
+  fullDescription?: string;
 }
-
-export interface DevlogPost extends Post {
-  source: DevlogSource[]
-}
-
-export type DevlogFrontmatter = Post & MarkdownParsedContent;

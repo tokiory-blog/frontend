@@ -11,12 +11,13 @@
         {{ project.name }}
       </BTitle>
       <BText class="info__description">
-        123
+        {{ project.description }}
       </BText>
       <BLink
         class="devlog-project__source source"
         is-new-tab
         :href="project.url"
+        @click.stop
       >
         <DevlogLink :type="project.type" />
       </BLink>

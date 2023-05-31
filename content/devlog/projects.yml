@@ -1,9 +1,0 @@
-projects:
-  - name: 'Capybara'
-    url: 'https://github.com/capybara-app'
-    description: '123'
-    type: 'github'
-  - name: '123'
-    description: '123'
-    url: '123'
-    type: 'github'
