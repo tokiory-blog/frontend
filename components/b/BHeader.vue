@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import NAVIGATION from "@d/navigation";
-import { REPO_GITHUB } from "~/constants/author";
+import { REPO_GITHUB, TELEGRAM_PUBLIC } from "~/constants/author";
 
 const route = useRoute();
 
@@ -30,12 +30,23 @@ const isLinkActive = (url: string): boolean => {
           </BLink>
         </li>
       </ul>
-      <NuxtLink :to="REPO_GITHUB">
-        <img
-          class="navigation__github"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-          alt="Github icon"
-        >
+      <NuxtLink
+        target="_blank"
+        :to="REPO_GITHUB"
+      >
+        <BIcon
+          name="github"
+          transparent
+        />
+      </NuxtLink>
+      <NuxtLink
+        target="_blank"
+        :to="TELEGRAM_PUBLIC"
+      >
+        <BIcon
+          transparent
+          name="telegram"
+        />
       </NuxtLink>
     </nav>
   </header>
@@ -70,31 +81,6 @@ const isLinkActive = (url: string): boolean => {
     display: flex;
     align-items: center;
     gap: 24px;
-  }
-
-  &__github {
-    opacity: 0.5;
-    cursor: pointer;
-    
-    @include adaptive-from-tablet {
-      width: 25px;
-    }
-    
-    @include adaptive-from-laptop {
-      width: 20px;
-    }
-    
-    &:hover {
-      opacity: 0.7;
-    }
-    
-    @media (prefers-color-scheme: dark) {
-      filter: contrast(0);
-    }
-  }
-
-  &__item {
-    margin: 0 !important;
   }
 }
 </style>

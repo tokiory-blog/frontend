@@ -75,6 +75,11 @@ const documentationSection: LinkSection = {
       description: "Сервис для поиска пакетов для разных ЯП и технологий"
     },
     {
+      name: "Can I DevTools?",
+      url: "https://www.canidev.tools/",
+      description: "Можно посмотреть какие возможности есть у разных инструментов для разработчика в различных браузерах",
+    },
+    {
       name: "Sourcegraph",
       url: "https://searchcode.com/",
       description: "Сервис, который предлагает поиск по кодовой базе Github с всевозможными фильтрами"

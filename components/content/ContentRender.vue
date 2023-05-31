@@ -1,9 +1,12 @@
 <script lang="ts" setup>
 import { MarkdownParsedContent } from "@nuxt/content/dist/runtime/types";
 import { SITE_NAME } from "~/constants/meta";
+import ContentEmpty from "@cmp/content/ContentEmpty.vue";
 
 const route = useRoute();
 const { data, error } = await useAsyncData<MarkdownParsedContent>("post", () => queryContent(route.path).findOne());
+
+console.log(data.value.body.children);
 
 interface Props {
   hasNavigation?: boolean;
@@ -29,25 +32,43 @@ useOpenGraph({
 </script>
 
 <template>
-  <ContentBanner
-    :title="data.title"
-    :src="data.banner ?? '#'"
-    :description="data.description"
-    :tags="data.tags"
-  />
-  <div class="post-content">
-    <ContentNavigation
-      v-if="hasNavigation"
-      :content="data"
-    />
-    <ContentRenderer
-      :value="data"
-    />
+  <div
+    class="content"
+    :class="{empty: !data.body.children.length}"
+  >
+    <ContentEmpty v-if="!data.body.children.length" />
+    <div
+      v-else
+      class="content__render"
+    >
+      <ContentBanner
+        :title="data.title"
+        :src="data.banner ?? '#'"
+        :description="data.description"
+        :tags="data.tags"
+      />
+      <div class="post-content">
+        <ContentNavigation
+          v-if="hasNavigation"
+          :content="data"
+        />
+        <ContentRenderer
+          :value="data"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
 <style lang="scss">
 @import "@s/post";
+
+.content.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - var(--size-header));
+}
 
 .post-content {
   margin-top: 64px;

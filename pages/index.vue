@@ -59,22 +59,18 @@ $gap: 16px;
   }
   
   @media screen and (min-width: 768px) {
-    //display: grid;
-    //grid-template-areas: 
-    //  ". ."
-    //  ". ."
-    //  "bottom bottom";
-    //gap: $gap;
-    //
-    //&__item:not(:first-child) {
-    //  margin-top: 0;
-    //}
-    display: grid;
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
 
-    &__item:not(:first-child) {
-      margin-top: 0;
+    &__item {
+      flex-basis: calc(50% - 8px);
+      height: 100%;
+      
+      &:not(:first-child) {
+        margin-top: 0;
+      }
     }
   }
 }
