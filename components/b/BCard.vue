@@ -22,6 +22,7 @@ defineProps<Props>();
   @include default-ui-card;
   padding: 12px 24px 18px;
   display: block;
+  height: 100%;
 
   &.hover:hover {
     border-color: var(--neutral-hover);
