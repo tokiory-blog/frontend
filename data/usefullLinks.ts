@@ -47,6 +47,11 @@ const documentationSection: LinkSection = {
       description: "Онлайн документация для огромного количества ЯП. Работает оффлайн.",
     },
     {
+      name: "Can I use",
+      url: "https://caniuse.com/",
+      description: "Сайт на котором можно посмотреть совместимость селекторов, методов JS и атрибутов с разными браузерами",
+    },
+    {
       name: "MDN",
       description: "Веб-документация для всего, что касается веб-технологий.",
       url: "https://developer.mozilla.org/en-US/"
