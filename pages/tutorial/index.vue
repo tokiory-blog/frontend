@@ -31,7 +31,7 @@ const filteredContentList = computed(() => {
     fullContentList.sort((a, b) => {
       const firstPostDate = new Date(a.publicationDate),
         secondPostDate = new Date(b.publicationDate);
-      return secondPostDate.getDate() - firstPostDate.getDate();
+      return secondPostDate.getTime() - firstPostDate.getTime();
     });
 });
 </script>
