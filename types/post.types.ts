@@ -1,7 +1,7 @@
 import type { MarkdownParsedContent } from "@nuxt/content/dist/runtime/types";
 
 export type ContentType =
-  "tutorial" |
+  "notes" |
   "article";
 
 export interface Post extends Pick<MarkdownParsedContent, "_path"> {

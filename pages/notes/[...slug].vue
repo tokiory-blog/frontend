@@ -5,5 +5,5 @@ definePageMeta({
 </script>
 
 <template>
-  <ContentRender has-navigation />
+  <ContentRender />
 </template>

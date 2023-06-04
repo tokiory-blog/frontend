@@ -42,12 +42,16 @@ useOpenGraph({
       class="content__render"
     >
       <ContentBanner
+        v-if="data.banner"
         :title="data.title"
         :src="data.banner ?? '#'"
         :description="data.description"
         :tags="data.tags"
       />
       <div class="post-content">
+        <BTitle v-if="!data.banner">
+          {{ data.title }}
+        </BTitle>
         <ContentNavigation
           v-if="hasNavigation"
           :content="data"

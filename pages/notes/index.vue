@@ -2,8 +2,8 @@
 import { SITE_DESCRIPTION, SITE_NAME } from "@/constants/meta";
 import type { Frontmatter } from "@/types/post.types";
 
-const PAGE_TITLE = `${SITE_NAME}: Туториалы`;
-const COLLECTION = "tutorial";
+const PAGE_TITLE = `${SITE_NAME}: Заметки`;
+const COLLECTION = "notes";
 
 definePageMeta({
   layout: "full"
@@ -40,14 +40,14 @@ const filteredContentList = computed(() => {
   <div class="article-page">
     <div class="article-page__title">
       <BTitle :level="1">
-        Туториалы
+        Заметки
       </BTitle>
     </div>
     <BSearch
       v-model="searchInput"
       class="article-page__search"
       :is-loading="isLoading"
-      placeholder="Найти туториалы по названию, описанию, тегам"
+      placeholder="Найти заметки по названию, описанию, тегам"
     />
     <div class="article-page__list">
       <BPost
