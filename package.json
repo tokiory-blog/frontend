@@ -11,8 +11,6 @@
     "lint": "eslint --ext .js,.ts,.vue --fix",
     "postinstall": "pnpm types",
     "test": "vitest --config ./vitest.config.ts",
-    "docs:serve": "mkdocs serve",
-    "docs:deploy": "bash scripts/deploy-docs.sh",
     "vercel:dev": "vercel",
     "vercel:prod": "pnpm build && pnpm vercel --prod"
   },

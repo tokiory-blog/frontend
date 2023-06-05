@@ -21,10 +21,10 @@ describe("[post] /api/search", async () => {
     expect(data?.posts.length ?? 0).toBeGreaterThan(0);
   });
 
-  test("[Search]: Search for tutorials", async () => {
+  test("[Search]: Search for notes", async () => {
     const params: SearchRequest = {
-      type: "tutorial",
-      query: "go"
+      type: "notes",
+      query: "nuxt"
     };
 
     const data = await got
