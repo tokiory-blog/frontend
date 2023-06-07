@@ -1,3 +1,5 @@
+import { Link } from "@unhead/schema";
+
 const designSection: LinkSection = {
   name: "Дизайн",
   child: [
@@ -23,7 +25,12 @@ const designSection: LinkSection = {
       name: "Dribbble",
       description: "Позволяет посмотреть тренды дизайна, а также найти вдохновение для своего проекта.",
       url: "https://dribbble.com/",
-    }
+    },
+    {
+      name: "Coolors",
+      description: "Удобный сервис для подбора цветовой палитры",
+      url: "https://coolors.co/",
+    },
   ]
 };
 
@@ -110,13 +117,111 @@ const databaseSection: LinkSection = {
     {
       name: "Firebase",
       url: "https://firebase.google.com/index.html",
-      description: "Serverless база данных, с помощью которой можно быстро создавать MVP"
+      description: "Serverless база данных, с помощью которой можно быстро создавать MVP."
     },
     {
       name: "Supabase",
       url: "https://supabase.com/",
       description: "Альтернатива для Firebase. В отличии от последней, Supabase - SQL-based."
+    },
+    {
+      name: "MongoDB",
+      url: "https://www.mongodb.com/",
+      description: "База данных основанная на документах JSON. Имеет схожий синтаксис c JS.",
+    },
+    {
+      name: "Prisma",
+      url: "https://www.prisma.io/",
+      description: "ORM для JavaScript/TypeScript",
+    },
+    {
+      name: "TypeORM",
+      url: "https://typeorm.io/",
+      description: "Еще одна ORM для JS/TS",
     }
+  ]
+};
+
+const frontendFrameworksSection: LinkSection = {
+  name: "Фреймворки/библиотеки для разработки Frontend'а",
+  child: [
+    {
+      name: "Vue.js",
+      url: "https://vuejs.org/",
+      description: "Удобный фреймворк для создания приложений. Огромная крутая экосистема, удобный язык разметки и многое" +
+        "другое."
+    },
+    {
+      name: "React",
+      url: "https://react.dev/",
+      description: "Более медленный аналог Vue, который появился раньше него. Очень популярен."
+    },
+    {
+      name: "Svelte",
+      url: "https://svelte.dev/",
+      description: "Один из самых быстрых Frontend-фреймворков на сегодняшний день. Синтаксис не добавляет ничего нового" +
+        "вся логика пишется на чистом JS, сам код компилируется и на выходе получается чистый JS. Фреймворк без VDOM."
+    },
+    {
+      name: "Lit",
+      url: "https://lit.dev/",
+      description: "Фреймворк для создания веб-компонентов."
+    },
+    {
+      name: "Solid",
+      url: "https://www.solidjs.com/",
+      description: "Более быстрый аналог React.js с аналогичным синтаксисом. Также как и Svelte - является одним из" +
+        "самых быстрых фреймворков, который существует на текущий момент."
+    },
+  ]
+};
+
+const backendFrameworksSection: LinkSection = {
+  name: "Фреймворки/библиотеки для построения Backend'а",
+  child: [
+    {
+      name: "[JS] Express.js",
+      url: "https://expressjs.com/ru/",
+      description: "Стандарт де-факто для написания бэкенда на Javascript + Node.js."
+    },
+    {
+      name: "[JS] Koa.js",
+      url: "https://koajs.com/",
+      description: "Аналог Express.js, который сделали разработчики, которые ушли из разработки Express.js."
+    },
+    {
+      name: "[Go] Gin",
+      url: "https://gin-gonic.com/",
+      description: "Самый популярный фреймворк для создания веб-приложений на Go."
+    },
+    {
+      name: "[Rust] Rocket",
+      url: "https://rocket.rs/",
+      description: "Один из популярных фреймворков для написания бэкенда на Rust."
+    }
+  ]
+};
+
+const desktopFrameworksSection: LinkSection = {
+  name: "Фреймворки/библиотеки для построения десктопных приложений",
+  child: [
+    {
+      name: "[JS] Electron",
+      url: "https://www.electronjs.org/",
+      description: "Древний как мир, фреймворк для написания десктопных приложений. Основывается на Chromium. Жрет много" +
+        "памяти и само приложение весит тоже много."
+    },
+    {
+      name: "[Rust/JS] Tauri",
+      url: "https://tauri.app/",
+      description: "Современный аналог Electron.js основанный на Webview. Обладает огромным функционалом."
+    },
+    {
+      name: "[Go] Webview",
+      url: "https://github.com/webview/webview",
+      description: "Webview является библиотекой, которая доступна для C++, C, Rust, Go и других языков. Она позволяет" +
+        "запускать свой JS и HTML внутри отдельного Webview в системе.",
+    },
   ]
 };
 
@@ -130,6 +235,14 @@ const deploymentSection: LinkSection = {
     {
       name: "Netlify",
       url: "https://www.netlify.com/"
+    },
+    {
+      name: "Firebase Hosting",
+      url: "https://firebase.google.com/docs/hosting",
+    },
+    {
+      name: "Render",
+      url: "https://render.com/",
     }
   ]
 };
@@ -146,7 +259,17 @@ const extraSection: LinkSection = {
       name: "Roadmap.sh",
       description: "Сайт с детальными роадмапами для развития разных скиллов у разработчиков",
       url: "https://roadmap.sh",
-    }
+    },
+    {
+      name: "Vimcolorschemes",
+      description: "Сайт для подбора тем для Neovim/Vim",
+      url: "https://vimcolorschemes.com/",
+    },
+    {
+      name: "VS Code Themes",
+      description: "Сайт для подбора цветовой темы для VSCode",
+      url: "https://vscodethemes.com/",
+    },
   ]
 };
 
@@ -199,6 +322,14 @@ const customThemes: LinkSection = {
       name: "Solarized",
       url: "https://ethanschoonover.com/solarized/",
     },
+    {
+      name: "Gruvbox",
+      url: "https://github.com/morhetz/gruvbox",
+    },
+    {
+      name: "Gruvbox Material",
+      url: "https://github.com/sainnhe/gruvbox-material",
+    }
   ],
 };
 
@@ -251,6 +382,9 @@ export default [
   documentationSection,
   architectureSection,
   databaseSection,
+  frontendFrameworksSection,
+  backendFrameworksSection,
+  desktopFrameworksSection,
   deploymentSection,
   extraSection,
   customFonts,
