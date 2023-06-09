@@ -104,6 +104,17 @@ const documentationSection: LinkSection = {
   ]
 };
 
+const tutorialSection: LinkSection = {
+  name: "Туториалы",
+  child: [
+    {
+      name: "NASM Tutorial",
+      description: "Туториал по ассемблеру (NASM)",
+      url: "https://cs.lmu.edu/~ray/notes/nasmtutorial/"
+    }
+  ]
+};
+
 const architectureSection: LinkSection = {
   name: "Архитектура",
   child: [
@@ -287,6 +298,14 @@ const extraSection: LinkSection = {
       description: "Сайт для подбора цветовой темы для VSCode",
       url: "https://vscodethemes.com/",
     },
+    {
+      name: "Compiler Explorer",
+      description: "Онлайн-компилятор, который преобразовывает любой код в ассемблерный-код",
+      url: "https://asm.godbolt.org/",
+    },
+    {
+      
+    }
   ]
 };
 
@@ -401,6 +420,7 @@ const links = [
   architectureSection,
   databaseSection,
   deploymentSection,
+  tutorialSection,
   extraSection,
   customFonts,
   customThemes,
