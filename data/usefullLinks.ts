@@ -1,4 +1,9 @@
-import { Link } from "@unhead/schema";
+import {
+  LinkSection,
+  LinkSectionItem,
+  TechnologyItem,
+  TechnologySection
+} from "@/types/links.types";
 
 const designSection: LinkSection = {
   name: "Дизайн",
@@ -142,85 +147,97 @@ const databaseSection: LinkSection = {
   ]
 };
 
-const frontendFrameworksSection: LinkSection = {
-  name: "Фреймворки/библиотеки для разработки Frontend'а",
+const frontendFrameworksSection: TechnologySection = {
+  name: "Разработка Frontend",
   child: [
     {
       name: "Vue.js",
       url: "https://vuejs.org/",
       description: "Удобный фреймворк для создания приложений. Огромная крутая экосистема, удобный язык разметки и многое" +
-        "другое."
+        "другое.",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
     },
     {
       name: "React",
       url: "https://react.dev/",
-      description: "Более медленный аналог Vue, который появился раньше него. Очень популярен."
+      description: "Более медленный аналог Vue, который появился раньше него. Очень популярен.",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
     {
       name: "Svelte",
       url: "https://svelte.dev/",
       description: "Один из самых быстрых Frontend-фреймворков на сегодняшний день. Синтаксис не добавляет ничего нового" +
-        "вся логика пишется на чистом JS, сам код компилируется и на выходе получается чистый JS. Фреймворк без VDOM."
+        "вся логика пишется на чистом JS, сам код компилируется и на выходе получается чистый JS. Фреймворк без VDOM.",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
     },
     {
       name: "Lit",
       url: "https://lit.dev/",
-      description: "Фреймворк для создания веб-компонентов."
+      description: "Фреймворк для создания веб-компонентов.",
+      icon: "/icons/colorful/lit.svg",
     },
     {
       name: "Solid",
       url: "https://www.solidjs.com/",
       description: "Более быстрый аналог React.js с аналогичным синтаксисом. Также как и Svelte - является одним из" +
-        "самых быстрых фреймворков, который существует на текущий момент."
+        "самых быстрых фреймворков, который существует на текущий момент.",
+      icon: "https://www.solidjs.com/assets/logo-123b04bc.svg",
     },
   ]
 };
 
-const backendFrameworksSection: LinkSection = {
-  name: "Фреймворки/библиотеки для построения Backend'а",
+const backendFrameworksSection: TechnologySection = {
+  name: "Разработка Backend",
   child: [
     {
-      name: "[JS] Express.js",
+      name: "Express.js",
       url: "https://expressjs.com/ru/",
-      description: "Стандарт де-факто для написания бэкенда на Javascript + Node.js."
+      description: "Стандарт де-факто для написания бэкенда на Javascript + Node.js.",
+      icon: "/icons/adaptive/express.svg",
     },
     {
-      name: "[JS] Koa.js",
+      name: "Koa.js",
       url: "https://koajs.com/",
-      description: "Аналог Express.js, который сделали разработчики, которые ушли из разработки Express.js."
+      description: "Аналог Express.js, который сделали разработчики, которые ушли из разработки Express.js.",
+      icon: "https://github.com/koajs/koa/raw/master/docs/logo.png",
     },
     {
-      name: "[Go] Gin",
+      name: "Gin",
       url: "https://gin-gonic.com/",
-      description: "Самый популярный фреймворк для создания веб-приложений на Go."
+      description: "Самый популярный фреймворк для создания веб-приложений на Go.",
+      icon: "https://raw.githubusercontent.com/gin-gonic/logo/master/color.png",
     },
     {
-      name: "[Rust] Rocket",
+      name: "Rocket",
       url: "https://rocket.rs/",
-      description: "Один из популярных фреймворков для написания бэкенда на Rust."
+      description: "Один из популярных фреймворков для написания бэкенда на Rust.",
+      icon: "https://rocket.rs/v0.5-rc/images/logo-small.svg",
     }
   ]
 };
 
-const desktopFrameworksSection: LinkSection = {
-  name: "Фреймворки/библиотеки для построения десктопных приложений",
+const desktopFrameworksSection: TechnologySection = {
+  name: "Разработка Desktop",
   child: [
     {
-      name: "[JS] Electron",
+      name: "Electron",
       url: "https://www.electronjs.org/",
       description: "Древний как мир, фреймворк для написания десктопных приложений. Основывается на Chromium. Жрет много" +
-        "памяти и само приложение весит тоже много."
+        "памяти и само приложение весит тоже много.",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg",
     },
     {
-      name: "[Rust/JS] Tauri",
+      name: "Tauri",
       url: "https://tauri.app/",
-      description: "Современный аналог Electron.js основанный на Webview. Обладает огромным функционалом."
+      description: "Современный аналог Electron.js основанный на Webview. Обладает огромным функционалом.",
+      icon: "/icons/colorful/tauri.svg",
     },
     {
-      name: "[Go] Webview",
+      name: "Webview",
       url: "https://github.com/webview/webview",
       description: "Webview является библиотекой, которая доступна для C++, C, Rust, Go и других языков. Она позволяет" +
         "запускать свой JS и HTML внутри отдельного Webview в системе.",
+      icon: "/icons/adaptive/webview.svg",
     },
   ]
 };
@@ -376,15 +393,13 @@ const articleSection: LinkSection = {
     return [...acc, ...articleList];
   }, [])
 };
-export default [
+
+const links = [
   designSection,
   readmeSection,
   documentationSection,
   architectureSection,
   databaseSection,
-  frontendFrameworksSection,
-  backendFrameworksSection,
-  desktopFrameworksSection,
   deploymentSection,
   extraSection,
   customFonts,
@@ -392,13 +407,13 @@ export default [
   articleSection,
 ];
 
-export interface LinkSection {
-  name: string;
-  child: LinkSectionItem[];
-}
+const technologies = [
+  frontendFrameworksSection,
+  backendFrameworksSection,
+  desktopFrameworksSection,
+];
 
-export interface LinkSectionItem {
-  name: string;
-  url: string;
-  description?: string;
-}
+export default {
+  links,
+  technologies,
+};

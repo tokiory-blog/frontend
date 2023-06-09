@@ -33,9 +33,14 @@ useOpenGraph({
       </BText>
     </div>
     <LinksSection
-      v-for="(section, idx) in USEFULL_LINKS"
+      v-for="(section, idx) in USEFULL_LINKS.links"
       :key="idx"
       :section="section"
+    />
+    <LinksTechnology
+      v-for="(technology, idx) in USEFULL_LINKS.technologies"
+      :key="idx"
+      :technologies="technology"
     />
   </div>
 </template>
