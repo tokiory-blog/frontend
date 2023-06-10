@@ -331,9 +331,6 @@ const extraSection: LinkSection = {
       description: "Онлайн-компилятор, который преобразовывает любой код в ассемблерный-код",
       url: "https://asm.godbolt.org/",
     },
-    {
-      
-    }
   ]
 };
 
