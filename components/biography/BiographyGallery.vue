@@ -3,41 +3,49 @@ const PRINCIPLES = [
   {
     title: "Разработка",
     text: "Я занимаюсь разработкой уже более 3-х лет, в основном специализируюсь во фронтэнд-разработке. " +
-      "В данном блоге я наглядно показываю как достигнуть больших результатов за короткий промежуток времени."
+      "В данном блоге я наглядно показываю как достигнуть больших результатов за короткий промежуток времени.",
+    url: "/devlog"
   },
   {
     title: "Открытость",
     text: "Внизу вы можете увидеть toml-файл с информацией обо мне, там же есть ссылка на Github, где вы можете" +
-      "найти мои пет-проекты, включая данный блог. Также " +
+      " найти мои пет-проекты, включая данный блог. Также " +
       "внизу приведены ссылки на мои социальные сети, где вы можете написать мне.",
+    url: "/author/checklist"
   },
   {
     title: "Знания",
     text: "В моем блоге вы сможете найти туториалы и статьи о самых разнообразных технологиях для веб-разработки. " +
       "Я пишу блог в свободное время и стараюсь делиться теми вещами, которые нашел и проверил на опыте. Именно " +
       "поэтому блог не так уж и часто обновляется",
+    url: "/article"
   },
 ];
 </script>
 
 <template>
   <div class="gallery">
-    <BCard
+    <NuxtLink
       v-for="(line, idx) in PRINCIPLES"
       :key="idx"
-      class="gallery__card"
-      has-shadow
+      class="gallery__link"
+      :to="line?.url"
     >
-      <BTitle
-        level="2"
-        class="gallery__title"
+      <BCard
+        class="gallery__card"
+        has-shadow
       >
-        {{ line.title }}
-      </BTitle>
-      <BText class="gallery__text">
-        {{ line.text }}
-      </BText>
-    </BCard>
+        <BTitle
+          level="2"
+          class="gallery__title"
+        >
+          {{ line.title }}
+        </BTitle>
+        <BText class="gallery__text">
+          {{ line.text }}
+        </BText>
+      </BCard>
+    </NuxtLink>
   </div>
 </template>
 
@@ -47,6 +55,12 @@ const PRINCIPLES = [
   gap: 32px;
   justify-content: center;
   flex-wrap: wrap;
+  
+  &__link {
+    display: block;
+    @include clear-link;
+    width: 100%;
+  }
 
   &__card {
     width: 100%;
@@ -63,7 +77,7 @@ const PRINCIPLES = [
 // Tablet styles
 @media screen and (min-width: $bp-tablet) {
   .gallery {
-    &__card {
+    &__link {
       width: calc(50% - 16px);
     }
   }

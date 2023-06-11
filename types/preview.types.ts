@@ -8,6 +8,7 @@ export type PreviewGradientColor = "pink" |
   "yellow" |
   "orange" |
   "purple" |
+  "lime"  |
   "black";
 
 export interface PreviewTemplate {

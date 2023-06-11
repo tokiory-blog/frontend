@@ -68,6 +68,11 @@ const getGradientCss = (color: PreviewGradientColor) => {
         background-image: linear-gradient(90deg, rgb(242, 132, 105) 0%, rgb(255, 82, 131) 100%);
         color: ${WHITE_COLOR};
       `;
+    case "lime":
+      return `
+        background: linear-gradient(260deg, #CFFB09 0%, #71FB0E 100%);
+        color: ${WHITE_COLOR}
+      `;
     case "pink":
       return `
         background-image: linear-gradient(45deg, rgba(255,191,217,1) 0%, rgba(194,255,193,1) 100%);
