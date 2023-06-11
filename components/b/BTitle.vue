@@ -22,12 +22,12 @@ withDefaults(defineProps<Props>(), {
   user-select: none;
   
   &_1 {
-    font-size: 32px;
+    font-size: var(--fz-h1);
     font-weight: 500;
   }
   
   &_2 {
-    font-size: 24px;
+    font-size: var(--fz-h2);
     font-weight: 500;
   }
 }

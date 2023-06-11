@@ -8,21 +8,15 @@
   --border-radius-200: 0.25rem; // 4px
   --border-radius-300: 0.5rem; // 8px
   --border-radius-400: 1rem; // 16px
-
-  // Font sizes
-  --fsize-xs: 0.5rem; // 8px
-  --fsize-sm: 0.625rem; // 10px
-  --fsize-sm-plus: 0.75rem; // 12px
-  --fsize-md: 0.875rem; // 14px
-  --fsize-md-plus: 1rem; // 16px
-  --fsize-bg: 1.25rem; // 20px
-  --fsize-bg-plus: 1.5rem; // 24px
-  --fsize-lg: 2rem; // 32px
-  --fsize-lg-plus: 2.5rem; // 40px
-  --fsize-xl: 3rem; // 48px
-  --fsize-xl-plus: 3.25rem; // 52px
-  --fsize-extreme: 4rem; // 64px
   
+  // Fonts sizes
+  --fz-h1: 26px;
+  --fz-h2: 24px;
+  --fz-h3: 22px;
+  --fz-text: 14px;
+  --fz-caption: 12px;
+  --fz-table: 14px;
+
   // Spacings
   --sp-100: 2px;
   --sp-200: 4px;
@@ -38,8 +32,6 @@
 
 // Adaptive things
 :root {
-
-  // Adaptive spacings
   --spacing-sm: var(--sp-200);
   --spacing-md: var(--sp-300);
   --spacing-lg: var(--sp-500);
@@ -48,25 +40,28 @@
     --spacing-sm: var(--sp-300);
     --spacing-md: var(--sp-400);
     --spacing-lg: var(--sp-500);
+    
+    --fz-h1: 30px;
+    --fz-h2: 26px;
+    --fz-h3: 24px;
   }
 
   @media screen and (min-width: $bp-laptop) {
     --spacing-sm: var(--sp-400);
     --spacing-md: var(--sp-500);
     --spacing-lg: var(--sp-700);
+    
+    --fz-h1: 32px;
+    --fz-h2: 28px;
+    --fz-h3: 24px;
   }
   
-  // Adaptive font size
-  --fsize-standard: var(--fsize-md-plus);
-  --fsize-big: var(--fsize-lg);
-
-  @media screen and (min-width: $bp-tablet) {
-    --fsize-standard: var(--fsize-bg);
-    --fsize-big: var(--fsize-bg-plus);
-  }
-
-  @media screen and (min-width: $bp-laptop) {
-    --fsize-standard: var(--fsize-md);
-    --fsize-big: var(--fsize-bg);
+  @media screen and (min-width: $bp-quad) {
+    --fz-h1: 36px;
+    --fz-h2: 32px;
+    --fz-h3: 28px;
+    --fz-text: 16px;
+    --fz-table: 16px;
+    --fz-caption: 14px;
   }
 }

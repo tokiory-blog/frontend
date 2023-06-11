@@ -80,7 +80,7 @@ useOpenGraph({
   @include center-container;
   @include font-manrope;
   @include default-ui-color;
-  font-size: var(--fsize-standard);
+  font-size: var(--fz-text);
   padding: 20vh 12px;
 }
 </style>

@@ -23,19 +23,11 @@
   align-items: center;
 
   &__text {
-    font-size: var(--fsize-lg-plus);
+    font-size: var(--fz-h1);
+    font-weight: 500;
     
     @include adaptive-from-tablet {
-      font-size: var(--fsize-extreme);
-    }
-    
-    @include adaptive-from-laptop {
       font-size: 72px;
-    }
-    font-weight: 500;
-
-    @media screen and (max-width: 425px) {
-      font-size: 52px;
     }
   }
 

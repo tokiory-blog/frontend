@@ -68,7 +68,7 @@ watch(() => props.active, () => {
     justify-content: center;
     color: var(--color-white-alpha);
     margin-top: 12px;
-    font-size: var(--fsize-md);
+    font-size: var(--fz-text);
   }
 }
 </style>

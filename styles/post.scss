@@ -30,7 +30,7 @@
 
   p {
     line-height: 1.6;
-    font-size: calc(var(--fsize-standard) + 2px);
+    font-size: var(--fz-text);
     letter-spacing: .015em;
   }
 
