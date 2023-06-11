@@ -71,7 +71,7 @@ const getGradientCss = (color: PreviewGradientColor) => {
     case "lime":
       return `
         background: linear-gradient(260deg, #CFFB09 0%, #71FB0E 100%);
-        color: ${WHITE_COLOR}
+        color: ${BLACK_COLOR}
       `;
     case "pink":
       return `
