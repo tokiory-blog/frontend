@@ -1,4 +1,6 @@
 import { NuxtConfig } from "nuxt/config";
+import * as dotenv from "dotenv";
+dotenv.config();
 
 const scssUtilityList = [
   "styles/_mixins.scss",
@@ -12,6 +14,9 @@ const scssMix = scssUtilityList
   .join("");
 
 export default {
+  server: {
+    port: process.env.PORT,
+  },
   css: {
     preprocessorOptions: {
       scss: {
