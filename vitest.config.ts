@@ -8,6 +8,8 @@ export default defineConfig({
   },
   test: {
     globals: true,
-    testTimeout: 15000
+    testTimeout: 15000,
+    include: ["./tests/**/*"],
+    exclude: ["./tests/scenario/**/*"],
   }
 });
