@@ -1,0 +1,29 @@
+:root {
+  --sp-100: 2px;
+  --sp-200: 4px;
+  --sp-300: 8px;
+  --sp-400: 12px;
+  --sp-500: 16px;
+  --sp-600: 20px;
+  --sp-700: 24px;
+  --sp-800: 28px;
+  --sp-900: 32px;
+  --sp-1000: 64px;
+  
+  // Adaptive spacing
+  --spacing-sm: var(--sp-200);
+  --spacing-md: var(--sp-300);
+  --spacing-lg: var(--sp-500);
+  
+  @media screen and (min-width: $bp-tablet) {
+    --spacing-sm: var(--sp-300);
+    --spacing-md: var(--sp-400);
+    --spacing-lg: var(--sp-500);
+  }
+  
+  @media screen and (min-width: $bp-laptop) {
+    --spacing-sm: var(--sp-400);
+    --spacing-md: var(--sp-500);
+    --spacing-lg: var(--sp-700);
+  }
+}
