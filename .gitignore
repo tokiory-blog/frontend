@@ -9,3 +9,6 @@ dist
 .DS_Store
 site
 .vercel
+/test-results/
+/playwright-report/
+/playwright/.cache/

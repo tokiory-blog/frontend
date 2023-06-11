@@ -1,9 +1,9 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="App: Generate .nuxt" type="js.build_tools.npm">
+  <configuration default="false" name="Test: [playwright] Record E2E Test" type="js.build_tools.npm">
     <package-json value="$PROJECT_DIR$/package.json" />
     <command value="run" />
     <scripts>
-      <script value="generate" />
+      <script value="test:e2e:record" />
     </scripts>
     <node-interpreter value="project" />
     <envs />
