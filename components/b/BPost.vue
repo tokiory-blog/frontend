@@ -53,13 +53,13 @@ const localizedPublicationDate = computed(() =>
   }
 
   &__title {
-    font-size: var(--fsize-big);
+    font-size: var(--fz-h2);
     font-weight: 500;
   }
 
   &__description {
     margin-top: 4px;
-    font-size: var(--fsize-standard);
+    font-size: var(--fz-text);
     line-height: 1.6;
   }
 

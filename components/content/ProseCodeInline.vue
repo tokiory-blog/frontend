@@ -44,7 +44,7 @@ export default defineComponent({
 <style lang="scss">
 .post-inline-code {
   @include font-jetbrains;
-  font-size: 13px;
+  font-size: var(--fz-code);
   display: inline-block;
   color: var(--color-red);
   padding: 2px 4px;

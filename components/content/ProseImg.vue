@@ -69,7 +69,7 @@ export default {
   
   &__description {
     margin-top: 8px;
-    font-size: var(--fsize-sm-plus);
+    font-size: var(--fz-caption);
     display: flex;
     justify-content: center;
     color: var(--neutral-hover);

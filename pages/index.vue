@@ -48,13 +48,13 @@ $gap: 16px;
   }
   
   &__title {
-    font-size: var(--fsize-big);
+    font-size: var(--fz-h1);
     font-weight: 500;
   }
 
   &__description {
     margin-top: 12px;
-    font-size: var(--fsize-standard);
+    font-size: var(--fz-text);
     line-height: 1.4;
   }
   

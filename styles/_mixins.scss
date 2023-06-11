@@ -30,7 +30,7 @@
 }
 
 @mixin default-ui-fsize {
-  font-size: var(--fsize-standard);
+  font-size: var(--fz-text);
 }
 
 @mixin default-ui-card {
