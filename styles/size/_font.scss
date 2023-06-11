@@ -1,0 +1,35 @@
+/*
+  The size of the main text doesn't increases until we reach 2k resolution.
+  As soon as we reach a resolution of 2k, the font starts to increase.
+  Headings will increase in proportion to the resolution.
+*/
+
+:root {
+  --fz-h1: 26px;
+  --fz-h2: 24px;
+  --fz-h3: 22px;
+  --fz-text: 15px;
+  --fz-code: 13px;
+  --fz-caption: 12px;
+
+  @media screen and (min-width: $bp-tablet) {
+    --fz-h1: 30px;
+    --fz-h2: 26px;
+    --fz-h3: 24px;
+  }
+
+  @media screen and (min-width: $bp-laptop) {
+    --fz-h1: 32px;
+    --fz-h2: 28px;
+    --fz-h3: 24px;
+  }
+
+  @media screen and (min-width: $bp-quad) {
+    --fz-h1: 36px;
+    --fz-h2: 32px;
+    --fz-h3: 28px;
+    --fz-text: 18px;
+    --fz-code: 16px;
+    --fz-caption: 15px;
+  }
+}
