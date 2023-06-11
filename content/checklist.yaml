@@ -1,0 +1,71 @@
+checklist:
+  - name: Книги
+    child:
+      - name: Thorsten Ball - Writing An Interpreter in Go
+        done: false
+        description: "Хорошая книга про написание интерпретатора на Go. Читаю ее по совету ThePrimeagen"
+        url: https://interpreterbook.com/
+
+      - name: Рэндал Э. Брайнт, Дэвид Р. О'Халларон - Компьютерные Системы
+        done: false
+        description: Хорошая книга, которая объясняет как работают компьютеры, от устройства компьютеров и его компонентов, до операционных систем и отдельных системных вызовов.
+        url: https://www.ozon.ru/product/kompyuternye-sistemy-arhitektura-i-programmirovanie-653589401/
+        
+      - name: Alan. A. A. Donovan, Brian W. Kernighan - The Go Programming Language
+        done: false
+        description: Одна из лучших книг, что мне приходилось читать. Описывает от и до Go.
+        url: https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440
+        
+      - name: Роберт Мартин - Чистый код
+        done: false
+        description: Книга, которая рекомендуется всем разработчиками для поддержания порядка в коде
+        url: https://www.ozon.ru/category/chistyy-kod-robert-martin/
+          
+      - name: Роберт Мартин - Чистая архитектура
+        done: false
+        description: Книга, которая объясняет принципы построения хорошей архитектуры, а также дает наглядные примеры хорошей и плохой архитектуры
+        url: https://www.ozon.ru/product/chistaya-arhitektura-iskusstvo-razrabotki-programmnogo-obespecheniya-martin-robert-1009205160
+        
+  - name: Туториалы
+    child:
+      - name: Vue Tutorial
+        done: true
+        description: "Один из лучших туториалов по Vue, который я переодически перепрохожу время от времени"
+        url: https://vuejs.org/tutorial/
+        
+      - name: Svelte Tutorial
+        done: false
+        description: Я полностью прочитал документацию по Svelte, но так и не опробовал туториал, который так хвалил создатель Svelte
+        url: https://svelte.dev/tutorial/basics
+        
+      - name: NASM Tutorial
+        done: false
+        description: "Всегда хотел выучить один ассемблерный язык для общего образования. Ранее писал на NASM в рамках института, с помощью этой статьи думаю дотянуть знания"
+        url: https://cs.lmu.edu/~ray/notes/nasmtutorial/
+        
+      - name: Ziglings
+        done: false
+        description: Для изучения Zig был создан специальный репозиторий с интерактивным консольным туториалом, подобно Rustlings
+        url: https://github.com/ratfactor/ziglings
+        
+      - name: React.dev
+        done: false
+        description: У React была написана новая документация, которую я еще не читал
+        url: https://react.dev
+        
+      - name: CSS Grid Garden
+        done: false
+        description: Давно хотел полностью подтянуть знания по CSS Grid
+        url: https://cssgridgarden.com/#ru
+        
+      - name: WebRTC for the Curious
+        done: false
+        description: Хочу подтянуть знания по WebRTC, когда-то работал с ним в рамках одного проекта и увидел в технологии большой потенциал
+        url: https://webrtcforthecurious.com/docs/
+        
+  - name: Статьи
+    child:
+      - name: "JavaScript в 3D: Введение в Three.js"
+        done: false
+        description: "Давно думал подробнее посмотреть в сторону 3D. Думаю прочитать для общего образования, так как уже когда-то работал с Three.js"
+        url: https://habr.com/ru/articles/477956/

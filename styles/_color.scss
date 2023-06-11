@@ -32,8 +32,8 @@
   --background-alpha: var(--color-white-alpha);
   --shadow: var(--shadow-black);
   --link: var(--color-blue);
-  --neutral: var(--color-neutral-5);
-  --neutral-hover: var(--color-neutral-7);
+  --neutral: var(--color-neutral-8);
+  --neutral-hover: var(--color-neutral-10);
 }
 
 // Night colorscheme
@@ -43,7 +43,7 @@
     --background: var(--color-black);
     --background-alpha: var(--color-black-alpha);
     --shadow: var(--shadow-white);
-    --neutral: var(--color-neutral-12);
-    --neutral-hover: var(--color-neutral-10);
+    --neutral: var(--color-neutral-10);
+    --neutral-hover: var(--color-neutral-11);
   }
 }

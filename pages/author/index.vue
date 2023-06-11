@@ -27,11 +27,11 @@ useOpenGraph({
 .author-page {
   width: 100%;
   padding-top: 20vh;
-  
+
   &__description {
     margin-top: 64px;
   }
-  
+
   &__gallery {
     margin-top: 32px;
   }

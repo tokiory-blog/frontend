@@ -9,7 +9,7 @@
 
 <script lang="ts" setup>
 interface Props {
-  level: 1 | 2;
+  level?: 1 | 2;
 }
 
 withDefaults(defineProps<Props>(), {
