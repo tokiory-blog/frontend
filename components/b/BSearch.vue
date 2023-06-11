@@ -63,10 +63,6 @@ const onInput = (e: Event) => {
     &::placeholder {
       color: var(--neutral-hover);
     }
-    
-    //&:focus {
-    //  outline: 2px solid var(--link);
-    //}
   }
 }
 </style>

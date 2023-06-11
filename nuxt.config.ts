@@ -4,7 +4,6 @@ import postcssConfig from "./config/postcss.config";
 import viteConfig from "./config/vite.config";
 import { ALIASES } from "./alias";
 
-
 export default defineNuxtConfig({
   content: nuxtContentConfig,
   runtimeConfig: runtimeConfig,

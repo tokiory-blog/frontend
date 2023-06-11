@@ -82,9 +82,9 @@ const onCopyButtonClick = async () => {
 
 <style lang="scss">
 .post-formatted-code {
+  @include font-jetbrains;
   width: 100%;
   margin: 12px 0 24px;
-  @include font-jetbrains;
   line-height: 1.6;
   overflow-x: auto;
 
@@ -134,7 +134,7 @@ const onCopyButtonClick = async () => {
   }
 
   pre {
-    font-size: 13px;
+    font-size: var(--fz-code);
     margin: 0;
     padding: 12px;
     background-color: var(--color-black);

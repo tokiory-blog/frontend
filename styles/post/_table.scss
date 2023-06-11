@@ -2,7 +2,7 @@
   table {
     @include default-ui-color;
     border: 1px solid grey;
-    font-size: var(--fz-table);
+    font-size: var(--fz-text);
     border-collapse: collapse;
     margin: 1em 0;
     width: 100%;

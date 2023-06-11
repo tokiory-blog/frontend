@@ -1,3 +1,6 @@
+@import 'size/spacing';
+@import 'size/font';
+
 :root {
   // UI sizes
   --size-footer: 32px;
@@ -8,60 +11,4 @@
   --border-radius-200: 0.25rem; // 4px
   --border-radius-300: 0.5rem; // 8px
   --border-radius-400: 1rem; // 16px
-  
-  // Fonts sizes
-  --fz-h1: 26px;
-  --fz-h2: 24px;
-  --fz-h3: 22px;
-  --fz-text: 14px;
-  --fz-caption: 12px;
-  --fz-table: 14px;
-
-  // Spacings
-  --sp-100: 2px;
-  --sp-200: 4px;
-  --sp-300: 8px;
-  --sp-400: 12px;
-  --sp-500: 16px;
-  --sp-600: 20px;
-  --sp-700: 24px;
-  --sp-800: 28px;
-  --sp-900: 32px;
-  --sp-1000: 64px;
-}
-
-// Adaptive things
-:root {
-  --spacing-sm: var(--sp-200);
-  --spacing-md: var(--sp-300);
-  --spacing-lg: var(--sp-500);
-
-  @media screen and (min-width: $bp-tablet) {
-    --spacing-sm: var(--sp-300);
-    --spacing-md: var(--sp-400);
-    --spacing-lg: var(--sp-500);
-    
-    --fz-h1: 30px;
-    --fz-h2: 26px;
-    --fz-h3: 24px;
-  }
-
-  @media screen and (min-width: $bp-laptop) {
-    --spacing-sm: var(--sp-400);
-    --spacing-md: var(--sp-500);
-    --spacing-lg: var(--sp-700);
-    
-    --fz-h1: 32px;
-    --fz-h2: 28px;
-    --fz-h3: 24px;
-  }
-  
-  @media screen and (min-width: $bp-quad) {
-    --fz-h1: 36px;
-    --fz-h2: 32px;
-    --fz-h3: 28px;
-    --fz-text: 16px;
-    --fz-table: 16px;
-    --fz-caption: 14px;
-  }
 }
