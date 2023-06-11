@@ -1,7 +1,7 @@
 import apiPath from "@/constants/apiPath";
 import { url } from "@/config/runtime.config";
 import got from "got";
-import { SearchRequest, SearchResponse } from "@/types/search.types";
+import { SearchRequest, SearchResponse } from "~/types/search.types";
 
 const SEARCH_URL = `${ url.dev }/${apiPath.search}`;
 const SEARCH_PARAMS: SearchRequest = {

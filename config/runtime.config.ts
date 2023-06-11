@@ -1,7 +1,9 @@
 import { NuxtConfig } from "nuxt/config";
+import * as dotenv from "dotenv";
+dotenv.config();
 
 export const url = {
-  dev: "http://localhost:3000",
+  dev: `http://localhost:${process.env.PORT}`,
   prod: "https://tokiory.vercel.app"
 };
 
