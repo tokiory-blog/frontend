@@ -8,57 +8,62 @@
 
 Welcome to my programming blog about web development! I cover various programming languages such as Rust, TypeScript, Go, Vue, and JavaScript. My goal is to provide helpful and practical information for developers who want to create fast, secure, and efficient web applications.
 
-> 💻 On this blog, you'll find tutorials and guides to help you get started with web development, as well as in-depth analysis of different programming languages and frameworks.
-
-> 🚀 I also cover the latest trends in web development, such as serverless computing, progressive web apps, and artificial intelligence.
-
-> 💡 Whether you're a seasoned developer or just starting out, my blog has something for everyone. I believe that everyone should have access to high-quality resources to help them succeed in web development.
-
-> 🙏 Thank you for visiting my blog, and we hope you find our content useful and informative. Don't forget to subscribe to our newsletter to stay up-to-date on the latest developments in web development!
-
 ## Installation
 
 To get started with the project, you'll need to follow these steps:
 
 1. 🌀 Clone the repository: `git clone https://github.com/tokiory-blog/frontend.git`
 2. 🔧 Install the required dependencies: `pnpm install`
-3. 🚀 Run the development server: `pnpm dev`
+3. 🔗 Choose development environment: `pnpm env:dev`
+4. 🚀 Run the development server: `pnpm app:dev`
 
 > 🎉 That's it! Your site is now running on your local machine. Happy hacking! 🎉
 
-## Documentation
-You can see documentation here [on Github Pages](https://tokiory-blog.github.io/frontend).
 
-### Run documentation locally
+### ✨ Environments
+There are only two environments in this repository:
+- Development environment `pnpm env:dev`
+- Production environment `pnpm env:prod`
 
-You can install [mkDocs](https://www.mkdocs.org/) and run documentation locally.
+> **Info**
+> 
+> I advise you not to change ports manually. In each file for the environment,
+> the `PORT` field is described, with the help of which the port will be set.
+> If you do it manually, you can easily break testing
 
-First of all, you need Python 3. You can install it via cli:
+## 👷‍ Testing
 
-```bash
-# Linux
-sudo apt install python # Debian-like
-sudo dnf install python # RHEL-like
-sudo pacman -Sy python  # Arch-like
+This repository contains two types of tests:
+- Unit tests
+- End-to-end testing
 
-# MacOS
-brew install python
-
-# Windows
-choco install python
-```
-If you have [asdf](https://asdf-vm.com/), python will install automatically.
-
-Now you can simply run following command:
+### Unit Tests
+In order to run unit tests, simply install all the necessary packages, select a development
+environment and start the server. From now on you can test your application with unit tests
 
 ```bash
-pnpm docs
+pnpm install
+pnpm env:dev
+pnpm app:dev
+pnpm test:unit
 ```
 
-> 👾 You can view documentation at `localhost:8000`
+### E2E Tests
+In order to run End-to-end tests, you will need to install browsers for testing.
+For this, a special command is assigned - `pnpm test:e2e:install`.
+After installing the browsers, you just need to choose a development environment and that's it.
+Playwright himself to run the development server
+
+```bash
+pnpm install
+pnpm test:e2e:install
+pnpm env:dev
+pnpm test:e2e
+```
 
 ## 👺 Deploy on Vercel
 
+- Run `pnpm env:prod` for production environment
 - Run `pnpm vercel` or `pnpm vercel:dev` to login to vercel and deploy your site to test environment.
 - Run `pnpm vercel:prod` to deploy your site to production environment
 
@@ -75,7 +80,6 @@ pnpm docs
 - 📦 [PNPM](https://pnpm.js.org/) - A fast and efficient package manager that uses a single shared package store \
   across projects.
 - ☁️ [Vercel](https://vercel.com/) - A cloud platform for deploying web applications and serverless functions.
-- 🐳 [Docker](https://www.docker.com/) - A platform for developing, shipping, and running applications in containers.
 
 ### 🤔 Why this stack?
 
@@ -98,47 +102,6 @@ multiple projects, reducing disk space usage and speeding up installs.
 ☁️ **Vercel**: Vercel is a cloud platform that allows for deploying applications and serverless functions easily and
 quickly. It has great documentation, a generous free tier, and provides an easy way to set up continuous integration and
 deployment (CI/CD) pipelines.
-
-🐳 **Docker**: Docker provides a platform for developing, shipping, and running applications in containers, making it
-easy to set up a consistent and reproducible development environment and deploy the application to different
-environments with ease.
-
-## 🐳 Docker
-Docker is a containerization platform that allows you to package your application and its dependencies into a single
-unit called a container. Containers are lightweight and can be run on any platform that supports Docker, making it easy
-to deploy your application to a variety of environments.
-
-> **INFO**
->
-> To follow along with this guide, you should have Docker installed on your machine.
-
-
-1. Clone this repo: `git clone https://github.com/tokiory-blog/frontend.git`;
-2. Run the following commands to run app:
-    ```bash
-    cd .docker
-    chmod +x ./docker
-    ./docker build:app
-    ./docker run:app
-    ```
-3. Done! You can visit site at `localhost:3000`.
-
-### Utility
-Docker utility script has the following help:
-
-```text
-Usage: build.sh [OPTION]
-Builds a Docker image for the app or testing environment
-
-Options:
-  -h, --help              Display this help message
-  -v, --version           Display the script version
-  build:app               Build the app Docker image
-  build:test              Build the testing Docker image
-  run:app                 Run image with app
-  run:test                Run image with app tests
-  kill                    Stop and remove any running containers
-```
 
 ## ✍️ Authors
 

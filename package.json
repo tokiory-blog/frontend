@@ -17,6 +17,7 @@
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:record": "playwright codegen",
+    "test:e2e:install": "playwright install",
     "test:all": "concurrently -n vitest,playwright 'npm:test:unit' 'npm:test:e2e'",
     "postinstall": "pnpm generate",
     "prepare": "concurrently -n husky,env 'husky install' 'pnpm env:prod'"
