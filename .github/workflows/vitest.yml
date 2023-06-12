@@ -22,7 +22,7 @@ jobs:
       - name: Set development environment
         run: "pnpm env:dev"
       - name: Run development server
-        run: "pnpm app:dev"
+        run: "pnpm app:dev &"
       - name: Run vitest
         run: "pnpm test:unit"
       - name: Report Coverage
