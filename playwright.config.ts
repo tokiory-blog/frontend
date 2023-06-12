@@ -1,4 +1,5 @@
 import { defineConfig, devices } from "@playwright/test";
+import appPackage from "./package.json";
 import * as dotenv from "dotenv";
 dotenv.config();
 
@@ -45,7 +46,7 @@ export default defineConfig({
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: "pnpm dev",
+    command: `pnpm ${appPackage.scripts["app:dev"]}`,
     url: `http://127.0.0.1:${process.env.PORT}`,
     reuseExistingServer: !process.env.CI,
   },
