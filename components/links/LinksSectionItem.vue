@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { LinkSectionItem } from "@d/usefullLinks";
+import type { LinkSectionItem } from "@d/links";
 
 interface Props {
   link: LinkSectionItem

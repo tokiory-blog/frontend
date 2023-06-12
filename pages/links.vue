@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import USEFULL_LINKS from "@d/usefullLinks";
+import USEFULL_LINKS from "@d/links";
 import { SITE_DESCRIPTION, SITE_NAME } from "~/constants/meta";
 import { selectors } from "@d/selectors";
 
