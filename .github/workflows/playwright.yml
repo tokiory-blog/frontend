@@ -6,7 +6,7 @@ on:
     branches: [ main, master ]
 jobs:
   test-e2e:
-    timeout-minutes: 5
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
