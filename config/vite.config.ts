@@ -28,6 +28,7 @@ const scssMix = scssUtilityList
 export default {
   server: {
     port: process.env.PORT,
+    strictPort: true,
   },
   css: {
     preprocessorOptions: {
