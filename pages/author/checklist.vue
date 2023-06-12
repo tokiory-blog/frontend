@@ -3,6 +3,7 @@
     <BTitle
       :level="1"
       class="checklist-page__title"
+      :data-test="selectors.page.title"
     >
       Чеклист
     </BTitle>
@@ -23,6 +24,7 @@
 
 <script lang="ts" setup>
 import { SITE_DESCRIPTION, SITE_NAME } from "~/constants/meta";
+import { selectors } from "@d/selectors";
 
 const PAGE_TITLE = `${SITE_NAME}: Чеклист`;
 

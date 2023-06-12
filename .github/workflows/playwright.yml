@@ -18,13 +18,13 @@ jobs:
       with: 
         version: 6.24.x
     - name: Install dependencies
-      run: pnpm install
+      run: pnpm i
     - name: Set development environment
       run: "pnpm env:dev"
     - name: Install Playwright Browsers
-      run: pnpm exec playwright install --with-deps
+      run: "pnpm test:e2e:install --with-deps"
     - name: Run Playwright tests
-      run: pnpm exec playwright test
+      run: "pnpm test:e2e"
     - uses: actions/upload-artifact@v3
       if: always()
       with:

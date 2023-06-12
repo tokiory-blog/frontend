@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { SITE_DESCRIPTION, SITE_NAME } from "@/constants/meta";
 import type { DevlogProject } from "@/types/devlog.types";
+import { selectors } from "@d/selectors";
 
 const PAGE_TITLE = `${SITE_NAME}: Devlog`;
 const COLLECTION = "devlog";
@@ -36,7 +37,10 @@ console.log(projects);
 <template>
   <div class="devlog-page">
     <div class="devlog-page__title">
-      <BTitle :level="1">
+      <BTitle
+        :data-test="selectors.page.title"
+        :level="1"
+      >
         Девлог
       </BTitle>
     </div>

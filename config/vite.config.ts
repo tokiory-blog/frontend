@@ -1,7 +1,19 @@
 import { NuxtConfig } from "nuxt/config";
+import { createLogger } from "vite";
 import * as dotenv from "dotenv";
 dotenv.config();
 
+const isProduction = !["test", "development"].includes(process.env.NODE_ENV as string);
+
+const logger = createLogger("info");
+logger.warn("**Node mode**: " + process.env.NODE_ENV, {
+  timestamp: true,
+});
+logger.warn("**Is production mode activated**: " + isProduction, {
+  timestamp: true,
+});
+
+// Mix scss into build
 const scssUtilityList = [
   "styles/_mixins.scss",
   "styles/_breakpoint.scss",

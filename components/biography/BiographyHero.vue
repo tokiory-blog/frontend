@@ -1,10 +1,14 @@
 <script setup>
 import { AUTHOR_GITHUB, AUTHOR_NAME_RU, AUTHOR_NICKNAME } from "~/constants/author";
+import { selectors } from "@d/selectors";
 </script>
 
 <template>
   <div class="hero">
-    <div class="hero__title">
+    <div
+      :data-test="selectors.page.title"
+      class="hero__title"
+    >
       Привет!
       Меня зовут
       <span class="hero__gradient-text">

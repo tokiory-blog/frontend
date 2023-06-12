@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { Frontmatter } from "@/types/post.types";
 import { SITE_DESCRIPTION, SITE_NAME } from "@/constants/meta";
+import { selectors } from "@d/selectors";
 
 const PAGE_TITLE = `${SITE_NAME}: Статьи`;
 const COLLECTION = "article";
@@ -39,7 +40,10 @@ const filteredContentList = computed(() => {
 <template>
   <div class="article-page">
     <div class="article-page__title">
-      <BTitle :level="1">
+      <BTitle
+        :data-test="selectors.page.title"
+        :level="1"
+      >
         Статьи
       </BTitle>
     </div>

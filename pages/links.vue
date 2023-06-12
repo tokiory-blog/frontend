@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import USEFULL_LINKS from "@d/usefullLinks";
 import { SITE_DESCRIPTION, SITE_NAME } from "~/constants/meta";
+import { selectors } from "@d/selectors";
 
 const PAGE_TITLE = "Ссылки";
 const PAGE_DESCRIPTION = `В данном разделе описаны ссылки, которые часто пригождались мне во время разработки. Здесь находятся все ссылки, которые я собрал во время разработки продуктов начиная от создания дизайна и заканчивая деплоем.
@@ -24,7 +25,10 @@ useOpenGraph({
 
 <template>
   <div class="link-page">
-    <BTitle :level="1">
+    <BTitle
+      :level="1"
+      :data-test="selectors.page.title"
+    >
       {{ PAGE_TITLE }}
     </BTitle>
     <div class="link-page__text">
