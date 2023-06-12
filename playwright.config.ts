@@ -1,5 +1,4 @@
 import { defineConfig, devices } from "@playwright/test";
-import appPackage from "./package.json";
 import * as dotenv from "dotenv";
 dotenv.config();
 
@@ -10,7 +9,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: "html",
+  reporter: process.env.CI ? "dot" : "list",
   use: {
     baseURL: `http://127.0.0.1:${process.env.PORT}`,
     trace: "on-first-retry",

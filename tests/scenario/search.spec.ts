@@ -43,9 +43,8 @@ test.describe("Search", () => {
   
   cases.forEach((item) => {
     test.describe(item.name, () => {
-      test.beforeEach(async ({ page }) => {
-        await page.goto("/");
-        await page.waitForLoadState("domcontentloaded");
+      test.beforeEach(async ({ page, baseURL }) => {
+        await page.goto(baseURL + "/");
         await page.getByText(item.section, { exact: true }).click();
       });
 

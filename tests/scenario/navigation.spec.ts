@@ -2,8 +2,8 @@ import { test, expect } from "@playwright/test";
 import { selectors } from "@d/selectors";
 
 test.describe("Navigation", () => {
-  test.beforeEach(async ({ page }) => {
-    await page.goto("/");
+  test.beforeEach(async ({ page, baseURL }) => {
+    await page.goto(baseURL + "/");
   });
   
   test("Article Page", async ({ page }) => {

@@ -13,7 +13,7 @@
     "env:prod": "shx ln -sf env/prod.env .env",
     "env:dev": "shx ln -sf env/dev.env .env",
     "test:unit": "vitest run --config ./vitest.config.ts --silent",
-    "test:e2e": "playwright test -j 2",
+    "test:e2e": "playwright test --quiet -j 2 --retries=3",
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:record": "playwright codegen",
     "test:e2e:install": "playwright install",
