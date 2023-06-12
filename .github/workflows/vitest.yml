@@ -1,0 +1,30 @@
+name: Playwright Tests
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+jobs:
+  test-unit:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 6.24.x
+      - name: Install dependencies
+        run: pnpm i
+      - name: Set development environment
+        run: "pnpm env:dev"
+      - name: Run development server
+        run: "pnpm app:dev"
+      - name: Run vitest
+        run: "pnpm test:unit"
+      - name: Report Coverage
+        if: always()
+        uses: davelosert/vitest-coverage-report-action@v1

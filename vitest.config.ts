@@ -7,6 +7,10 @@ export default defineConfig({
     alias: VITE_ALIASES
   },
   test: {
+    coverage: {
+      reporter: ["text", "json-summary", "json"],
+      provider: "istanbul" // or 'v8'
+    },
     globals: true,
     testTimeout: 15000,
     include: ["./tests/**/*"],
