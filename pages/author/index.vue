@@ -18,7 +18,7 @@ useOpenGraph({
   <div class="author-page">
     <BiographyHero class="author-page__hero" />
     <BiographyDescription class="author-page__description" />
-    <BiographyGallery class="author-page__gallery" />
+    <BiographyFaq class="author-page__faq" />
     <BiographyCode />
   </div>
 </template>
@@ -32,7 +32,7 @@ useOpenGraph({
     margin-top: 64px;
   }
 
-  &__gallery {
+  &__faq {
     margin-top: 32px;
   }
 }

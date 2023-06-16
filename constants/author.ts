@@ -13,5 +13,5 @@ export const AUTHOR_EMAIL = "tokiory.personal@gmail.com";
 export const AUTHOR_GITHUB = `https://github.com/${AUTHOR_NICKNAME}`;
 export const REPO_GITHUB = "https://github.com/tokiory-blog/frontend";
 export const AUTHOR_TELEGRAM = "@tokiory";
-export const AUTHOR_DISCORD = "сухопутный краб#6280";
+export const AUTHOR_DISCORD = "tokiory#6280";
 export const TELEGRAM_PUBLIC = "https://t.me/developer_log";
