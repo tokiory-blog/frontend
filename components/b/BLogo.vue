@@ -3,20 +3,18 @@
     class="logo"
     href="/"
   >
-    <pre class="logo__image">
-      {{ Logo }}
-    </pre>
+    <img
+      class="logo__image"
+      src="/images/logo.png"
+      alt="Logo"
+    >
   </NuxtLink>
 </template>
 
-<script lang="ts" setup>
-import Logo from "~/constants/logo";
-</script>
-
 <style lang="scss" scoped>
 .logo {
-  font-size: 6px;
-  text-decoration: none;
-  color: inherit;
+  &__image {
+    height: 48px;
+  }
 }
 </style>
