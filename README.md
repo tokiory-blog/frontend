@@ -6,6 +6,11 @@
     <a href="https://vercel.com" target="_blank"><img src="https://img.shields.io/badge/Powered_by-Vercel-242424?logo=vercel" alt="Powered by - Vercel"></a>
 </p>
 
+<p align="center">
+  <img src="https://github.com/tokiory-blog/frontend/actions/workflows/vercel.yml/badge.svg" alt="Build status" />
+</p>
+
+
 Welcome to my programming blog about web development! I cover various programming languages such as Rust, TypeScript, Go, Vue, and JavaScript. My goal is to provide helpful and practical information for developers who want to create fast, secure, and efficient web applications.
 
 ## Installation
