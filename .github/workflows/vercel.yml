@@ -8,20 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2.2.4
-        with:
-          version: 6.24.x
-      - name: Install dependencies
-        run: pnpm i
-      - name: Set production environment
-        run: "pnpm env:prod"
-      - name: Build project
-        run: "pnpm build"
       - name: Deploy
         uses: amondnet/vercel-action@v20
         with:
