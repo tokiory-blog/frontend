@@ -15,6 +15,5 @@ jobs:
           vercel-args: '--prod'
           vercel-org-id: ${{ secrets.VERCEL_ORGANIZATION_ID}}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
-          vercel-version: 28.18.5
           working-directory: ./
 
