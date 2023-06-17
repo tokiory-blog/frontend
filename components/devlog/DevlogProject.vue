@@ -19,7 +19,10 @@
         :href="project.url"
         @click.stop
       >
-        <DevlogLink :type="project.type" />
+        <DevlogLink
+          class="source__link"
+          :type="project.type"
+        />
       </BLink>
     </div>
   </BCard>
@@ -55,9 +58,12 @@ const iconPath = computed(() =>
   display: flex;
   gap: 16px;
   align-items: center;
-  justify-content: flex-end;
-  &__icon {
-    width: 24px;
+  margin-top: 8px;
+
+  @include adaptive-from-tablet {
+    justify-content: flex-end;
+    margin-top: 4px;
   }
 }
+
 </style>
