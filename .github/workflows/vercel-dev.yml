@@ -5,6 +5,8 @@ on:
 permissions:
   pull-requests: write
   actions: write
+  repository-projects: write
+  issues: write
 jobs:
   dev-deploy:
     runs-on: ubuntu-latest
