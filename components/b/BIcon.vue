@@ -19,6 +19,7 @@ defineProps<Props>();
 .icon {
   cursor: pointer;
   filter: grayscale(1);
+  height: 28px;
 
   @include adaptive-from-tablet {
     width: 25px;
