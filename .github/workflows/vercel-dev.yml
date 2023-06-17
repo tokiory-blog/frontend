@@ -3,13 +3,7 @@ on:
   pull_request:
     branches: [ main ]
 permissions:
-  contents: read
-  deployments: write
-  actions: write
   pull-requests: write
-  repository-projects: write
-  statuses: write
-  issues: write
 jobs:
   dev-deploy:
     runs-on: ubuntu-latest
