@@ -13,8 +13,12 @@
 
 <style lang="scss" scoped>
 .logo {
+  display: block;
+  height: 48px;
+  
   &__image {
-    height: 48px;
+    display: block;
+    height: 100%;
   }
 }
 </style>
