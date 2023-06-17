@@ -6,7 +6,7 @@
     <div class="hero__text">
       Станция Токиори.
     </div>
-    <HeroBannerAscii class="hero__ascii" />
+    <BLogo class="hero__logo" />
     <div class="hero__description">
       Место, где можно сесть и почитать о разработке.
     </div>
@@ -21,6 +21,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+  &__logo {
+    margin-top: 16px;
+    height: 80px;
+    @include adaptive-from-tablet {
+      height: 120px;
+    }
+  }
 
   &__text {
     font-size: var(--fz-h1);
@@ -32,7 +40,7 @@
   }
 
   &__description {
-    margin-top: 4px;
+    margin-top: 16px;
     font-family: 'JetBrains Mono', Verdana, Geneva, Tahoma, sans-serif;
   }
 }

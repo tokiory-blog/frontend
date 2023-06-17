@@ -8,7 +8,6 @@
 // 
 import { html } from "satori-html";
 import { PreviewGradientColor, PreviewTemplate } from "@/types/preview.types";
-import { FULL_LOGO_PREVIEW } from "~/constants/logo";
 
 // Styles for the template
 // Docs: https://github.com/vercel/satori#css
@@ -48,11 +47,6 @@ const STYLE = {
     display: flex;
     font-size: 18px;
   `,
-  logo: `
-    text-align: left;
-    font-family: 'JetBrainsMono', monospace;
-    font-weight: 400;
-  `
 };
 
 
@@ -134,7 +128,12 @@ const generatePreviewTemplate = ({ title, subtitle, description, url, gradient =
       <div style="${STYLE.title}">${title}</div>
       ${subtitle && `<div style="${STYLE.subtitle}">${subtitle}</div>`}
       ${description && `<div style="${STYLE.description}">${description}</div>`}
-      <pre style="${STYLE.logo}">${FULL_LOGO_PREVIEW}</pre>
+      <img
+        height="167"
+        width="215"
+        src="https://raw.githubusercontent.com/tokiory-blog/frontend/a3e18b66b29ec93f2d1ad7468f2e1d214daa1da6/public/images/logo.png"
+        alt="logo"
+      >
       <div style="${STYLE.url}">${url}</div>
     </div>
   </div>
