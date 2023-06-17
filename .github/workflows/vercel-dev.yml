@@ -12,7 +12,6 @@ jobs:
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          github-comment: true
           vercel-org-id: ${{ secrets.VERCEL_ORGANIZATION_ID}}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
           working-directory: ./
