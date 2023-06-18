@@ -19,6 +19,7 @@ useOpenGraph({
     <BiographyHero class="author-page__hero" />
     <BiographyDescription class="author-page__description" />
     <BiographyFaq class="author-page__faq" />
+    <BiographyStack />
     <BiographyCode />
   </div>
 </template>

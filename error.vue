@@ -6,9 +6,7 @@
     <div class="not-found__title">
       Не найдено((
     </div>
-    <div class="not-found__ascii">
-      <HeroAscii />
-    </div>
+    <BLogo class="not-found__logo" />
     <div class="not-found__description">
       К сожалению страница, которую вы запрашиваете не была найдена.<br>
       Попробуйте перезайти по данному адресу позже. Если вы считаете что данная страница должна существовать,
@@ -38,6 +36,11 @@
     font-size: 32px;
     font-weight: 500;
     letter-spacing: -0.024em;
+  }
+  
+  &__logo {
+    margin-top: 12px;
+    height: 120px;
   }
 
   &__description {

@@ -55,6 +55,7 @@ const processedCodeHtml = await useShiki({
     border: 1px solid var(--neutral);
     border-top: none;
     font-size: 13px;
+    overflow-x: auto;
   }
 }
 

@@ -9,7 +9,7 @@
 
 <script lang="ts" setup>
 interface Props {
-  level?: 1 | 2;
+  level?: 1 | 2 | 3;
 }
 
 withDefaults(defineProps<Props>(), {
@@ -30,13 +30,10 @@ withDefaults(defineProps<Props>(), {
     font-size: var(--fz-h2);
     font-weight: 500;
   }
-}
-
-@media screen and (max-width: 420px) {
-  .title {
-    &_1 {
-      font-size: 24px;
-    }
+  
+  &_3 {
+    font-size: var(--fz-h3);
+    font-weight: 500;
   }
 }
 </style>
