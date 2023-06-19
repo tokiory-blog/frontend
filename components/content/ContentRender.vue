@@ -57,6 +57,11 @@ useOpenGraph({
         <ContentRenderer
           :value="data"
         />
+        <ContentReferences
+          v-if="data.references"
+          :references="data.references"
+          class="post-content__references"
+        />
       </div>
     </div>
   </div>
@@ -80,5 +85,9 @@ useOpenGraph({
   @include default-ui-color;
   font-size: var(--fz-text);
   padding: 20vh 12px;
+  
+  &__references {
+    margin-top: 36px;
+  }
 }
 </style>
