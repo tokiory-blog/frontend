@@ -47,8 +47,6 @@ const { data: info, error: infoError } = await useAsyncData("info", async () => 
     .findOne();
 });
 
-console.log(logs.value, info.value);
-
 if ([logsError, infoError].some(err => err.value !== null) ||
   logs.value?.length === 0 ||
   !info.value
@@ -68,8 +66,6 @@ useOpenGraph({
   title: SITE_NAME,
   gradient: "yellow",
 });
-
-console.log(route.path);
 </script>
 
 <style scoped lang="scss">

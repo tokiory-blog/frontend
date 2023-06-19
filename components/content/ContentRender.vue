@@ -6,8 +6,6 @@ import ContentEmpty from "@cmp/content/ContentEmpty.vue";
 const route = useRoute();
 const { data, error } = await useAsyncData<MarkdownParsedContent>("post", () => queryContent(route.path).findOne());
 
-console.log(data.value.body.children);
-
 interface Props {
   hasNavigation?: boolean;
 }

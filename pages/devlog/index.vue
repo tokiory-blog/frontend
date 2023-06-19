@@ -30,8 +30,6 @@ const projects = await queryContent<DevlogProject>(COLLECTION)
       path: `/${project._file.split("/").slice(0, -1).join("/")}`
     }))
   );
-
-console.log(projects);
 </script>
 
 <template>
