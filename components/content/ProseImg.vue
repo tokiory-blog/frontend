@@ -48,7 +48,6 @@ const props = defineProps({
 });
 
 const isImageViewActive = ref(false);
-console.log(props.alt);
 </script>
 
 <script lang="ts">

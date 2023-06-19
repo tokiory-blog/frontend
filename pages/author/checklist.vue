@@ -42,7 +42,6 @@ useOpenGraph({
 const content = await queryContent("checklist")
   .where({ _type: "yaml" })
   .findOne();
-console.log(content);
 
 </script>
 

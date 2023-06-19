@@ -2,6 +2,7 @@
 title: "Компьютерные сети: Топология"
 tags:
   - backend
+  - network
 publicationDate: 16 Jun 2023
 ---
 
