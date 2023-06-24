@@ -87,7 +87,7 @@
                 is-new-tab
               >
                 Ergohaven K:02
-              </BLink> ― Клавиатура
+              </BLink> ― Основной браузер;
             </BText>
           </li>
           <li class="details__list-item">
