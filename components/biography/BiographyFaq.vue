@@ -83,6 +83,16 @@
           <li class="details__list-item">
             <BText>
               <BLink
+                href="https://ru.ergohaven.xyz/"
+                is-new-tab
+              >
+                Ergohaven K:02
+              </BLink> ― Основной браузер;
+            </BText>
+          </li>
+          <li class="details__list-item">
+            <BText>
+              <BLink
                 href="https://www.jetbrains.com/webstorm/"
                 is-new-tab
               >
